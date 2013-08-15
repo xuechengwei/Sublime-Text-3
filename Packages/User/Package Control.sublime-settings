@@ -1,0 +1,22 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"BracketHighlighter",
+		"BufferScroll",
+		"Case Conversion",
+		"ChangeQuotes",
+		"ColorPicker",
+		"CSScomb",
+		"DocBlockr",
+		"Emmet",
+		"INI",
+		"JsFormat",
+		"Sass",
+		"Terminal",
+		"Theme - Soda",
+		"TrailingSpaces",
+		"YUI Compressor"
+	]
+}
