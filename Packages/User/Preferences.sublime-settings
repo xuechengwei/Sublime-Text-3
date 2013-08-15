@@ -1,7 +1,5 @@
 {
-	"ignored_packages":
-	[
-		"Vintage",
-		"ApacheConf.tmLanguage"
-	]
+	"theme": "Soda Light 3.sublime-theme",
+	"ignored_packages":[],
+	"soda_classsic_tabs": true
 }

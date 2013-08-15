@@ -3,7 +3,7 @@
 	[
 	],
 	"last_version": 3047,
-	"last_window_id": 2,
+	"last_window_id": 5,
 	"log_indexing": false,
 	"settings":
 	{
@@ -19,7 +19,7 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 392.0,
+				"height": 327.0,
 				"selected_items":
 				[
 					[
@@ -53,6 +53,7 @@
 			"file_history":
 			[
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/Users/xuechengwei/project/seq.log",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Installed Packages/Emmet.sublime-package"
 			],
 			"find":
