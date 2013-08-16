@@ -1,0 +1,189 @@
+{
+    "fe66224a0abd022fa74c1b8f412c0c59": {
+        "opened": [
+            {
+                "index": -1, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js"
+            }, 
+            {
+                "index": -1, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/templates/huodong/search.html"
+            }, 
+            {
+                "index": 6, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/models.py"
+            }, 
+            {
+                "index": 5, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/forms.py"
+            }, 
+            {
+                "index": 4, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/views.py"
+            }, 
+            {
+                "index": 4, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/draft/urls.py"
+            }, 
+            {
+                "index": 3, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/urls.py"
+            }
+        ], 
+        "closed": [
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/open iterm"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/basemodels.py"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/seq.log"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Downloads/dsdt.dsl"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Downloads/dsdt.aml"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/xheditor/xheditor-1.1.14-zh-cn.min.js"
+            }
+        ]
+    }, 
+    "global": {
+        "opened": [
+            {
+                "index": -1, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js"
+            }, 
+            {
+                "index": -1, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/templates/huodong/search.html"
+            }, 
+            {
+                "index": 6, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/models.py"
+            }, 
+            {
+                "index": 5, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/forms.py"
+            }, 
+            {
+                "index": 4, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/views.py"
+            }, 
+            {
+                "index": 4, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/draft/urls.py"
+            }, 
+            {
+                "index": 3, 
+                "group": 0, 
+                "filename": "/Users/xuechengwei/project/library/huodong/urls.py"
+            }
+        ], 
+        "closed": [
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/open iterm"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/index.tpl"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/huodong.html"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/basemodels.py"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/seq.log"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/.bash_profile"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Downloads/dsdt.dsl"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Downloads/dsdt.aml"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/xheditor/xheditor-1.1.14-zh-cn.min.js"
+            }
+        ]
+    }, 
+    "d41d8cd98f00b204e9800998ecf8427e": {
+        "opened": [], 
+        "closed": [
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/index.tpl"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/Desktop/huodong.html"
+            }, 
+            {
+                "index": -1, 
+                "group": -1, 
+                "filename": "/Users/xuechengwei/.bash_profile"
+            }
+        ]
+    }
+}
