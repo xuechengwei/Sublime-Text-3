@@ -19,19 +19,21 @@
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
+		"Tag",
+		"Theme - Nil",
 		"Theme - Soda",
 		"TrailingSpaces",
 		"YUI Compressor"
 	],
-	"startup_sec": 1.601164,
+	"startup_sec": 0.33414,
 	"syntax":
 	{
-		"CSS": 18,
-		"HTML": 26,
-		"JSON": 24,
-		"JavaScript": 1,
-		"Python": 3,
-		"Shell-Unix-Generic": 7
+		"CSS": 32,
+		"HTML": 43,
+		"JSON": 52,
+		"JavaScript": 106,
+		"Plain text": 1,
+		"Python": 14
 	},
-	"time": 1376554146
+	"time": 1376959737
 }

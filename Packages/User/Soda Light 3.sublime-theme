@@ -1,0 +1,12 @@
+[
+	{
+	        "class": "minimap_control",
+	        "viewport_color": [255, 255, 255, 50]
+	 },
+	 {
+	     "class": "tab_control",
+	     "attributes": ["dirty"],
+	     "layer0.tint": [230, 240, 255]
+	 }
+
+]

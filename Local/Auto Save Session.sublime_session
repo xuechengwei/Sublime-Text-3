@@ -1,21 +1,40 @@
 {
 	"folder_history":
 	[
+		"/Users/xuechengwei/project/wholesite",
+		"/Users/xuechengwei/project/library",
+		"/Volumes/软件/www/wholesite",
 		"/Users/xuechengwei/project/library/huodong",
 		"/Users/xuechengwei"
 	],
 	"last_version": 3047,
-	"last_window_id": 14,
+	"last_window_id": 19,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 955.0,
+		"new_window_height": 518.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
+					[
+						"search",
+						"searchtype"
+					],
+					[
+						"appe",
+						"append"
+					],
+					[
+						"fu",
+						"fun	Function"
+					],
+					[
+						"label",
+						"label_wrap"
+					],
 					[
 						"lab",
 						"label_wrap"
@@ -45,20 +64,20 @@
 				"selected_items":
 				[
 					[
-						"pip",
-						"Package Control: Install Package"
+						"bra",
+						"BracketHighlighter: Jump to Right Bracket"
 					],
 					[
 						":w",
 						":w - Save"
 					],
 					[
-						":q",
-						"BracketHighlighter: Swap Quotes"
+						"pip",
+						"Package Control: Install Package"
 					],
 					[
-						"bra",
-						"BracketHighlighter: Jump to Right Bracket"
+						":q",
+						"BracketHighlighter: Swap Quotes"
 					],
 					[
 						"braack",
@@ -102,7 +121,18 @@
 			},
 			"file_history":
 			[
+				"/Users/xuechengwei/project/library/.gitignore",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/Users/xuechengwei/Desktop/test.js",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Settings/SideBarEnhancements.json",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+				"/Users/xuechengwei/project/library/huodong/views.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+				"/Volumes/软件/www/wholesite/index.html",
+				"/Users/xuechengwei/project/library/huodong/urls.py",
+				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Desktop/open iterm",
 				"/Users/xuechengwei/project/library/huodong/basemodels.py",
 				"/Users/xuechengwei/project/seq.log",
 				"/Users/xuechengwei/Downloads/dsdt.dsl",
@@ -119,9 +149,10 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 98.0,
 				"where_history":
 				[
+					"/Users/xuechengwei/project/library/huodong"
 				]
 			},
 			"find_state":
@@ -129,6 +160,24 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"aid",
+					"消息",
+					"\n",
+					"';\n",
+					"searchtype",
+					"sinalogin",
+					"活动景点",
+					"费用明细弹出层",
+					"费用明细弹出层 begin",
+					"tr",
+					"create",
+					"活动特色",
+					"ajax",
+					"选择省",
+					"find_cities_of_province",
+					".pngfix",
+					"choose",
+					"CD_to",
 					"sub_leader",
 					"sub_",
 					"import",
@@ -171,7 +220,7 @@
 			"menu_visible": true,
 			"replace":
 			{
-				"height": 52.0
+				"height": 68.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -180,12 +229,20 @@
 				"selected_items":
 				[
 					[
-						"script",
-						"static/actPublish/js/script.js"
+						"page.css",
+						"wholesite/css/page.css"
 					],
 					[
-						"page.css",
-						"static/actPublish/css/page.css"
+						"script.js",
+						"huodong/static/actPublish/js/script.js"
+					],
+					[
+						"index.html",
+						"wholesite/index.html"
+					],
+					[
+						"script",
+						"static/actPublish/js/script.js"
 					]
 				],
 				"width": 0.0
@@ -226,6 +283,30 @@
 				"selected_items":
 				[
 					[
+						"cropp",
+						"cropperImg"
+					],
+					[
+						"crop",
+						"cropperPanel"
+					],
+					[
+						"csr",
+						"csrf_exempt"
+					],
+					[
+						"search",
+						"searchtype"
+					],
+					[
+						"appe",
+						"append"
+					],
+					[
+						"fu",
+						"fun	Function"
+					],
+					[
 						"label",
 						"label_wrap"
 					],
@@ -254,18 +335,10 @@
 			"buffers":
 			[
 				{
-					"contents": "昨天：\n	1. 搭建开发环境\n今天：\n	1. 活动发布前后端连调\n	2. 活动搜索2.1样式调整",
+					"file": "/Users/xuechengwei/Desktop/待办事项",
 					"settings":
 					{
-						"buffer_size": 48,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 422,
+						"buffer_size": 133,
 						"line_ending": "Unix"
 					}
 				},
@@ -273,47 +346,23 @@
 					"file": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
 					"settings":
 					{
-						"buffer_size": 26416,
+						"buffer_size": 27697,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/urls.py",
+					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
 					"settings":
 					{
-						"buffer_size": 868,
+						"buffer_size": 16423,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/views.py",
+					"file": "/Users/xuechengwei/project/library/pubevent/views.py",
 					"settings":
 					{
-						"buffer_size": 26083,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/xuechengwei/project/library/huodong/forms.py",
-					"settings":
-					{
-						"buffer_size": 7152,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/xuechengwei/project/library/huodong/models.py",
-					"settings":
-					{
-						"buffer_size": 6273,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/xuechengwei/project/library/draft/urls.py",
-					"settings":
-					{
-						"buffer_size": 496,
+						"buffer_size": 6984,
 						"line_ending": "Unix"
 					}
 				},
@@ -321,52 +370,122 @@
 					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
 					"settings":
 					{
-						"buffer_size": 15499,
+						"buffer_size": 17563,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "/*\n * @description: lvye new version activity publish page script\n * @author: xuechengwei\n * @email: xuechengweiyx@163.com\n * @update: 2013-07-03 10:51:23\n */\n\njQuery(document).ready(function() {\n\n	//包车信息显示与隐藏\n	$('#baobus').click(function() {\n		$('#businfo').show();\n		$('#othervehicle').hide();\n	});\n\n	// $(\"#publishform\").jqTransform();\n\n	//包车信息显示\n	$('#nobaobus').click(function() {\n		$('#businfo').hide();\n		$('#othervehicle').show();\n	});\n\n	//表格隔行变色\n	$('.feiinfo tr:odd').css('backgroundColor', '#EEE');\n\n	//表单验证\n	jQuery(\"#publishform\").validationEngine({\n		'autoPositionUpdate': true\n	})\n\n	//模板列表的显示与隐藏\n	var tmptogglebtn = $('#tmplistslide'),\n		tmplist = $('.tmplist');\n\n	tmptogglebtn.click(function() {\n		if (tmplist.is(':visible')) {\n			tmplist.slideUp();\n			$(this).prop('class', 'tmpdown');\n		} else {\n			tmplist.slideDown();\n			$(this).prop('class', 'tmpup');\n		}\n	})\n\n	//文本获得焦点时提示信息\n	$('.container input').poshytip({\n		className: 'tip-yellowsimple',\n		showOn: 'focus',\n		alignTo: 'target',\n		alignX: 'right',\n		alignY: 'center',\n		offsetX: 5,\n		showTimeout: 100\n	})\n\n	$('.tips').poshytip({\n		className: 'tip-bluesimple',\n		showOn: 'hover',\n		alignTo: 'target',\n		alignX: 'right',\n		alignY: 'center',\n		offsetX:10\n	})\n	// 为了保障安全,成行人数每超过25人请增加一位副领队协助领队带队\n	// 报名必填选项 选中加绿色边框\n	$('.applyinfo').find('input[type=\"checkbox\"]').each(function() {\n		var that = $(this);\n		that.live('click', function() {\n			if(that.prop('checked')) {\n				that.closest('li').addClass('selectedbox');\n			}else {\n				that.closest('li').removeClass('selectedbox');\n			}\n		})\n	})\n	function parseSubleaders (leaderobj) {\n		$.each(leaderobj, function(key, value) {\n			this_subleader = value;\n			li_wrap = value.choosen ? $('<li class=\"selectedbox\"></li>') : $('<li></li>');\n			label_wrap = $('<label></label>').html(this_subleader.name);\n			\n		})\n	}\n	parseSubleaders(sub_leaders)\n\n	// 显示可选副领队\n	function writeSelectableLeader() {\n		$('#subleaderlist').html(\"\")\n		$.each(sub_leaders, function(key, value) {\n			if(sub_leaders[key].choosen) {\n				item_wrap = $('<li class=\"selectedbox\"></li>');\n			} else {\n				item_wrap = $('<li></li>');\n			}\n			this_subleader = sub_leaders[key]\n\n			this_label = $('<label></label>').html(this_subleader.name);\n			this_label.appendTo(item_wrap);\n			$('<input />').attr({'type':'checkbox', 'value': key,'checked': this_subleader.choosen ? true:false}).appendTo(this_label);\n			item_wrap.appendTo($('#subleaderlist'))\n		})\n	};\n	// 点击弹出副领队选框\n	$('.choosebtn').click(function() {\n		if(!$('#popfeeinfo').is(':visible')) {\n			showPopFee();\n			writeSelectableLeader()\n		}\n	})\n\n	// 关闭弹出框\n	$('.popclosebtn').click(function() {\n		hidePopFee();\n	});\n	$('#subleaderlist input[type=\"checkbox\"]').live('click', function() {\n		var selected_check = $(this).val();\n		if($(this).prop('checked')) {\n			$(this).closest('li').addClass('selectedbox')\n		} else {\n			$(this).closest('li').removeClass('selectedbox')\n		}\n	})\n	function showPopFee(){\n		$('.fullscreenmask').show();\n		$('#popfeeinfo').show();\n		document.body.className += 'hideselects';\n	}\n	function hidePopFee(){\n		$('.fullscreenmask').hide();\n		$('#popfeeinfo').hide();\n		document.body.className = document.body.className.replace('hideselects', '');\n	}\n\n	function set_subleader (subleaders) {\n		$('input[name=\"sub_leaders\"]').val(sub_leaders)\n	}\n\n	// 点击确认框\n	$('.popconfirmbtn').live('click', function() {\n		var selectedli = $('#subleaderlist').find(\"input[type='checkbox']\")\n		if ($('#subleaderlist').find('input:checked').length) {\n\n		}\n		selectedli.each(function(){\n			if($(this).prop('checked')) {\n				sub_leaders[$(this).val()]['choosen'] = true;\n			} else {\n				sub_leaders[$(this).val()]['choosen'] = false;\n			}\n		})\n\n		$(\"#selectedleaderlist\").html(\"\");\n		$.each(sub_leaders, function(key, value) {\n			this_obj = sub_leaders[key];\n			if (this_obj.choosen) {\n				attr_wrap = $('<li class=\"clearfix\"></li>');\n				attr_wrap.html('<span class=\"fll\">'+this_obj.name+'</span>')\n				this_deletebtn = $('<span class=\"deletesubleader\"></span>');\n				this_deletebtn.attr('rel', key)\n				this_deletebtn.appendTo(attr_wrap)\n				attr_wrap.appendTo($('#selectedleaderlist'))\n			}\n		})\n\n		hidePopFee();\n		if($('#subleaderlist').find('input:checked').length){\n			$('#selectedleaderlist').css('display','block')\n		} else {\n			$('#selectedleaderlist').css('display','none')\n		}\n	});\n\n	// 删除领队\n	$('.deletesubleader').live('click',function(){\n		$(this).closest('li').remove();\n		sub_leaders[$(this).attr(\"rel\")]['choosen'] = false;\n\n		if($('#selectedleaderlist').children('li').length < 1) {\n			$('#selectedleaderlist').hide();\n		}\n	})\n\n	// 副领队搜索功能\n	function subleaderSearch(kwd) {\n		$.each(sub_leaders, function(key, value) {\n			var leadername = sub_leaders[key].name;\n			if(kwd == \"\") {\n				writeSelectableLeader();\n			}else if (kwd == \"\" && leadername.toLowerCase().indexOf(kwd) !== -1) {\n				var outer = sub_leaders[key].choosen ? $(\"<li class='selectedbox'></li>\") : $(\"<li></li>\"),\n				innerwrap = $(\"<label></label>\"),\n				inputfiled = innerwrap.append(leadername).append($('<input />').attr({'type':'checkbox', 'value':key, 'checked':sub_leaders[key].choosen ? true : false}));\n				outer.append(inputfiled);\n				$('#subleaderlist').html(outer)\n			} else {\n				$('#subleaderlist').html('无此好友!');\n			}\n		})\n	}\n	$('.searchbtn').click(function() {\n		var kwd = $('.subleadersearch').val();\n		$.ajax({\n			type: \"get\",\n			url:'http://www.xcw.lvye.homeip.net/huodong/api/get_subleaders?sname='+kwd,\n			dataType: \"json\",\n			success: function(data) {\n				console.log(data)\n			},\n			error: function() {\n				$('#subleaderlist').html('无此好友');\n			}\n		})\n	})\n\n\n	function returnTipStr(str) {\n		return str;\n	}\n	$('.categoryul li').click(function(){\n		$(this).addClass('attrselected').siblings().removeClass('attrselected');\n		$('#act_category').val($(this).data('name'))\n	})\n	$('#titleinput').keyup(function() {\n		var maxlen = 150,\n			thisobj = $(this),\n			surpluslen = maxlen - thisobj.val().length;\n\n		thisobj.poshytip('update', returnTipStr('您还可以输入' + surpluslen + '个字符!'))\n		if (thisobj.val().length > 150) {\n			$(tihs).val(thisobj.val().substr(0, maxlen));\n		}\n	})\n\n	$('#actrequirequantity').keyup(function() {\n		var val = parseInt($(this).val(), 10);\n		if (typeof val == \"number\") {\n			if (!val) {\n				$(this).poshytip('update', returnTipStr('请输入参加人数'));\n				$(this).poshytip('show')\n			} else if (val > 25) {\n				$(this).poshytip('update', returnTipStr('您需要' + (Math.ceil((val - 25) / 25)) + '个副领队'));\n				$(this).poshytip('show');\n			} else {\n				$(this).poshytip('hide');\n			}\n		} else {\n			$(this).poshytip('update', returnTipStr('请输入数字'));\n			$(this).poshytip('show')\n		}\n		// switch (val) {\n		// 	case \"\":\n		// 		$(this).poshytip('update','请输入不为空的数字');\n		// 		break;\n		// 	case val%25:\n\n		// }\n\n	})\n\n	//费用明细开始\n	/**\n	 * get total price\n	 * @param  {string} tr 根据每行算出总费用\n	 * @return {number}    表单提交校验\n	 */\n\n	function get_price(tr) {\n		var c = $(tr).find(\"input:eq(0)\").attr(\"checked\");\n		if (c && c == \"checked\") {\n			var p = $(tr).find(\"input:eq(1)\").val();\n			return parseInt(p, 10);\n		}\n	}\n\n	/**\n	 * 获得必付钱数\n	 * @param  {string} tr 根据选中的checkbox算出必付\n	 * @return {[number]}    [description]\n	 */\n\n	function get_must_price(tr) {\n		var m = $(tr).find(\"input:eq(2)\").attr(\"checked\");\n		if (m && m == \"checked\") {\n			return get_price(tr);\n		}\n	}\n\n	/**\n	 * 明细校验\n	 * @return {boolean} 全部合格则返回true 否则false\n	 */\n\n	function validateFee() {\n		var trs = $(\"#feeinfotb\").find(\"tr\"),\n			totalPay = 0,\n			mustPay = 0,\n			prePay = $(\"#pre_pay\").val(),\n			errorwrap = $(\"#feeitemerror\");\n\n		trs = trs.slice(1, trs.length);\n\n		for (var i = 0; i < trs.length; i++) {\n			var p = get_price(trs[i]),\n				mp = get_must_price(trs[i]);\n			totalPay += p ? p : 0;\n			mustPay += mp ? mp : 0;\n		}\n\n		if (prePay) {\n			prePay = parseInt(prePay, 10);\n		} else {\n			errorwrap.html('dame');\n		}\n\n\n		//console.log('总额:'+(totalPay),'必付:'+(mustPay),'预付:'+(prePay))\n\n		if (isNaN(totalPay) || isNaN(mustPay) || isNaN(prePay)) {\n			errorwrap.html('类型错误');\n		} else if (Math.floor(totalPay) < 1) {\n			errorwrap.html('总额不能小于1');\n		} else if (totalPay * 0.1 > mustPay) {\n			errorwrap.html('必付必须大于总费用的10%!');\n		} else {\n			errorwrap.html(\"\");\n			if (mustPay < 100) {\n				if (!(prePay >= mustPay)) {\n					errorwrap.html(\"预付费必须大于必付费!\");\n				} else if (!(totalPay >= prePay)) {\n					errorwrap.html(\"预付费必须小于总额!\");\n				}\n			} else {\n				if (!(prePay >= (mustPay * 0.3))) {\n					errorwrap.html('必付费大于100时,预付费必须大于必付的30%!');\n				} else if (!(totalPay >= prePay)) {\n					errorwrap.html('预付费必须小于总额!');\n				} else {\n					errorwrap.html(\"\");\n					return true;\n				}\n			}\n		}\n		$(\"#totalcost\").val(totalPay);\n		$(\"#mustpay\").val(mustPay);\n	}\n\n	window.validateFee = validateFee;\n\n	$(\"#feeinfotb\").find(\"input[type='checkbox']\").click(function() {\n		validateFee();\n	})\n	$(\"#feeinfotb\").find(\"input[type='text']\").blur(function() {\n		validateFee();\n	})\n	$(\"#pre_pay\").blur(function() {\n		validateFee();\n	})\n\n	$(\".fee_choose\").click(function() {\n		if ($(this).prop(\"checked\")) {\n			$(this).closest(\"tr\").css(\"backgroundColor\", \"#E8FFCF\");\n		} else {\n			$(this).parents(\"tr\").css(\"backgroundColor\", \"#fff\");\n		}\n	})\n	//费用明细结束\n\n	// 富文本编辑器\n	// CKEDITOR.appendTo('webeditor')\n	$(pageInit);\n	var webeditor;\n\n	function pageInit() {\n		var plugins = {\n			sixfoot: {\n				c: 'btnsixfoot',\n				t: '六只脚线路上传',\n				h: 1,\n				e: function() {\n					var _this = this;\n					var sixFoot = $('<div>请输入六只脚轨迹URL地址:</div><div><input type=\"text\" id=\"sixfootinput\" /></div><div><p>示例:http://www.foooooot.com/trip/60770/</p><p><a href=\"http://bbs.lvye.cn/thread-769658-1-1.html\" target=\"_blank\">查看帮助</a></p><input type=\"button\" id=\"ensurebtn\" value=\"提交\" /></div>');\n					var sixFootInput = $('#sixfootinput', sixFoot),\n						ensure = $('#ensurebtn', sixFoot);\n					ensure.click(function() {\n						var urlpattern = /^(http:\\/\\/)?www\\.foooooot\\.com\\/trip\\/\\d{2,}\\/?(trip\\.swf)?$/,\n							inputvalue = sixFootInput.val();\n\n						if(inputvalue.indexOf('http://')!=0){\n							inputvalue = 'http://'+inputvalue;\n						}\n						var lastChar = inputvalue.substr(inputvalue.length-1, inputvalue.length);\n						if(lastChar !== '/' && lastChar!== 'f') {\n							inputvalue += '/';\n						}\n\n						if(urlpattern.test(inputvalue)){\n							_this.loadBookmark();\n							if(inputvalue.indexOf('trip.swf') == -1) {\n								_this.pasteHTML('[flash]'+_this.domEncode(inputvalue)+'trip.swf[/flash]');\n							} else {\n								_this.pasteHTML('[flash]'+_this.domEncode(inputvalue)+'[/flash]');\n							}\n							_this.hidePanel();\n						}else {\n							alert(\"请输入合法的六只脚线路网址,\\n例如:http://www.foooooot.com/trip/80942/\");\n							sixFootInput.focus();\n						}\n						return false;\n					});\n					_this.saveBookmark();\n					_this.showDialog(sixFoot);\n				}\n			}\n		}\n\n		webeditor = $('#webeditorroute, #webeditorjourney, #webeditorequipment, #webeditorjoin').xheditor({\n			tools: 'full',\n			skin: 'nostyle',\n			showBlocktag: true,\n			internalScript: false,\n			internalStyle: false,\n			width: 918,\n			height: 300,\n			forcePtag: true,\n			upImgUrl: \"upload.php\",\n			upImgExt: \"jpg,jpeg,gif,png\",\n			emots: {\n				donkey: {\n					name: '驴表情',\n					width: 60,\n					height: 60,\n					line: 7,\n					list: {\n						hi: '嗨',\n						laugh: '大笑',\n						smile: '微笑',\n						cry: '哭',\n						angry: '怒',\n						sad: '沮丧',\n						dizzy: '晕',\n						faint: '我倒',\n						donkey: '齐步走',\n						tongue: '舔舌头',\n						sweat: '汗',\n						surprise: '惊讶',\n						shame: '害羞',\n						scare: '害怕',\n						cheer: '鼓掌',\n						lech: '色',\n						nonono: '摇头',\n						heihei: '嘿嘿',\n						glass: '酷',\n						addoil: '加油',\n						abuse: '咒骂',\n						sleep: '睡着了',\n						run: '我闪',\n						byebye: '再见',\n						money: '发财了',\n						affect: '可怜'\n					}\n				}\n			},\n			plugins: plugins,\n			linkTag: false,\n			internalScript: false,\n			inlineScript: false\n		});\n	}\n\n});",
-					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
-					"file_size": 12460,
-					"file_write_time": 130211144200000000,
+					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
 					"settings":
 					{
-						"buffer_size": 11723,
+						"buffer_size": 2473,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/project/wholesite/index.html",
+					"settings":
+					{
+						"buffer_size": 12718,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "Open this script into AppleScript Editor and save it as an application in ~/Library/Scripts/Applications/Finder/cd\nRun rm \\ ~/Library/Scripts/Applications/Finder/cd.app/Contents/Resources/droplet.icns\nRun cp /Applications/iTerm.app/Contents/Resources/iTerm.icns \\ ~/Library/Scripts/Applications/Finder/cd.app/Contents/Resources/droplet.icns\nRun touch ~/Library/Scripts/Applications/Finder/cd.app, this refreshes the icon\nDrag and drop your app into your Finder toolbar",
+					"contents": "{\n	// Copy any modified settings to `User/Emmet.sublime-settings`\n	// otherwise modifications will not survive updates.\n\n	// Path to folder where Emmet should look for extensions\n	// http://docs.emmet.io/customization/\n	\"extensions_path\": \"~/emmet\",\n\n	// Disable completions of HTML attributes\n	// with this option disabled, you can get attribute list completions\n	// inside opening HTML tags.\n	// WARNING: with this option disabled, Tab key expander will not\n	// work inside opening HTML attributes\n	\"disable_completions\": false,\n\n	// With this option enabled, all Emmet's CSS snippets\n	// will be available in standard auto-complete popup\n	\"show_css_completions\": true,\n\n	// List of scopes where Emmet CSS completions should be available\n	\"css_completions_scope\": \"source.css - meta.selector.css - meta.property-value.css, source.scss - meta.selector.scss - meta.property-value.scss\",\n\n	// Remove default HTML tag completions on plugin start\n	// You should restart editor after changing this option\n	\"remove_html_completions\": false,\n\n	// A comma-separated list of scopes where Emmet’s Tab key\n	// abbreviation expander should be disabled	 \n	\"disable_tab_abbreviations_for_scopes\": \"\",\n\n	// A regexp for scope name: if it matches, Tab handler won’t work\n	// The reason to use this preference is that ST2 has buggy scope matcher\n	// which may still trigger Tab handler even if it's restricted by context\n	\"disable_tab_abbreviations_for_regexp\": \"source\\\\.(?!css).+?\\\\stext\\\\.html\",\n\n	// Exit tabstop mode when enter key is pressed\n	\"clear_fields_on_enter_key\": true,\n\n	// A comma-separated list of disabled action names.\n	// Listed action will not be triggered by default keyboard\n	// shortcut.\n	// Use \"all\" value to disable all shortcuts at once\n	\"disabled_keymap_actions\": \"\",\n\n	// By default, Emmet overrides Tab key to effectively expand abbreviations.\n	// The downside of this approach is that you can’t expand regular ST2\n	// snippets (like `php`). Since it’s not currently possible to get a list\n	// of ST2 snippets via API, you can provide a list of scopes where Emmet’s\n	// Tab trigger should be disabled when expanding simple abbreviation.\n	// If entered abbreviation (like `php`) wasn’t found in Emmet snippets list\n	// or \"known_html_tags\" preference, Tab handler will not be triggered.\n	// Leave this setting blank to disable this feature\n	\"disabled_single_snippet_for_scopes\": \"text.html\",\n\n	// A space-separated list of single snippets that should be \n	// forcilbly disabled (not handled) for Emmet even if it \n	// has such abbreviation. \n	// This option is useful if you wish the enumerated snippets\n	// should be handled by Sublime Text.\n	// Example value: \"script style html\"\n	\"disabled_single_snippets\": \"\",\n\n	// A space separated list of all known HTML tags,\n	// used together with \"disabled_on_single_snippets\" option\n	\"known_html_tags\": \"html head title base link meta style script noscript body section nav article aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr pre blockquote ol ul li dl dt dd figure figcaption div a em strong small s cite q dfn abbr data time code var samp kbd sub sup i b u mark ruby rt rp bdi bdo span br wbr ins del img iframe embed object param video audio source track canvas map area svg math table caption colgroup col tbody thead tfoot tr td th form fieldset legend label input button select datalist optgroup option textarea keygen output progress meter details summary command menu\",\n\n	\"empty_elements\": \"area base basefont br col frame hr img input isindex link meta param embed\",\n\n	// If set to `true`, Emmet will automatically insert final tabstop\n	// at the end of expanded abbreviation\n	\"insert_final_tabstop\": false,\n\n	// Try to automatically detect XHTML dialect in HTML documents.\n	// With this option enabled, your custom profile for HTML documents may not work.\n	\"autodetect_xhtml\": true,\n\n	// Use old Tab handler to expand abbreviations.\n	// With this option enabled, editor may better handle Tab key\n	// (especially with other plugins that overrides Tab key),\n	// but will spit \"slow plugin\" message\n	\"use_old_tab_handler\": false,\n\n	///////////////////////////////\n	// Emmet customization\n	// Each section has the same meaning as the same-named JSON file \n	// described here:\n	// http://docs.emmet.io/customization/\n	///////////////////////////////\n\n\n	// Custom snippets definitions, as per https://github.com/emmetio/emmet/blob/master/snippets.json\n	\"snippets\": {\n		// \"html\": {\n		// 	\"abbreviations\": {\n		// 		\"example\": \"<div class='example' title='Custom element example'>\"\n		// 	}\n		// }\n	},\n\n	// Emmet preferences\n	// List of all available preferences:\n	// http://docs.emmet.io/customization/preferences/\n	\"preferences\": {\n		// \"css.valueSeparator\": \": \",\n		// \"css.propertyEnd\": \";\"\n	},\n\n	// Output profiles for syntaxes\n	// http://docs.emmet.io/customization/syntax-profiles/\n	\"syntaxProfiles\": {\n		// Enable XHTML dialect for HTML syntax\n		// \"html\": \"xhtml\"\n	}\n}",
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+					"file_size": -1,
+					"file_write_time": -1,
 					"settings":
 					{
-						"buffer_size": 468,
+						"buffer_size": 4950,
 						"line_ending": "Unix",
-						"name": "Open this script into AppleScript Editor and save"
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 43753,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore",
+					"settings":
+					{
+						"buffer_size": 65,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "{\n    \"use_entire_file_if_no_selection\" : true,\n    \"indent\" : 2,\n    \"sort_keys\" : false,\n    \"ensure_ascii\" : false\n}",
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 119,
+						"line_ending": "Unix",
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 18,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/project/wholesite/css/page.css",
+					"settings":
+					{
+						"buffer_size": 7039,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/xuechengwei/project/wholesite/js/newheader.js",
+					"settings":
+					{
+						"buffer_size": 1043,
+						"line_ending": "Windows"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 115.0,
 				"selected_items":
 				[
 					[
-						":w",
-						":w - Save"
+						"pretty",
+						"Pretty JSON: Reformat (Pretty Print) JSON"
 					],
 					[
 						"pip",
 						"Package Control: Install Package"
 					],
 					[
-						":q",
-						"BracketHighlighter: Swap Quotes"
+						":w",
+						":w - Save"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
 					],
 					[
 						"bra",
 						"BracketHighlighter: Jump to Right Bracket"
+					],
+					[
+						":q",
+						"BracketHighlighter: Swap Quotes"
 					],
 					[
 						"braack",
@@ -375,10 +494,6 @@
 					[
 						"upgrad",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"list",
-						"Package Control: List Packages"
 					],
 					[
 						"sshtml",
@@ -410,8 +525,39 @@
 			},
 			"file_history":
 			[
-				"/Users/xuechengwei/Desktop/open iterm",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/Users/xuechengwei/project/wholesite/绿野网网站头部及底部设计.fw.png",
+				"/Users/xuechengwei/project/library/pubevent/models.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda Light 3.sublime-theme",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/3.sublime-theme",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Light",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda",
+				"/Users/xuechengwei/project/library/huodong/views.py",
+				"/Users/xuechengwei/project/library/pubevent/urls.py",
+				"/Users/xuechengwei/project/library/library/settings.py",
+				"/Users/xuechengwei/project/library/utils/api_type.py",
+				"/Users/xuechengwei/project/library/pubevent/admin.py",
+				"/Users/xuechengwei/project/library/pubevent/tests.py",
+				"/Users/xuechengwei/project/library/pubevent/__init__.py",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/JsFormat/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Cache/Color Scheme - Default/Monokai.tmTheme.cache",
+				"/Users/xuechengwei/project/library/pubevent/views.py",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+				"/Users/xuechengwei/project/library/.gitignore",
+				"/Users/xuechengwei/Desktop/test.js",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Settings/SideBarEnhancements.json",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+				"/Volumes/软件/www/wholesite/index.html",
+				"/Users/xuechengwei/project/library/huodong/urls.py",
+				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+				"/Users/xuechengwei/Desktop/open iterm",
 				"/Users/xuechengwei/project/library/huodong/basemodels.py",
 				"/Users/xuechengwei/project/seq.log",
 				"/Users/xuechengwei/Downloads/dsdt.dsl",
@@ -428,9 +574,11 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 98.0,
 				"where_history":
 				[
+					"/Users/xuechengwei/project/",
+					"/Users/xuechengwei/project/library/huodong"
 				]
 			},
 			"find_state":
@@ -438,6 +586,54 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"bg",
+					"snippets",
+					"关于我们",
+					"form",
+					"BASE_URL",
+					"base_url",
+					"BASE_URL",
+					">\n",
+					"300",
+					"100",
+					"uploadify",
+					"margin: 0 0.3em; width: 300px; height: 300px;",
+					"preview",
+					"footer",
+					"文章",
+					"活动",
+					"y1",
+					"x2",
+					"1",
+					"type=\"hidden",
+					"home",
+					"theme",
+					"file",
+					"end",
+					"imgareaselect",
+					"#cropper",
+					"cropperImg",
+					"media",
+					"1376967458.53.png",
+					"upload_coordinate",
+					"ajaxuploadbtn",
+					"aid",
+					"消息",
+					"\n",
+					"';\n",
+					"searchtype",
+					"sinalogin",
+					"活动景点",
+					"费用明细弹出层",
+					"费用明细弹出层 begin",
+					"tr",
+					"create",
+					"活动特色",
+					"ajax",
+					"选择省",
+					"find_cities_of_province",
+					".pngfix",
+					"choose",
 					"CD_to",
 					"sub_leader",
 					"sub_",
@@ -474,29 +670,34 @@
 			[
 				{
 					"follow_symlinks": true,
-					"path": "/Users/xuechengwei/project/library/huodong"
+					"path": "/Users/xuechengwei/project/library"
+				},
+				{
+					"follow_symlinks": true,
+					"path": "/Users/xuechengwei/project/wholesite"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 10,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
+							"file": "/Users/xuechengwei/Desktop/待办事项",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 48,
+								"buffer_size": 133,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										48,
-										48
+										133,
+										133
 									]
 								],
 								"settings":
@@ -508,30 +709,30 @@
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
 										"bh_single_quote_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
 										"bh_square_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
 										"bh_double_quote",
 										"bh_double_quote_center",
 										"bh_double_quote_open",
@@ -540,16 +741,17 @@
 										"bh_tag_center",
 										"bh_tag_open",
 										"bh_tag_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close"
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
 									],
 									"bs_sintax": "plain text",
+									"buffer_scroll_name": "deb2e5a7",
 									"rulers":
 									[
 									],
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -559,19 +761,19 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+							"file": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 422,
+								"buffer_size": 27697,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										419,
-										419
+										5407,
+										5411
 									]
 								],
 								"settings":
@@ -579,49 +781,769 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
 										"bh_curly",
 										"bh_curly_center",
 										"bh_curly_open",
 										"bh_curly_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
 										"bh_double_quote",
 										"bh_double_quote_center",
 										"bh_double_quote_open",
-										"bh_double_quote_close"
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "html",
+									"buffer_scroll_name": "17bfdb79",
+									"is_xml": false,
+									"rulers":
+									[
+									],
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 5708.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 16423,
+								"regions":
+								{
+									"bookmarks":
+									{
+										"flags": 144,
+										"icon": "bookmark",
+										"regions":
+										[
+											[
+												1178,
+												1178
+											],
+											[
+												9097,
+												9097
+											]
+										],
+										"scope": "bookmarks"
+									}
+								},
+								"selection":
+								[
+									[
+										7681,
+										7681
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "javascript",
+									"buffer_scroll_name": "25bca91e",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 5756.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/Users/xuechengwei/project/library/pubevent/views.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6984,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2361,
+										2361
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "python",
+									"buffer_scroll_name": "fd2e2f2c",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1283.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 17563,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										16107,
+										16107
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "css",
+									"buffer_scroll_name": "a2bb7d43",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"tab_size": 2
+								},
+								"translation.x": 0.0,
+								"translation.y": 11128.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2473,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1766,
+										1766
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "css",
+									"buffer_scroll_name": "cb462cea",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 648.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 3,
+					"sheets":
+					[
+						{
+							"buffer": 6,
+							"file": "/Users/xuechengwei/project/wholesite/index.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 12718,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6795,
+										6795
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "html",
+									"buffer_scroll_name": "470bd195",
+									"is_xml": false,
+									"rulers":
+									[
+									],
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3268.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4950,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4570,
+										4570
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
 									],
 									"bs_sintax": "json",
-									"buffer_scroll_name": "6aa89eae",
+									"buffer_scroll_name": "e1a22ad1",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1336.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 43753,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										18619,
+										18619
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "json",
+									"buffer_scroll_name": "f7f18908",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 7204.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 65,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										64,
+										64
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "plain text",
+									"buffer_scroll_name": "c24ab8d3",
+									"rulers":
+									[
+										3.9,
+										4.2
+									],
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 119,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										64,
+										52
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "json",
+									"buffer_scroll_name": "109fe480",
 									"rulers":
 									[
 									],
@@ -634,20 +1556,20 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+							"buffer": 11,
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 26416,
+								"buffer_size": 18,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										481,
-										481
+										16,
+										16
 									]
 								],
 								"settings":
@@ -655,76 +1577,152 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
 										"bh_curly",
 										"bh_curly_center",
 										"bh_curly_open",
 										"bh_curly_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
 										"bh_double_quote",
 										"bh_double_quote_center",
 										"bh_double_quote_open",
-										"bh_double_quote_close"
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
 									],
-									"bs_sintax": "html",
-									"buffer_scroll_name": "17bfdb79",
+									"bs_sintax": "json",
+									"buffer_scroll_name": "9eb442a8",
 									"rulers":
 									[
 									],
-									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 12,
+							"file": "/Users/xuechengwei/project/wholesite/css/page.css",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7039,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3718,
+										3718
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"bs_sintax": "css",
+									"buffer_scroll_name": "7ec5d7dd",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/CSS/CSS.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 2230.0,
+								"translation.y": 3828.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 3,
-							"file": "/Users/xuechengwei/project/library/huodong/urls.py",
+							"buffer": 13,
+							"file": "/Users/xuechengwei/project/wholesite/js/newheader.js",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 868,
+								"buffer_size": 1043,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										694,
-										694
+										889,
+										889
 									]
 								],
 								"settings":
@@ -732,14 +1730,10 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
@@ -748,578 +1742,42 @@
 										"bh_curly_center",
 										"bh_curly_open",
 										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
 										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "2c541079",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/Users/xuechengwei/project/library/huodong/views.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 26083,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										23225,
-										23253
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "6af41426",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 13506.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/Users/xuechengwei/project/library/huodong/forms.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 7152,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										938,
-										938
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "a31273e2",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 111.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/Users/xuechengwei/project/library/huodong/models.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 6273,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5505,
-										5505
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "ec0c8b3f",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1738.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/Users/xuechengwei/project/library/draft/urls.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 496,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										283,
-										283
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "d14c971a",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 8,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 15499,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										15437,
-										15437
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close"
-									],
-									"bs_sintax": "css",
-									"buffer_scroll_name": "a2bb7d43",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/CSS/CSS.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 8787.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 9,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 11723,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1818,
-										1818
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
 										"bh_angle",
 										"bh_angle_center",
 										"bh_angle_open",
 										"bh_angle_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_tag",
 										"bh_tag_center",
 										"bh_tag_open",
 										"bh_tag_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close"
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
 									],
 									"bs_sintax": "javascript",
-									"buffer_scroll_name": "25bca91e",
+									"buffer_scroll_name": "0a844f8b",
 									"rulers":
 									[
 									],
 									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 1242.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 10,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 468,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										114,
-										114
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"auto_name": "Open this script into AppleScript Editor and save",
-									"bh_regions":
-									[
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close"
-									],
-									"bs_sintax": "plain text",
-									"is_xml": false,
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -1336,7 +1794,7 @@
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 38.0
 			},
 			"layout":
 			{
@@ -1347,11 +1805,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.246695963542,
 					1.0
 				],
 				"rows":
@@ -1365,7 +1830,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 52.0
+				"height": 68.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -1374,12 +1839,32 @@
 				"selected_items":
 				[
 					[
-						"script",
-						"static/actPublish/js/script.js"
+						"uplod",
+						"library/huodong/static/actPublish/css/uploadify.css"
+					],
+					[
+						"upload",
+						"huodong/static/actPublish/css/uploadify.css"
+					],
+					[
+						"index.html",
+						"huodong/templates/actPublish/index.html"
+					],
+					[
+						"scri",
+						"huodong/static/actPublish/js/script.js"
 					],
 					[
 						"page.css",
-						"static/actPublish/css/page.css"
+						"wholesite/css/page.css"
+					],
+					[
+						"script.js",
+						"huodong/static/actPublish/js/script.js"
+					],
+					[
+						"script",
+						"static/actPublish/js/script.js"
 					]
 				],
 				"width": 0.0
@@ -1406,13 +1891,13 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 319.0,
+			"side_bar_visible": false,
+			"side_bar_width": 73.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 11,
+			"window_id": 19,
 			"workspace_name": ""
 		}
 	],
