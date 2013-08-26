@@ -17,6 +17,7 @@
 		"JsFormat",
 		"LiveStyle",
 		"Package Control",
+		"Pretty JSON",
 		"Sass",
 		"SideBarEnhancements",
 		"Tag",
@@ -25,15 +26,13 @@
 		"TrailingSpaces",
 		"YUI Compressor"
 	],
-	"startup_sec": 0.33414,
+	"startup_sec": 0.28721,
 	"syntax":
 	{
-		"CSS": 32,
-		"HTML": 43,
-		"JSON": 52,
-		"JavaScript": 106,
-		"Plain text": 1,
-		"Python": 14
+		"CSS": 5,
+		"HTML": 27,
+		"JavaScript": 79,
+		"Plain text": 1
 	},
-	"time": 1376959737
+	"time": 1377218937
 }

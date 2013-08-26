@@ -1,15 +1,200 @@
 {
+    "d41d8cd98f00b204e9800998ecf8427e": {
+        "opened": [], 
+        "closed": [
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/basemodels.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/Sublime text 3\u652f\u6301\u7684\u63d2\u4ef6.txt", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/index.tpl", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/huodong.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/.bash_profile", 
+                "group": -1
+            }
+        ]
+    }, 
+    "1833632cc0439b41b03ef68416ee0c8b": {
+        "opened": [], 
+        "closed": [
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/wholesite/index.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/draft/urls.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/models.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/forms.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/mission.txt", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Volumes/\u8f6f\u4ef6/www/wholesite/index.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/urls.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap", 
+                "group": -1
+            }
+        ]
+    }, 
+    "e2871c23629e1407266c38338d4192f8": {
+        "opened": [
+            {
+                "index": 10, 
+                "filename": "/Volumes/\u8f6f\u4ef6/www/wholesite/index.html", 
+                "group": 0
+            }
+        ], 
+        "closed": []
+    }, 
     "global": {
         "opened": [
             {
-                "index": 3, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore", 
-                "group": 1
+                "index": 2, 
+                "filename": "/Users/xuechengwei/project/hdlibrary/library/library/settings.py", 
+                "group": 0
             }, 
             {
-                "index": 2, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings", 
-                "group": 1
+                "index": 4, 
+                "filename": "/Users/xuechengwei/project/library/draft/models.py", 
+                "group": 0
+            }, 
+            {
+                "index": 8, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/ruby/docs/rdocs/classes/Xapian/InvalidArgumentError.html", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/java/org/xapian/errors/InvalidArgumentError.java", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/validationEngine.jquery.css", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/utils/validator.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/tests/testdata/flint-0.9.9/value.baseA", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/library/urls.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/accounts/urls.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/draft/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/chatroom/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/catalog/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/accounts/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/ValueIterator.cs", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/wholesite/simpleheader.html", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/docs/examples/SimpleIndex.cs", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/skiptest", 
+                "group": -1
             }, 
             {
                 "index": -1, 
@@ -19,11 +204,6 @@
             {
                 "index": -1, 
                 "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/common/.deps/utils.Plo", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/accounts/urls.py", 
                 "group": -1
             }, 
             {
@@ -88,16 +268,6 @@
             }, 
             {
                 "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/skiptest", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/ValueIterator.cs", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
                 "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/tests/testdata/apitest_punc.txt", 
                 "group": 0
             }, 
@@ -135,12 +305,57 @@
         "closed": [
             {
                 "index": -1, 
+                "filename": "/Users/xuechengwei/.bash_profile", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/.bash_rc.swp", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
                 "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap", 
                 "group": -1
             }, 
             {
                 "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/pydebug.sublime-snippet", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
                 "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/usr/local/etc/nginx/nginx.conf", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/livestyle.css", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore", 
                 "group": -1
             }, 
             {
@@ -156,11 +371,6 @@
             {
                 "index": -1, 
                 "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda Light 3.sublime-theme", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
                 "group": -1
             }, 
             {
@@ -305,11 +515,6 @@
             }, 
             {
                 "index": -1, 
-                "filename": "/Users/xuechengwei/.bash_profile", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
                 "filename": "/Users/xuechengwei/Downloads/dsdt.dsl", 
                 "group": -1
             }, 
@@ -321,6 +526,207 @@
             {
                 "index": -1, 
                 "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/xheditor/xheditor-1.1.14-zh-cn.min.js", 
+                "group": -1
+            }
+        ]
+    }, 
+    "0f6fcca09c6d36cd5faf5f090f6fa09e": {
+        "opened": [
+            {
+                "index": 2, 
+                "filename": "/Users/xuechengwei/project/hdlibrary/library/library/settings.py", 
+                "group": 0
+            }, 
+            {
+                "index": 4, 
+                "filename": "/Users/xuechengwei/project/library/draft/models.py", 
+                "group": 0
+            }, 
+            {
+                "index": 8, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/ruby/docs/rdocs/classes/Xapian/InvalidArgumentError.html", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/java/org/xapian/errors/InvalidArgumentError.java", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/validationEngine.jquery.css", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/utils/validator.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/tests/testdata/flint-0.9.9/value.baseA", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/library/urls.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/accounts/urls.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/draft/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/chatroom/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/catalog/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/accounts/views.py", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/ValueIterator.cs", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/wholesite/simpleheader.html", 
+                "group": 0
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/docs/examples/SimpleIndex.cs", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/skiptest", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css", 
+                "group": 0
+            }
+        ], 
+        "closed": [
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/.bash_profile", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/.bash_rc.swp", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/pydebug.sublime-snippet", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/Sublime-text-2/Packages/User/Default (Windows).sublime-keymap", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/usr/local/etc/nginx/nginx.conf", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/livestyle.css", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/wholesite/\u7eff\u91ce\u7f51\u7f51\u7ad9\u5934\u90e8\u53ca\u5e95\u90e8\u8bbe\u8ba1.fw.png", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/simple.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/urls.py", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Desktop/\u5f85\u529e\u4e8b\u9879", 
+                "group": -1
+            }, 
+            {
+                "index": -1, 
+                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Installed Packages/Alignment.sublime-package", 
                 "group": -1
             }
         ]
@@ -400,16 +806,6 @@
                 "group": -1
             }
         ]
-    }, 
-    "e2871c23629e1407266c38338d4192f8": {
-        "opened": [
-            {
-                "index": 10, 
-                "filename": "/Volumes/\u8f6f\u4ef6/www/wholesite/index.html", 
-                "group": 0
-            }
-        ], 
-        "closed": []
     }, 
     "9104d172d3dedaad7674487578396b31": {
         "opened": [
@@ -548,272 +944,6 @@
             {
                 "index": -1, 
                 "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings", 
-                "group": -1
-            }
-        ]
-    }, 
-    "0f6fcca09c6d36cd5faf5f090f6fa09e": {
-        "opened": [
-            {
-                "index": 3, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore", 
-                "group": 1
-            }, 
-            {
-                "index": 2, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings", 
-                "group": 1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/common/.deps/utils.Plo", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/accounts/urls.py", 
-                "group": -1
-            }, 
-            {
-                "index": 3, 
-                "filename": "/Users/xuechengwei/project/library/pubevent/views.py", 
-                "group": 0
-            }, 
-            {
-                "index": 6, 
-                "filename": "/Users/xuechengwei/project/wholesite/js/newheader.js", 
-                "group": 0
-            }, 
-            {
-                "index": 5, 
-                "filename": "/Users/xuechengwei/project/wholesite/css/page.css", 
-                "group": 0
-            }, 
-            {
-                "index": 4, 
-                "filename": "/Users/xuechengwei/project/wholesite/index.html", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/csharp/ValueIterator.cs", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/tests/testdata/apitest_punc.txt", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/xheditor/xheditor_plugins/ubb.min.js", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/DD_belatedPNG_0.0.8a-min.js", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/pubevent/__init__.py", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/pubevent/tests.py", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/tests/perftest/perftest_all.h", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/PLATFORMS", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-core-1.1.4/docs/scalability.html", 
-                "group": 0
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/xapian-bindings-1.1.4/skiptest", 
-                "group": -1
-            }
-        ], 
-        "closed": [
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/wholesite/\u7eff\u91ce\u7f51\u7f51\u7ad9\u5934\u90e8\u53ca\u5e95\u90e8\u8bbe\u8ba1.fw.png", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/simple.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/urls.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/\u5f85\u529e\u4e8b\u9879", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Installed Packages/Alignment.sublime-package", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/forms.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/.gitignore", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/test.js", 
-                "group": -1
-            }
-        ]
-    }, 
-    "1833632cc0439b41b03ef68416ee0c8b": {
-        "opened": [], 
-        "closed": [
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/wholesite/index.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/draft/urls.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/models.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/forms.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/mission.txt", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/views.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Volumes/\u8f6f\u4ef6/www/wholesite/index.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/urls.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap", 
-                "group": -1
-            }
-        ]
-    }, 
-    "d41d8cd98f00b204e9800998ecf8427e": {
-        "opened": [], 
-        "closed": [
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/project/library/huodong/basemodels.py", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/Sublime text 3\u652f\u6301\u7684\u63d2\u4ef6.txt", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/index.tpl", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/Desktop/huodong.html", 
-                "group": -1
-            }, 
-            {
-                "index": -1, 
-                "filename": "/Users/xuechengwei/.bash_profile", 
                 "group": -1
             }
         ]
