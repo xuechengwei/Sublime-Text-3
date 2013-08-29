@@ -1,6 +1,8 @@
 {
 	"folder_history":
 	[
+		"/Users/xuechengwei/project/usercenter",
+		"/Users/xuechengwei/project/guoqing",
 		"/Users/xuechengwei/project/wholesite",
 		"/Users/xuechengwei/project/library",
 		"/Volumes/软件/www/wholesite",
@@ -8,7 +10,7 @@
 		"/Users/xuechengwei"
 	],
 	"last_version": 3047,
-	"last_window_id": 20,
+	"last_window_id": 28,
 	"log_indexing": false,
 	"settings":
 	{
@@ -19,6 +21,50 @@
 			{
 				"selected_items":
 				[
+					[
+						"vali",
+						"emailValidate"
+					],
+					[
+						"valid",
+						"validateUserName"
+					],
+					[
+						"bakc",
+						"background"
+					],
+					[
+						"publish",
+						"publishform"
+					],
+					[
+						"tem",
+						"templateForm"
+					],
+					[
+						"temp",
+						"template_create_form"
+					],
+					[
+						"draft",
+						"draft_create_form"
+					],
+					[
+						"save",
+						"savetmpl"
+					],
+					[
+						"form",
+						"formToJsonString"
+					],
+					[
+						"fun",
+						"fun	Function"
+					],
+					[
+						"prev",
+						"preventDefault"
+					],
 					[
 						"cropp",
 						"cropperImg"
@@ -60,10 +106,6 @@
 						"parseSubleaders"
 					],
 					[
-						"fun",
-						"function"
-					],
-					[
 						"sublead",
 						"sub_leaders"
 					]
@@ -72,9 +114,49 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 159.0,
 				"selected_items":
 				[
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"enal",
+						"Package Control: Enable Package"
+					],
+					[
+						"disabl",
+						"Package Control: Disable Package"
+					],
+					[
+						"net",
+						"Emmet: Next Edit Point"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"remove",
+						"BracketHighlighter: Remove Brackets"
+					],
+					[
+						"book",
+						"Bookmarks: Clear All"
+					],
 					[
 						"sscss",
 						"Set Syntax: CSS"
@@ -86,10 +168,6 @@
 					[
 						"pip",
 						"Package Control: Install Package"
-					],
-					[
-						":w",
-						":w - Save"
 					],
 					[
 						"list",
@@ -110,10 +188,6 @@
 					[
 						"upgrad",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					]
 				],
 				"width": 579.0
@@ -137,6 +211,33 @@
 			},
 			"file_history":
 			[
+				"/Users/xuechengwei/project/guoqing/index.html",
+				"/Users/xuechengwei/project/guoqing/css/page.css",
+				"/Users/xuechengwei/project/guoqing/js/shiyi.js",
+				"/Users/xuechengwei/project/usercenter/index.html",
+				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+				"/Users/xuechengwei/project/library/library/local_settings.py",
+				"/Users/xuechengwei/local_settings.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+				"/Users/xuechengwei/project/library/pubevent/views.py",
+				"/Users/xuechengwei/project/library/draft/models.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
+				"/Users/xuechengwei/project/library/draft/views.py",
+				"/Users/xuechengwei/project/library/library/urls.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js",
+				"/Users/xuechengwei/project/library/huodong/views.py",
+				"/Users/xuechengwei/project/library/library/settings.py",
+				"/Users/xuechengwei/project/library/library/settings.py.sample",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+				"/Users/xuechengwei/project/hdlibrary/library/library/settings.py",
+				"/Users/xuechengwei/.bash_profile",
+				"/Users/xuechengwei/.bash_rc.swp",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/pydebug.sublime-snippet",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/Users/xuechengwei/Desktop/Sublime-text-2/Packages/User/Default (Windows).sublime-keymap",
 				"/Users/xuechengwei/project/wholesite/js/newheader.js",
 				"/Users/xuechengwei/project/wholesite/simpleheader.html",
 				"/Users/xuechengwei/project/wholesite/index.html",
@@ -147,39 +248,29 @@
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore",
-				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 				"/Users/xuechengwei/project/wholesite/绿野网网站头部及底部设计.fw.png",
 				"/Users/xuechengwei/project/library/pubevent/models.py",
-				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda Light 3.sublime-theme",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/3.sublime-theme",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Light",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda",
-				"/Users/xuechengwei/project/library/huodong/views.py",
 				"/Users/xuechengwei/project/library/pubevent/urls.py",
-				"/Users/xuechengwei/project/library/library/settings.py",
 				"/Users/xuechengwei/project/library/utils/api_type.py",
 				"/Users/xuechengwei/project/library/pubevent/admin.py",
 				"/Users/xuechengwei/project/library/pubevent/tests.py",
 				"/Users/xuechengwei/project/library/pubevent/__init__.py",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/JsFormat/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Cache/Color Scheme - Default/Monokai.tmTheme.cache",
-				"/Users/xuechengwei/project/library/pubevent/views.py",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 				"/Users/xuechengwei/project/library/.gitignore",
 				"/Users/xuechengwei/Desktop/test.js",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Settings/SideBarEnhancements.json",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
 				"/Volumes/软件/www/wholesite/index.html",
 				"/Users/xuechengwei/project/library/huodong/urls.py",
-				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
 				"/Users/xuechengwei/Desktop/open iterm",
 				"/Users/xuechengwei/project/library/huodong/basemodels.py",
 				"/Users/xuechengwei/project/seq.log",
@@ -209,6 +300,86 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"bg",
+					"http://www.lvye.cn/app/huodong",
+					"img",
+					"bg",
+					"actlistul",
+					"actlistul1",
+					"blur",
+					"actlistul",
+					"active",
+					"actlistul",
+					"blur",
+					"actlistul",
+					"actlistul1",
+					"【Perfect travel】8.23.-25坝上草原“对酒当歌，篝火狂欢”",
+					"actimg.jpg",
+					"regbutton",
+					"g",
+					"bg",
+					"folder",
+					"</li>",
+					"  ｜ ",
+					"$",
+					"icon1",
+					"redbutton",
+					"lvyeforyou",
+					"nameval",
+					"emailp",
+					"emailaddress",
+					"field",
+					"usernmae",
+					"<img",
+					" pngfix",
+					"backtop",
+					"tximg",
+					"png",
+					"target=\"_blank\"",
+					" target=\"_blank\" ",
+					"target=\"_blank\" ",
+					"person4",
+					"person3",
+					"person2",
+					"person1",
+					"rectitle",
+					"personfeature",
+					"person2feature",
+					" persion2feature",
+					"4",
+					"3",
+					"person2feature",
+					"txtbg1",
+					"lefttxt clearfix",
+					"actlist clearfix",
+					"pname pname1",
+					"|",
+					" | ",
+					"2",
+					"a:hover",
+					"actlist",
+					".ptop",
+					"juci clearfix",
+					"tx",
+					"pos",
+					"html",
+					"=\\\"\\\"",
+					" ｜ ",
+					"position",
+					"publishform",
+					"'",
+					"validationengine",
+					"home",
+					"return",
+					" value=\"\"",
+					"type=\"submit\"",
+					"input",
+					"document.re",
+					"document.",
+					"EventFeeDetailFormSet",
+					"ipdb",
+					"ipbd",
+					"close_all",
 					"view",
 					"热闹",
 					"image",
@@ -256,26 +427,7 @@
 					"create",
 					"活动特色",
 					"ajax",
-					"选择省",
-					"find_cities_of_province",
-					".pngfix",
-					"choose",
-					"CD_to",
-					"sub_leader",
-					"sub_",
-					"import",
-					"预付费",
-					"id=\"\"",
-					"pub_pubbtn",
-					"发布活动",
-					"{{ STATIC_PREFIX }}js",
-					"{{STATIC_PREFIX}}/",
-					"{{STATIC_PREFIX}}",
-					"{{ STATIC_PREFIX }}",
-					"{{STATIC_PREFIX}}/",
-					"/actPublish/",
-					"images/faqtip.png",
-					"theme"
+					"选择省"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -313,6 +465,38 @@
 				"selected_items":
 				[
 					[
+						"page.css",
+						"guoqing/css/page.css"
+					],
+					[
+						"",
+						"guoqing/index.html"
+					],
+					[
+						"script",
+						"library/huodong/static/actPublish/js/script.js"
+					],
+					[
+						"sett",
+						"library/library/settings.py"
+					],
+					[
+						"views",
+						"library/huodong/views.py"
+					],
+					[
+						"valida",
+						"library/huodong/static/actPublish/js/jquery.validationEngine.js"
+					],
+					[
+						"url",
+						"library/library/urls.py"
+					],
+					[
+						"view",
+						"library/draft/views.py"
+					],
+					[
 						"simple",
 						"wholesite/simpleheader.html"
 					],
@@ -333,16 +517,8 @@
 						"huodong/static/actPublish/js/script.js"
 					],
 					[
-						"page.css",
-						"wholesite/css/page.css"
-					],
-					[
 						"script.js",
 						"huodong/static/actPublish/js/script.js"
-					],
-					[
-						"script",
-						"static/actPublish/js/script.js"
 					]
 				],
 				"width": 0.0
@@ -366,8 +542,8 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 128.0,
+			"side_bar_visible": false,
+			"side_bar_width": 224.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -382,6 +558,18 @@
 			{
 				"selected_items":
 				[
+					[
+						"vali",
+						"emailValidate"
+					],
+					[
+						"valid",
+						"validateUserName"
+					],
+					[
+						"bakc",
+						"background"
+					],
 					[
 						"publish",
 						"publishform"
@@ -466,97 +654,125 @@
 					"file": "/Users/xuechengwei/Desktop/待办事项",
 					"settings":
 					{
-						"buffer_size": 111,
+						"buffer_size": 201,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+					"file": "/Users/xuechengwei/project/usercenter/register.html",
 					"settings":
 					{
-						"buffer_size": 28121,
+						"buffer_size": 6790,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/hdlibrary/library/library/settings.py",
+					"file": "/Users/xuechengwei/project/lvye_cms/huodongcms/templates/huodongcms/huodong.html",
 					"settings":
 					{
-						"buffer_size": 8623,
+						"buffer_size": 51248,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+					"file": "/Users/xuechengwei/Desktop/untitled.html",
 					"settings":
 					{
-						"buffer_size": 18317,
+						"buffer_size": 269,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/pubevent/views.py",
+					"file": "/Users/xuechengwei/project/usercenter/login.html",
 					"settings":
 					{
-						"buffer_size": 6984,
+						"buffer_size": 3132,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/draft/models.py",
+					"file": "/Users/xuechengwei/project/usercenter/css/page.css",
 					"settings":
 					{
-						"buffer_size": 2355,
+						"buffer_size": 7793,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
+					"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 17655,
+						"buffer_size": 43871,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
+					"file": "/Users/xuechengwei/project/usercenter/js/ucenter.js",
 					"settings":
 					{
-						"buffer_size": 2473,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/Users/xuechengwei/project/library/draft/views.py",
-					"settings":
-					{
-						"buffer_size": 11997,
+						"buffer_size": 2637,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/library/urls.py",
+					"file": "/Users/xuechengwei/Downloads/jquery-validation-1.11.1/lib/jquery.form.js",
 					"settings":
 					{
-						"buffer_size": 1165,
+						"buffer_size": 39236,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js",
+					"file": "/Users/xuechengwei/project/guoqing/index.html",
 					"settings":
 					{
-						"buffer_size": 70694,
-						"line_ending": "Windows"
+						"buffer_size": 25024,
+						"line_ending": "Unix"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 115.0,
 				"selected_items":
 				[
+					[
+						"diff",
+						"FileDiffs: Menu"
+					],
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"enal",
+						"Package Control: Enable Package"
+					],
+					[
+						"disabl",
+						"Package Control: Disable Package"
+					],
+					[
+						"net",
+						"Emmet: Next Edit Point"
+					],
 					[
 						":w",
 						":w - Save"
@@ -578,10 +794,6 @@
 						"Pretty JSON: Reformat (Pretty Print) JSON"
 					],
 					[
-						"pip",
-						"Package Control: Install Package"
-					],
-					[
 						"list",
 						"Package Control: List Packages"
 					],
@@ -600,10 +812,6 @@
 					[
 						"upgrad",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					]
 				],
 				"width": 579.0
@@ -627,12 +835,31 @@
 			},
 			"file_history":
 			[
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
+				"/Users/xuechengwei/project/guoqing/index.html",
+				"/Users/xuechengwei/project/guoqing/css/page.css",
+				"/Users/xuechengwei/project/guoqing/js/shiyi.js",
+				"/Users/xuechengwei/project/usercenter/index.html",
+				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+				"/Users/xuechengwei/project/library/library/local_settings.py",
+				"/Users/xuechengwei/local_settings.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+				"/Users/xuechengwei/project/library/pubevent/views.py",
+				"/Users/xuechengwei/project/library/draft/models.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
+				"/Users/xuechengwei/project/library/draft/views.py",
+				"/Users/xuechengwei/project/library/library/urls.py",
+				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js",
+				"/Users/xuechengwei/project/library/huodong/views.py",
+				"/Users/xuechengwei/project/library/library/settings.py",
+				"/Users/xuechengwei/project/library/library/settings.py.sample",
+				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+				"/Users/xuechengwei/project/hdlibrary/library/library/settings.py",
 				"/Users/xuechengwei/.bash_profile",
 				"/Users/xuechengwei/.bash_rc.swp",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-				"/Users/xuechengwei/project/library/draft/views.py",
-				"/Users/xuechengwei/project/library/huodong/views.py",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/pydebug.sublime-snippet",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 				"/Users/xuechengwei/Desktop/Sublime-text-2/Packages/User/Default (Windows).sublime-keymap",
@@ -646,35 +873,29 @@
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/.gitignore",
 				"/Users/xuechengwei/project/wholesite/绿野网网站头部及底部设计.fw.png",
 				"/Users/xuechengwei/project/library/pubevent/models.py",
-				"/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda Light 3.sublime-theme",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/3.sublime-theme",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Light",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Soda",
 				"/Users/xuechengwei/project/library/pubevent/urls.py",
-				"/Users/xuechengwei/project/library/library/settings.py",
 				"/Users/xuechengwei/project/library/utils/api_type.py",
 				"/Users/xuechengwei/project/library/pubevent/admin.py",
 				"/Users/xuechengwei/project/library/pubevent/tests.py",
 				"/Users/xuechengwei/project/library/pubevent/__init__.py",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/JsFormat/Default (OSX).sublime-keymap",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Cache/Color Scheme - Default/Monokai.tmTheme.cache",
-				"/Users/xuechengwei/project/library/pubevent/views.py",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 				"/Users/xuechengwei/project/library/.gitignore",
 				"/Users/xuechengwei/Desktop/test.js",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Settings/SideBarEnhancements.json",
 				"/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-				"/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
 				"/Volumes/软件/www/wholesite/index.html",
 				"/Users/xuechengwei/project/library/huodong/urls.py",
-				"/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
 				"/Users/xuechengwei/Desktop/open iterm",
 				"/Users/xuechengwei/project/library/huodong/basemodels.py",
 				"/Users/xuechengwei/project/seq.log",
@@ -704,6 +925,72 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"bg",
+					"http://www.lvye.cn/app/huodong",
+					"img",
+					"bg",
+					"actlistul",
+					"actlistul1",
+					"blur",
+					"actlistul",
+					"active",
+					"actlistul",
+					"blur",
+					"actlistul",
+					"actlistul1",
+					"【Perfect travel】8.23.-25坝上草原“对酒当歌，篝火狂欢”",
+					"actimg.jpg",
+					"regbutton",
+					"g",
+					"bg",
+					"folder",
+					"</li>",
+					"  ｜ ",
+					"$",
+					"icon1",
+					"redbutton",
+					"lvyeforyou",
+					"nameval",
+					"emailp",
+					"emailaddress",
+					"field",
+					"usernmae",
+					"<img",
+					" pngfix",
+					"backtop",
+					"tximg",
+					"png",
+					"target=\"_blank\"",
+					" target=\"_blank\" ",
+					"target=\"_blank\" ",
+					"person4",
+					"person3",
+					"person2",
+					"person1",
+					"rectitle",
+					"personfeature",
+					"person2feature",
+					" persion2feature",
+					"4",
+					"3",
+					"person2feature",
+					"txtbg1",
+					"lefttxt clearfix",
+					"actlist clearfix",
+					"pname pname1",
+					"|",
+					" | ",
+					"2",
+					"a:hover",
+					"actlist",
+					".ptop",
+					"juci clearfix",
+					"tx",
+					"pos",
+					"html",
+					"=\\\"\\\"",
+					" ｜ ",
+					"position",
 					"publishform",
 					"'",
 					"validationengine",
@@ -765,26 +1052,7 @@
 					"create",
 					"活动特色",
 					"ajax",
-					"选择省",
-					"find_cities_of_province",
-					".pngfix",
-					"choose",
-					"CD_to",
-					"sub_leader",
-					"sub_",
-					"import",
-					"预付费",
-					"id=\"\"",
-					"pub_pubbtn",
-					"发布活动",
-					"{{ STATIC_PREFIX }}js",
-					"{{STATIC_PREFIX}}/",
-					"{{STATIC_PREFIX}}",
-					"{{ STATIC_PREFIX }}",
-					"{{STATIC_PREFIX}}/",
-					"/actPublish/",
-					"images/faqtip.png",
-					"theme"
+					"选择省"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -806,17 +1074,17 @@
 			[
 				{
 					"follow_symlinks": true,
-					"path": "/Users/xuechengwei/project/library"
+					"path": "/Users/xuechengwei/project/guoqing"
 				},
 				{
 					"follow_symlinks": true,
-					"path": "/Users/xuechengwei/project/wholesite"
+					"path": "/Users/xuechengwei/project/usercenter"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -825,15 +1093,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 111,
+								"buffer_size": 201,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										111,
-										111
+										196,
+										196
 									]
 								],
 								"settings":
@@ -841,34 +1109,18 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
@@ -877,10 +1129,26 @@
 										"bh_regex_center",
 										"bh_regex_open",
 										"bh_regex_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close"
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
 									"bs_sintax": "plain text",
 									"buffer_scroll_name": "deb2e5a7",
@@ -897,19 +1165,19 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/xuechengwei/project/library/huodong/templates/actPublish/index.html",
+							"file": "/Users/xuechengwei/project/usercenter/register.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 28121,
+								"buffer_size": 6790,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										26887,
-										26887
+										1262,
+										1262
 									]
 								],
 								"settings":
@@ -917,34 +1185,18 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
@@ -953,42 +1205,57 @@
 										"bh_regex_center",
 										"bh_regex_open",
 										"bh_regex_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close"
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
 									"bs_sintax": "html",
-									"buffer_scroll_name": "17bfdb79",
+									"buffer_scroll_name": "22ef4cdd",
 									"is_xml": false,
 									"rulers":
 									[
 									],
 									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"tab_size": 2,
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1158.0,
+								"translation.y": 120.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/Users/xuechengwei/project/hdlibrary/library/library/settings.py",
+							"file": "/Users/xuechengwei/project/lvye_cms/huodongcms/templates/huodongcms/huodong.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8623,
+								"buffer_size": 51248,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										757,
-										757
+										5685,
+										5685
 									]
 								],
 								"settings":
@@ -996,34 +1263,18 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
@@ -1032,56 +1283,58 @@
 										"bh_regex_center",
 										"bh_regex_open",
 										"bh_regex_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close"
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "2c35c485",
+									"bs_sintax": "html",
+									"buffer_scroll_name": "ad138f9c",
+									"is_xml": false,
 									"rulers":
 									[
-										-0.1,
-										0.2
 									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1540.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/script.js",
+							"file": "/Users/xuechengwei/Desktop/untitled.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 18317,
+								"buffer_size": 269,
 								"regions":
 								{
-									"bookmarks":
-									{
-										"flags": 144,
-										"icon": "bookmark",
-										"regions":
-										[
-											[
-												2630,
-												2630
-											]
-										],
-										"scope": "bookmarks"
-									}
 								},
 								"selection":
 								[
 									[
-										17884,
-										17884
+										261,
+										261
 									]
 								],
 								"settings":
@@ -1089,34 +1342,18 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
@@ -1125,41 +1362,56 @@
 										"bh_regex_center",
 										"bh_regex_open",
 										"bh_regex_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close"
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
-									"bs_sintax": "javascript",
-									"buffer_scroll_name": "25bca91e",
+									"bs_sintax": "plain text",
+									"buffer_scroll_name": "93f53d19",
+									"is_xml": false,
 									"rulers":
 									[
 									],
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 13758.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 4,
-							"file": "/Users/xuechengwei/project/library/pubevent/views.py",
+							"file": "/Users/xuechengwei/project/usercenter/login.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 6984,
+								"buffer_size": 3132,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3847,
-										3847
+										841,
+										841
 									]
 								],
 								"settings":
@@ -1167,77 +1419,77 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
 										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
 										"bh_unmatched",
 										"bh_unmatched_center",
 										"bh_unmatched_open",
 										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
-										"bh_single_quote_close"
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "fd2e2f2c",
+									"bs_sintax": "html",
+									"buffer_scroll_name": "075aaa65",
+									"is_xml": false,
 									"rulers":
 									[
 									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 444.0,
+								"translation.y": 280.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 5,
-							"file": "/Users/xuechengwei/project/library/draft/models.py",
+							"file": "/Users/xuechengwei/project/usercenter/css/page.css",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2355,
+								"buffer_size": 7793,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										489,
-										489
+										2991,
+										2991
 									]
 								],
 								"settings":
@@ -1245,77 +1497,76 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
 										"bh_square",
 										"bh_square_center",
 										"bh_square_open",
 										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
 										"bh_unmatched",
 										"bh_unmatched_center",
 										"bh_unmatched_open",
 										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
-										"bh_single_quote_close"
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
 									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "c02f8308",
+									"bs_sintax": "css",
+									"buffer_scroll_name": "5dc08659",
 									"rulers":
 									[
 									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 3560.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 6,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/page.css",
+							"file": "/Users/xuechengwei/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 17655,
+								"buffer_size": 43871,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1196,
-										1196
+										7,
+										15
 									]
 								],
 								"settings":
@@ -1323,369 +1574,60 @@
 									"BracketHighlighterBusy": false,
 									"bh_regions":
 									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
 										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
 										"bh_default",
 										"bh_default_center",
 										"bh_default_open",
 										"bh_default_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"bs_sintax": "css",
-									"buffer_scroll_name": "a2bb7d43",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"tab_size": 2
-								},
-								"translation.x": 0.0,
-								"translation.y": 266.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/css/uploadify.css",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2473,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1766,
-										1766
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
 										"bh_double_quote",
 										"bh_double_quote_center",
 										"bh_double_quote_open",
 										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
 										"bh_single_quote_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
 										"bh_angle",
 										"bh_angle_center",
 										"bh_angle_open",
 										"bh_angle_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close"
-									],
-									"bs_sintax": "css",
-									"buffer_scroll_name": "cb462cea",
-									"rulers":
-									[
-										10.7,
-										11.0
-									],
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 648.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 8,
-							"file": "/Users/xuechengwei/project/library/draft/views.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 11997,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2674,
-										2674
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
 										"bh_tag",
 										"bh_tag_center",
 										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
+										"bh_tag_close"
 									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "689ce4ab",
+									"bs_sintax": "json",
+									"buffer_scroll_name": "f7f18908",
 									"rulers":
 									[
+										6.03333333333,
+										6.33333333333
 									],
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1531.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 9,
-							"file": "/Users/xuechengwei/project/library/library/urls.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1165,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										550,
-										564
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"bs_sintax": "python",
-									"buffer_scroll_name": "db85448d",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/Python/Python.tmLanguage",
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 10,
-							"file": "/Users/xuechengwei/project/library/huodong/static/actPublish/js/jquery.validationEngine.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 70694,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										18026,
-										18042
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"bs_sintax": "javascript",
-									"buffer_scroll_name": "502aba1c",
-									"rulers":
-									[
-									],
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 9908.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1693,8 +1635,244 @@
 					]
 				},
 				{
+					"selected": 2,
 					"sheets":
 					[
+						{
+							"buffer": 7,
+							"file": "/Users/xuechengwei/project/usercenter/js/ucenter.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2637,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1720,
+										1720
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
+									],
+									"bs_sintax": "javascript",
+									"buffer_scroll_name": "ec4ffe9a",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 808.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/Users/xuechengwei/Downloads/jquery-validation-1.11.1/lib/jquery.form.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 39236,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6337,
+										6337
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
+									],
+									"bs_sintax": "javascript",
+									"buffer_scroll_name": "b32f784a",
+									"rulers":
+									[
+									],
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 977.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/Users/xuechengwei/project/guoqing/index.html",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 25024,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4232,
+										4232
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close"
+									],
+									"bs_sintax": "html",
+									"buffer_scroll_name": "f83f2689",
+									"is_xml": false,
+									"rulers":
+									[
+										26.0333333333,
+										26.3333333333
+									],
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 2160.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -1726,7 +1904,7 @@
 				"cols":
 				[
 					0.0,
-					0.75,
+					0.385430908203,
 					1.0
 				],
 				"rows":
@@ -1736,7 +1914,7 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "1920 0 1920 1080 1920 0 1920 1080 ",
+			"position": "1920 61 1920 977 1920 0 1920 1080 ",
 			"project": "",
 			"replace":
 			{
@@ -1748,6 +1926,26 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"page.css",
+						"guoqing/css/page.css"
+					],
+					[
+						"",
+						"guoqing/index.html"
+					],
+					[
+						"script",
+						"library/huodong/static/actPublish/js/script.js"
+					],
+					[
+						"sett",
+						"library/library/settings.py"
+					],
+					[
+						"views",
+						"library/huodong/views.py"
+					],
 					[
 						"valida",
 						"library/huodong/static/actPublish/js/jquery.validationEngine.js"
@@ -1781,16 +1979,8 @@
 						"huodong/static/actPublish/js/script.js"
 					],
 					[
-						"page.css",
-						"wholesite/css/page.css"
-					],
-					[
 						"script.js",
 						"huodong/static/actPublish/js/script.js"
-					],
-					[
-						"script",
-						"static/actPublish/js/script.js"
 					]
 				],
 				"width": 0.0
@@ -1818,12 +2008,12 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 239.0,
+			"side_bar_width": 224.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 19,
+			"window_id": 24,
 			"workspace_name": ""
 		}
 	],

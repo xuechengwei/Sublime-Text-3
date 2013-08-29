@@ -26,13 +26,14 @@
 		"TrailingSpaces",
 		"YUI Compressor"
 	],
-	"startup_sec": 0.28721,
+	"startup_sec": 0.332301,
 	"syntax":
 	{
-		"CSS": 5,
-		"HTML": 27,
-		"JavaScript": 79,
-		"Plain text": 1
+		"CSS": 136,
+		"HTML": 74,
+		"JSON": 7,
+		"JavaScript": 10,
+		"Plain text": 3
 	},
-	"time": 1377218937
+	"time": 1377650618
 }
