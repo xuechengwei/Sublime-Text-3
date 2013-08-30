@@ -1,7 +1,7 @@
 Sublime-Text-3
 ==============
 
-My favorite sublime text 3 config files
+My favorite sublime text 3 settings
 
 ## Installed Packages:
 - AdvancedNewFile
@@ -30,3 +30,8 @@ My favorite sublime text 3 config files
 - Theme - Soda
 - TrailingSpaces
 - YUI Compressor
+
+## Usage
+Install Sublime text 3, open it
+Sublime Text -> Preferences ->Browse Packages...
+Clone this to your opened folder and replace
