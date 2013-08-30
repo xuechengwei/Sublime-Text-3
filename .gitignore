@@ -1,4 +1,17 @@
+# Package Control cache #
+#############################
 Packages/User/Package\ Control.cache/*
+Packages/User/FileHistory.json
+Packages/User/Package Control.last-run
+
+# Session files #
+#############################
+Local/Auto Save Session.sublime_session
+Local/Session.sublime_metrics
+Local/Session.sublime_session
+
+
 .DS_Store
 Cache/*
 Index/*
+Settings/BufferScroll.bin.gz

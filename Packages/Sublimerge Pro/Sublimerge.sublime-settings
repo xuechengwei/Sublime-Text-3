@@ -1,0 +1,161 @@
+//You should not modify this file because it will be automatically overwritten after update.
+//To change the settings, edit the "Settings - User" file (can be found via Preferences menu)
+
+{
+    //GENERAL /////////////////////////////////////////////////////////////////////////////////////////
+
+    //Turn on/off debugging logs (console)
+    "debug": false,
+
+    //Other plugins to be paused in diff view
+    "pause_plugins": ["GitGutterEvents"],
+
+    //This will limit the list of comparable files to the files with the same syntax
+    "same_syntax_only": true,
+
+    //This will order the list of comparable files by file's names similiarity
+    "intelligent_files_sort": true,
+
+    //This will display compact list of comparable files
+    "compact_files_list": true,
+
+
+    //DIFF ALGORITHM //////////////////////////////////////////////////////////////////////////////////
+
+    //Set to true if you want to ignore whitespace differences:
+    "ignore_whitespace": false,
+
+    //Set to true if you want to ignore differences in new line characters (CR/LF)
+    "ignore_crlf": true,
+
+    //Determines whether to perform intraline change analysis within each of the changed blocks.
+    //It is only used to mark interline changes and does not affect general difference analysis.
+    //When you work with big files and get performance problems, you can switch this off.
+    "intraline_analysis": true,
+
+    //Ratio, calculated as: (length of changed parts / length of unchanged parts) * 100. When ratio
+    //gets greater than this value interline changes are not displayed and line is considered as
+    //fully replaced rather than modified.
+    "intraline_changes_threshold": 60,
+
+    //This setting makes small spans of text, with the length lower or equal this value, to be marked
+    //as part of interline change if they appear between two interline changes. This setting eliminates
+    //noisy highlights within the line.
+    "intraline_combine_threshold": 3,
+
+    //Produces more difference blocks in such a way that all grayed (missing) lines blocks are
+    //separated from changed blocks.
+    //This gives you more possible ways to merge changes, but requires you to be more careful.
+    //Sometimes you will need to correct something "by hand".
+    "separate_missing_blocks": false,
+
+
+    //VIEWS ///////////////////////////////////////////////////////////////////////////////////////////
+
+    //Diff view consists of two Sublime's views. All options defined here will be applied to them.
+    //The list of possible options can be found via Preferences -> Settings - Default
+    "view": {
+        //set to true if you want to display line numbers (they may not be corresponding
+        //with original file lines due to expanded diff regions)
+        "line_numbers": false,
+
+        //set to true if you want lines to wrap on words (this is not recommended due to
+        //readability reasons)
+        "word_wrap": false,
+
+        //set to true if you want to have extended scroll area
+        "scroll_past_end": false,
+
+        //set to false if you don't want to highlight corresponding lines
+        "highlight_line": false,
+
+        //set to 'all' to display white space characters always, 'selection' to display
+        //only when selection is applied
+        "draw_white_space": "all",
+
+        //disable save on focus functionality in diff view
+        "save_on_focus_lost": false
+    },
+
+    //Set to true if you want to hide sidebar in comparison window
+    "hide_side_bar": true,
+
+    //Set to true if you want the first diff region to be automatically selected
+    "auto_select_first": false,
+
+
+    //DIFF BLOCK COLORS ///////////////////////////////////////////////////////////////////////////////
+
+    //Values for these properties are defined in your color scheme. They are set to work properly with
+    //the Monokai scheme, which is Sublime's default. You can change them to any you want. The list of
+    //available values can be found in your current scheme file (.tmTheme).
+
+    //border color when content of difference exists in both files:
+    "diff_block_changed": "markup.changed",
+
+    //border color when content of difference exists in left file, but does not exist in right one:
+    "diff_block_inserted": "markup.inserted",
+
+    //border color when content of difference exists in right file, but does not exist in left one:
+    "diff_block_deleted": "markup.deleted",
+
+    //fill color for intraline changes marks:
+    "diff_block_intraline": "markup.changed",
+
+    //fill color for selected difference:
+    "diff_block_selected": "selection",
+
+    //fill color for missing lines block:
+    "diff_block_missing": "comment",
+
+
+    //SNAPSHOTS ///////////////////////////////////////////////////////////////////////////////////////
+
+    //Whether to automatically create snapshot when file is opened
+    "snapshots_on_open": true,
+
+    //Whether to automatically create snapshot each time file is saved
+    "snapshots_on_save": false,
+
+
+    //VERSION CONTROL SYSTEMS SUPPORT /////////////////////////////////////////////////////////////////
+
+    "vcs_support": true,
+
+
+    //GIT SUPPORT (applicable when vcs_support = true)
+
+    //Path to git executable
+    //For Windows this could be something like:
+    //C:\\PROGRA~1\\Git\\bin\\git.exe or C:\\PROGRA~2\\Git\\bin\\git.exe
+    "git_executable_path": "git",
+
+    //Additional arguments for 'git log' command
+    "git_log_args": "--encoding=UTF-8 --no-color",
+
+    //Additional arguments for 'git show' command
+    "git_show_args": "",
+
+
+    //SVN SUPPORT (applicable when vcs_support = true)
+
+    //Path to svn executable
+    "svn_executable_path": "svn",
+
+    //Additional arguments for 'svn log' command
+    "svn_log_args": "--stop-on-copy",
+
+    //Additional arguments for 'svn cat' command
+    "svn_cat_args": "",
+
+    //SYNTAX SPECIFIC SETTINGS ////////////////////////////////////////////////////////////////////////
+    "syntax_specific": {
+        "Python": {
+            "ignore_whitespace": false,
+            "ignore_crlf": false,
+            "view": {
+                "draw_white_space": "all"
+            }
+        }
+    }
+}

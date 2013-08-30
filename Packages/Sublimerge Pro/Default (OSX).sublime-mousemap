@@ -1,0 +1,15 @@
+[
+    {
+        "button": "button1", "count": 1, "modifiers": ["ctrl", "alt"],
+        "press_command": "sublimerge_select_region",
+        "press_args": {"by": "lines"}
+    },
+    {
+        "button": "button1", "count": 1, "modifiers": ["ctrl", "shift"],
+        "press_command": "sublimerge_merge_left"
+    },
+    {
+        "button": "button2", "count": 1, "modifiers": ["ctrl", "shift"],
+        "press_command": "sublimerge_merge_right"
+    }
+]
