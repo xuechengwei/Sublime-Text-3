@@ -22,6 +22,20 @@
 			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
 		}
 	},
+	// Select text between brackets
+	{
+	    "keys": ["ctrl+alt+super+s"],
+	    "command": "bh_key",
+	    "args":
+	    {
+	        "lines" : true,
+	        "plugin":
+	        {
+	            "type": ["__all__"],
+	            "command": "bh_modules.bracketselect"
+	        }
+	    }
+	},
 	{ "keys": ["ctrl+shift+'"], "command": "change_quotes" },
 	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
 	// Go to left bracket
