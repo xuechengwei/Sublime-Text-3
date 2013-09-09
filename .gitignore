@@ -15,4 +15,5 @@ Local/Session.sublime_session
 Cache/*
 Index/*
 Backup/*
+Local/*
 Settings/BufferScroll.bin.gz
