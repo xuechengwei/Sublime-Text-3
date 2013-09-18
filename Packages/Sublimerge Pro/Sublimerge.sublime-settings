@@ -8,7 +8,7 @@
     "debug": false,
 
     //Other plugins to be paused in diff view
-    "pause_plugins": ["GitGutterEvents"],
+    "pause_plugins": ["GitGutterEvents", "VcsGutterEvents"],
 
     //This will limit the list of comparable files to the files with the same syntax
     "same_syntax_only": true,
