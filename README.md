@@ -4,8 +4,10 @@ Sublime-Text-3
 My favorite sublime text 3 settings
 
 ## Installed Packages:
-- AdvancedNewFile
+- iAdvancedNewFile
 - Alignment
+- AngularJS
+- ApacheConf.tmLanguage
 - BracketHighlighter
 - BufferScroll
 - Case Conversion
@@ -16,10 +18,17 @@ My favorite sublime text 3 settings
 - DocBlockr
 - Emmet
 - File History
+- GitGutter
+- Html compressor
+- HTML Compressor
+- HTML-CSS-JS Prettify
 - INI
 - jQuery
 - JsFormat
+- JSHint Gutter
+- LESS
 - LiveStyle
+- PlainTasks
 - Pretty JSON
 - Sass
 - SideBarEnhancements
