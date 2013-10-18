@@ -4,7 +4,7 @@ Sublime-Text-3
 My favorite sublime text 3 settings
 
 ## Installed Packages:
-- iAdvancedNewFile
+- AdvancedNewFile
 - Alignment
 - AngularJS
 - ApacheConf.tmLanguage
