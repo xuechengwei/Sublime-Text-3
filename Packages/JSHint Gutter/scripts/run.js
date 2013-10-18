@@ -20,7 +20,7 @@
   var globals = Object.create(null);
 
   // This stuff does all the magic.
-  var jshint = require("jshint/src/stable/jshint.js").JSHINT;
+  var jshint = require("jshint/src/jshint.js").JSHINT;
 
   // Some handy utility functions.
   function isTrue(value) {
@@ -28,7 +28,7 @@
   }
   function getOptions(file) {
     var data = fs.readFileSync(file, "utf8");
-    var comments = /(?:\/\*(?:[\s\S]*?)\*\/)|(?:\/\/(?:[^\"]*)$)/gm;
+    var comments = /(?:\/\*(?:[\s\S]*?)\*\/)|(?:\/\/(?:.*)$)/gm;
     try {
       return JSON.parse(data.replace(comments, ""));
     } catch (e) {
@@ -76,6 +76,10 @@
   var lastCurrentFolder;
   var jshintrcPath;
   var packagejsonPath;
+
+  // Older versions of node has `existsSync` in the path module, not fs. Meh.
+  fs.existsSync = fs.existsSync || path.existsSync;
+  path.sep = path.sep || "/";
 
   // Try and get some persistent options from the plugin folder.
   if (fs.existsSync(jshintrcPath = pluginFolder + path.sep + jshintrc)) {

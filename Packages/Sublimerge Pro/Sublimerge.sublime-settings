@@ -19,7 +19,7 @@
     //This will display compact list of comparable files
     "compact_files_list": true,
 
-
+    
     //DIFF ALGORITHM //////////////////////////////////////////////////////////////////////////////////
 
     //Set to true if you want to ignore whitespace differences:
@@ -77,7 +77,13 @@
         "save_on_focus_lost": false
     },
 
-    //Set to true if you want to hide sidebar in comparison window
+    //Set to true if you want diff window to be opened in full screen mode
+    "full_screen": false,
+
+    //Set to true if you want to hide menu in diff window (Windows only)
+    "hide_menu": true,
+
+    //Set to true if you want to hide sidebar in diff window
     "hide_side_bar": true,
 
     //Set to true if you want the first diff region to be automatically selected

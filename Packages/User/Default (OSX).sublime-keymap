@@ -67,5 +67,6 @@
 	            "args": {"select": "right"}
 	        }
 	    }
-	}
+	},
+	{ "keys": ["alt+d"], "command": "goto_definition" },
 ]

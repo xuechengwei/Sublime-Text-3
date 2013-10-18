@@ -63,7 +63,7 @@
          * Custom Git comparison. Allows to compare your working file with the same file in another branch
          */
         {
-            "name": "Compare {sublimerge:current_file_name} to Other Branch...",
+            "name": "Compare to Other Branch...",
             "requires": "git",
             "steps": [
                 {
@@ -102,12 +102,12 @@
                     }
                 }
             ]
-        }
+        },
 
         /*
          * Custom Git comparison. Allows to run custom Git command and compare working file with command's output
          */
-        // ,{
+        // {
         //     "name": "Custom Git Command...",
         //     "requires": "git",
         //     "steps": [
@@ -136,6 +136,49 @@
         //             }
         //         }
         //     ]
-        // }
+        // },
+
+        /**
+         * Custom SVN comparison. Displays quick panel with modified files and allows to compare working copy to HEAD to see uncommited changes.
+         */
+        {
+            "name": "Show Uncommited Changes...",
+            "requires": "svn",
+            "steps": [
+                {
+                    "quick_panel": {
+                        "name": "modified_file",
+                        "source": {
+                            "execute": {
+                                "command": "{config:svn_executable_path} status",
+                                "directory": "{sublimerge:repo_root}"
+                            },
+                            "item": {
+                                "regexp": "^M\\s+(.*)$",
+                                "caption": ["@1"],
+                                "value": "@1"
+                            },
+                            "empty_message": "There are no uncommited changes."
+                        }
+                    }
+                },
+                {
+                    "compare": {
+                        "execute": {
+                            "command": "{config:svn_executable_path} cat \"{modified_file}\"@HEAD >> \"{sublimerge:repo_root}/{modified_file}@HEAD\"",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "left": {
+                            "file": "{sublimerge:repo_root}/{modified_file}",
+                            "temporary": false
+                        },
+                        "right": {
+                            "file": "{sublimerge:repo_root}/{modified_file}@HEAD",
+                            "temporary": true
+                        }
+                    }
+                }
+            ]
+        }
     ]
 }

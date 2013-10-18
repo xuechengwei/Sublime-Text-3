@@ -25,7 +25,8 @@ class JshintCommand(sublime_plugin.TextCommand):
     filePath = self.view.file_name()
     hasJsExtension = filePath != None and bool(re.search(r'\.jsm?$', filePath))
     hasJsSyntax = bool(re.search("JavaScript", self.view.settings().get("syntax"), re.I))
-    if not hasJsExtension and not hasJsSyntax:
+    hasJsonSyntax = bool(re.search("JSON", self.view.settings().get("syntax"), re.I))
+    if hasJsonSyntax or (not hasJsExtension and not hasJsSyntax):
       return
 
     if PLUGIN_FOLDER.find(u".sublime-package") != -1:
@@ -54,7 +55,12 @@ following the instructions at:\n"""
 
     # Simply using `node` without specifying a path sometimes doesn't work :(
     settings = sublime.load_settings(SETTINGS_FILE)
-    node = "node" if exists_in_path("node") else settings.get("node_path")
+    if exists_in_path("nodejs"):
+      node = "nodejs"
+    elif exists_in_path("node"):
+      node = "node"
+    else:
+      node = settings.get("node_path")
 
     output = ""
     try:
