@@ -92,7 +92,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -139,9 +139,9 @@
 	"soda_folder_icons": true,
 	"spell_check": false,
 	"tab_completion": true,
-	"tab_size": 2,
+	"tab_size": 4,
 	"theme": "Soda Light 3.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": false,
