@@ -1,27 +1,169 @@
 /**
- * This file contains custom comparisons examples. All of them are designed for Git, however you can define your own for SVN as well.
- * If something can not be easily done with VCS commands, you can always create some external script which will properly format an
- * output to be parsed by Sublimerge.
- *
- * To make a comparison working only for SVN, you have to set 'requires: svn' instead 'requires: git'.
- *
- * Predefined variables:
- *
- * {config:<config_key>} - returns a configuration value for given key
- * {sublimerge:repo_root} - root directory where '.svn' or '.git' is located
- * {sublimerge:current_file} - full path of active file, i.e. '/Users/workspace/my_project/something.js'
- * {sublimerge:current_file_dir} - full path of  active file owning directory, i.e. '/Users/workspace/my_project'
- * {sublimerge:current_file_name} - name of active file, i.e. 'something.js'
+This file contains default custom comparisons.
+
+If you want to create your own, please do it in `Custom Comparisons - User` file. Please initialize
+that file with the following content in order not to override the default ones:
+
+"custom_comparisons_user": [
+   //your definitions here
+]
+ 
+Remember that you can call shell scripts. If something can't be done here, or requires more advanced 
+logic, you can do it in that script and return a parseable output.
+ 
+To make comparison available only for Git, SVN or Mercurial, set 'requires' to one of the following:
+'git', 'svn', 'hg'. Set to null if doesn't need any of VCS.
+
+NOTE: currently there are no debugging mechanisms implemented so while creating new comparison, please
+open Sublime's console for error logging.
+ 
+Predefined variables:
+ 
+{config:<config_key>} - returns a configuration value for given key
+{sublimerge:repo_root} - root directory where '.svn', '.git' or '.hg' is located
+{sublimerge:current_file} - full path of active file, i.e. '/Users/workspace/my_project/something.js'
+{sublimerge:current_file_dir} - full path of  active file owning directory, i.e. '/Users/workspace/my_project'
+{sublimerge:current_file_name} - name of active file, i.e. 'something.js'
+ 
+Each comparison is defined as follows:
+
+{
+    "name": "Comparison Name",
+    "requires": null, //can be 'git', 'svn', 'hg' or null
+    "steps": [
+        {
+            //step
+        }
+    ]
+}
+
+Each step MUST consist of ONLY ONE directive. One of these:
+
+- quick_panel
+- prompt
+- capture
+- compare
+
+NOTE: each string argument accepts {variable} placeholders for variables.
+
+
+Syntax and description:
+
+quick_panel
+
+    Displays Quick Panel (list menu) with data prepared by `source` directive.
+    String argument `name` is used to populate a variable which will hold selected value.
+
+    quick_panel {
+        <string> name, 
+        <source> source
+    }
+
+source
+    
+    Parses output returned by command defined in `execute` directive. Returns parsed items
+    to the parent `quick_panel`. If parsed output is empty, stops flow execution and
+    optionally displays message defined by `empty_message` string argument.
+
+    source {
+        <execute> execute,
+        <item> item
+        [, <string> empty_message]
+    }
+
+execute
+    
+    Executes given command in given directory
+
+    execute {
+        <string> command, 
+        <string> directory
+    }
+
+item
+    
+    Used by `source` directive to parse its `execute` output. Parsing is called for every
+    output line. The `regexp` string argument defines regular expression to be used to parse line.
+    The `caption` argument, array of strings, is used to create each item which will be displayed
+    in `quick_panel`. The `value` string argument sets item's value.
+
+    Both `caption` and `value` accepts '@<number>' placeholders for each `regexp` capturing group,
+    i.e. @0, @1 and so on.
+
+    To make all items unique by their values, set `unique` argument to true.
+
+    item {
+        <string> regexp, 
+        <array> caption, 
+        <string> value
+        [, <boolean> unique=false]
+    }
+
+compare
+    
+    Runs files comparison. Optionally can call a shell command given in `execute` statement just
+    before comparison is run.
+
+    compare {
+        [<execute> execute, ]
+        <left> left, 
+        <right> right
+    }
+
+left, right
+
+    Defines left and right files for `compare` directive. The boolean `temporary` argument defines
+    whether a file is temporary. Temporary files are read-only and are automatically removed
+    after comparison is done.
+
+    left, right {
+        <string> file,
+        <boolean> temporary
+    }
+
+capture
+    
+    Captures output from `execute` directive. If you want a step to run `execute` directive you must
+    put it in `capture`.
+
+    `name` - if set, a variable containing captured output will be populated
+    `regexp` - if set, used to find and and parse matching output lines
+    `value` - if set, allows to format output line. Accepts '@<number>' placeholders for `regexp`
+    `greedy` - by default `capture` is not greedy and will stop on first (matching) line
+    `empty_message` - if set, empty capture will display a message and stop flow
+
+    capture {
+        <execute> execute
+        [, <string> name]
+        [, <string> regexp]
+        [, <string> value]
+        [, <boolean> greedy=false]
+        [, <string> empty_message]
+    }
+
+prompt
+  
+    Displays a text box in the bottom of editor and populates a variable, defined by `name` with
+    text entered by user. The `caption` string argument is used to display field's caption.
+    The `default` string argument defines initial value displayed in field.
+
+    prompt {
+        <string> name,
+        <string> caption
+        [, <string> default]
+    }
  */
 
 {
     "custom_comparisons": [
+        /************************************* GIT *************************************/
+
         /*
          * Custom Git comparison. Displays quick panel with modified files and allows to compare working copy to HEAD to see uncommited changes.
          */
         {
             "name": "Show Uncommited Changes...", //comparison name
-            "requires": "git", //What does it require. Currently 'git', 'svn' or null (if doesn't require any of VCS)
+            "requires": "git", //What does it require. Currently 'git', 'svn' 'hg' or null (if doesn't require any of VCS)
             "steps": [ //comparison is divided into steps. You can define more steps when needed.
                 {
                     "quick_panel": { //Displays a Quick Panel with given attributes
@@ -32,11 +174,11 @@
                                 "directory": "{sublimerge:repo_root}" //Set a command working directory
                             },
                             "item": { //Single item extractor
-                                "regexp": "^\\s+M\\s+(.*)$", //Regular expression to parse each output line
+                                "regexp": "^\\s+M\\s+\"?(.*?)\"?$", //Regular expression to parse each output line
                                 "caption": ["@1"], //Caption is an array. Each item is another line. @n - placeholder for regular expression match
                                 "value": "@1" //Value must be a single string
                             },
-                            "empty_message": "There are no uncommited changes." //Message to be displayed when data source is empty (no items created)
+                            "empty_message": "There are no uncommited changes" //Message to be displayed when data source is empty (no items created)
                         }
                     }
                 },
@@ -75,11 +217,11 @@
                                 "directory": "{sublimerge:current_file_dir}"
                             },
                             "item": {
-                                "regexp": "^(\\*?\\s+)([^\\(]+)$",
+                                "regexp": "^(?:(\\*\\s+)|(?:\\s+))([^\\(]+)$",
                                 "caption": ["@1@2", "{sublimerge:current_file_name} in @2"],
                                 "value": "@2"
                             },
-                            "empty_message": "There are no branches."
+                            "empty_message": "There are no branches"
                         }
                     }
                 },
@@ -97,6 +239,171 @@
 
                         "right": {
                             "file": "{sublimerge:current_file}@{get_branch}",
+                            "temporary": true
+                        }
+                    }
+                }
+            ]
+        },
+
+        /*
+         * Custom Git comparison. Allows to show unpushed changes
+         */
+        {
+            "name": "Show Unpushed Changes...",
+            "requires": "git",
+            "steps": [
+                {
+                    "capture": { //get current branch name
+                        "name": "branch", //populate as `branch` variable
+                        "execute": {
+                            "command": "{config:git_executable_path} branch --no-color",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "regexp": "^\\*\\s+(.+)$",
+                        "value": "@1"
+                    }
+                },
+                {
+                    "capture": {
+                        "name": "remote",
+                        "execute": {
+                            "command": "{config:git_executable_path} branch -vv --no-color",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "regexp": "^\\*.*?\\[([^/]+/[^:\\]]+).*?\\].*$",
+                        "value": "@1",
+                        "empty_message": "{branch} is not a remote-tracking branch" //if no match is found, display a message and stop
+                    }
+                },
+                {
+                    "quick_panel": {
+                        "name": "file",
+                        "source": {
+                            "execute": {
+                                "command": "{config:git_executable_path} log {remote}..HEAD --name-status --no-decorate --pretty=\"format:\"",
+                                "directory": "{sublimerge:repo_root}"
+                            },
+                            "item": {
+                                "regexp": "^M\\s+(.+)$",
+                                "caption": ["@1", "{remote}"],
+                                "value": "@1",
+                                "unique": true //every item's value must be unique. duplicates will be filtered out
+                            },
+                            "empty_message": "There are no unpushed changes"
+                        }
+                    }
+                },
+                {
+                    "capture": { //capture also allows to run `execute` block as a step
+                        "execute": {
+                            "command": "{config:git_executable_path} show HEAD:\"./{file}\" >> \"{sublimerge:repo_root}/{file}@HEAD\"",
+                            "directory": "{sublimerge:repo_root}"
+                        }
+                    }
+                },
+                {
+                    "compare": {
+                        "execute": {
+                            "command": "{config:git_executable_path} show {remote}:\"./{file}\" >> \"{sublimerge:repo_root}/{file}@remote\"",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "left": {
+                            "file": "{sublimerge:repo_root}/{file}@HEAD",
+                            "temporary": true
+                        },
+                        "right": {
+                            "file": "{sublimerge:repo_root}/{file}@remote",
+                            "temporary": true
+                        }
+                    }
+                }
+            ]
+        },
+
+        /*
+         * Custom Git comparison. Allows to show changes between current HEAD and selected remote
+         */
+        {
+            "name": "Show Changes Between Current and Remote...",
+            "requires": "git",
+            "steps": [
+                {
+                    "capture": {
+                        "name": "branch",
+                        "execute": {
+                            "command": "{config:git_executable_path} branch --no-color",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "regexp": "^\\*\\s+(.+)$",
+                        "value": "@1"
+                    }
+                },
+                {
+                    "capture": {
+                        "name": "ref_head",
+                        "execute": {
+                            "command": "{config:git_executable_path} symbolic-ref HEAD",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "regexp": "^([^\\s]+)$",
+                        "value": "@1"
+                    }
+                },
+                {
+                    "quick_panel": {
+                        "name": "remote",
+                        "source": {
+                            "execute": {
+                                "command": "{config:git_executable_path} branch -r --no-color",
+                                "directory": "{sublimerge:repo_root}"
+                            },
+                            "item": {
+                                "regexp": "^\\s+([^\\s]+)(.*)$",
+                                "caption": ["@1@2", "Compare {ref_head} to @1"],
+                                "value": "@1"
+                            }
+                        }
+                    }
+                },
+                {
+                    "quick_panel": {
+                        "name": "file",
+                        "source": {
+                            "execute": {
+                                "command": "{config:git_executable_path} log {remote}..HEAD --name-status --no-decorate --pretty=\"format:\"",
+                                "directory": "{sublimerge:repo_root}"
+                            },
+                            "item": {
+                                "regexp": "^M\\s+(.+)$",
+                                "caption": ["@1", "{remote}"],
+                                "value": "@1",
+                                "unique": true
+                            },
+                            "empty_message": "There are no changes between {ref_head} and {remote}"
+                        }
+                    }
+                },
+                {
+                    "capture": {
+                        "execute": {
+                            "command": "{config:git_executable_path} show HEAD:\"./{file}\" >> \"{sublimerge:repo_root}/{file}@HEAD\"",
+                            "directory": "{sublimerge:repo_root}"
+                        }
+                    }
+                },
+                {
+                    "compare": {
+                        "execute": {
+                            "command": "{config:git_executable_path} show {remote}:\"./{file}\" >> \"{sublimerge:repo_root}/{file}@remote\"",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "left": {
+                            "file": "{sublimerge:repo_root}/{file}@HEAD",
+                            "temporary": true
+                        },
+                        "right": {
+                            "file": "{sublimerge:repo_root}/{file}@remote",
                             "temporary": true
                         }
                     }
@@ -138,6 +445,8 @@
         //     ]
         // },
 
+        /************************************* SVN *************************************/
+
         /**
          * Custom SVN comparison. Displays quick panel with modified files and allows to compare working copy to HEAD to see uncommited changes.
          */
@@ -154,11 +463,11 @@
                                 "directory": "{sublimerge:repo_root}"
                             },
                             "item": {
-                                "regexp": "^M\\s+(.*)$",
+                                "regexp": "^M\\s+\"?(.*?)\"?$",
                                 "caption": ["@1"],
                                 "value": "@1"
                             },
-                            "empty_message": "There are no uncommited changes."
+                            "empty_message": "There are no uncommited changes"
                         }
                     }
                 },
@@ -174,6 +483,93 @@
                         },
                         "right": {
                             "file": "{sublimerge:repo_root}/{modified_file}@HEAD",
+                            "temporary": true
+                        }
+                    }
+                }
+            ]
+        },
+
+        /************************************* MERCURIAL *************************************/
+
+        /**
+         * Custom Mercurial comparison. Displays quick panel with modified files and allows to compare working copy to tip to see uncommited changes.
+         */
+        {
+            "name": "Show Uncommited Changes...",
+            "requires": "hg",
+            "steps": [
+                {
+                    "quick_panel": {
+                        "name": "modified_file",
+                        "source": {
+                            "execute": {
+                                "command": "{config:hg_executable_path} status",
+                                "directory": "{sublimerge:repo_root}"
+                            },
+                            "item": {
+                                "regexp": "^M\\s+\"?(.*?)\"?$",
+                                "caption": ["@1"],
+                                "value": "@1"
+                            },
+                            "empty_message": "There are no uncommited changes"
+                        }
+                    }
+                },
+                {
+                    "compare": {
+                        "execute": {
+                            "command": "{config:hg_executable_path} cat \"./{modified_file}\" -r tip >> \"{sublimerge:repo_root}/{modified_file}@tip\"",
+                            "directory": "{sublimerge:repo_root}"
+                        },
+                        "left": {
+                            "file": "{sublimerge:repo_root}/{modified_file}",
+                            "temporary": false
+                        },
+                        "right": {
+                            "file": "{sublimerge:repo_root}/{modified_file}@tip",
+                            "temporary": true
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "name": "Compare to Named Branch...",
+            "requires": "hg",
+            "steps": [
+                {
+                    "quick_panel": {
+                        "name": "get_branch",
+                        "source": {
+                            "execute": {
+                                "command": "{config:hg_executable_path} branches",
+                                "directory": "{sublimerge:current_file_dir}"
+                            },
+                            "item": {
+                                "regexp": "^([^\\s]+)\\s+(.*)$",
+                                "caption": ["@1", "{sublimerge:current_file_name} in @2"],
+                                "value": "@1"
+                            },
+                            "empty_message": "There are no named branches"
+                        }
+                    }
+                },
+                {
+                    "compare": {
+                        "execute": {
+                            "command": "{config:hg_executable_path} cat \"{sublimerge:current_file_name}\" -r \"{get_branch}\" >> \"{sublimerge:current_file}@{get_branch}\"",
+                            "directory": "{sublimerge:current_file_dir}"
+                        },
+
+                        "left": {
+                            "file": "{sublimerge:current_file}",
+                            "temporary": false
+                        },
+
+                        "right": {
+                            "file": "{sublimerge:current_file}@{get_branch}",
                             "temporary": true
                         }
                     }

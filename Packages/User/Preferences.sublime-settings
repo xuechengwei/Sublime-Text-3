@@ -92,7 +92,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 12,
+	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -100,6 +100,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"SublimeCodeIntel"
 	],
 	"indent_guide_options":
 	[
