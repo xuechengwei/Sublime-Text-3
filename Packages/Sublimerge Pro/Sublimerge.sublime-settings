@@ -9,6 +9,11 @@
     //Turn on/off debugging logs (console)
     "debug": false,
 
+    //Fallback encoding to encode shell commands. If you get an error message while running VCS commands,
+    //you should change it the compatible one with your system's locale. For full list of encodings please
+    //visit http://docs.python.org/2/library/codecs.html#standard-encodings
+    "shell_fallback_encoding": "ascii",
+
     //Other plugins to be paused in diff view
     "pause_plugins": ["GitGutterEvents", "VcsGutterEvents"],
 
@@ -82,6 +87,9 @@
         //disable save on focus functionality in diff view
         "save_on_focus_lost": false
     },
+
+    //Starts diff view in swapped mode where new changes are displayed on the left-hand side panel.
+    "start_swapped": false,
 
     //When set to 0, scroll is synchronized after the scrolled view stops scrolling. When set to greater
     //value defines how often (in milliseconds) scroll should be synchronized.
