@@ -104,13 +104,23 @@ following the instructions at:\n"""
       for line in output.decode().splitlines():
         try:
           lineNo, columnNo, description = line.split(" :: ")
-          text_point = self.view.text_point(int(lineNo) - 1, int(columnNo))
-          region = self.view.word(text_point)
-          menuitems.append(lineNo + ":" + columnNo + " " + description)
-          regions.append(region)
-          JshintListener.errors.append((region, description))
         except:
-          pass
+          continue
+
+        symbolname = re.match("('[^']+')", description)
+
+        text_point = self.view.text_point(int(lineNo) - 1, int(columnNo) - 1)
+        region = self.view.word(text_point)
+
+        if symbolname:
+          region = self.view.word(text_point)
+        else:
+          region = self.view.line(text_point)
+
+        menuitems.append(lineNo + ":" + columnNo + " " + description)
+
+        regions.append(region)
+        JshintListener.errors.append((region, description))
 
       if show_regions:
         self.add_regions(regions)
@@ -118,7 +128,7 @@ following the instructions at:\n"""
         self.view.window().show_quick_panel(menuitems, self.on_chosen)
 
   def add_regions(self, regions):
-    packageName = PLUGIN_FOLDER.replace(sublime.packages_path(), "")
+    packageName = (PLUGIN_FOLDER.split(os.path.sep))[-1]
 
     if int(sublime.version()) >= 3000:
       icon = "Packages/" + packageName + "/warning.png"
@@ -140,11 +150,18 @@ following the instructions at:\n"""
       return
 
     # Focus the user requested region from the quick panel.
-    region = self.view.get_regions("jshint_errors")[index]
+    region = JshintListener.errors[index][0]
+    region_cursor = sublime.Region(region.begin(), region.begin())
     selection = self.view.sel()
     selection.clear()
-    selection.add(region)
-    self.view.show(region)
+    selection.add(region_cursor)
+    self.view.show(region_cursor)
+
+    if not sublime.load_settings(SETTINGS_FILE).get("highlight_selected_regions"):
+      return
+
+    self.view.erase_regions("jshint_selected")
+    self.view.add_regions("jshint_selected", [region], "meta")
 
 class JshintSetLintingPrefsCommand(sublime_plugin.TextCommand):
   def run(self, edit):
@@ -168,6 +185,7 @@ class JshintClearAnnotationsCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     JshintListener.reset()
     self.view.erase_regions("jshint_errors")
+    self.view.erase_regions("jshint_selected")
 
 class JshintListener(sublime_plugin.EventListener):
   timer = None

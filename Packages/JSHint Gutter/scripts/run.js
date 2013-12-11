@@ -27,10 +27,9 @@
     return value == "true" || value == true;
   }
   function getOptions(file) {
-    var data = fs.readFileSync(file, "utf8");
-    var comments = /(?:\/\*(?:[\s\S]*?)\*\/)|(?:\/\/(?:.*)$)/gm;
     try {
-      return JSON.parse(data.replace(comments, ""));
+      require("jsonminify");
+      return JSON.parse(JSON.minify(fs.readFileSync(file, "utf8")));
     } catch (e) {
       return Object.create(null);
     }
