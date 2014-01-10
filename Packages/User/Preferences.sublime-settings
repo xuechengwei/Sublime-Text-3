@@ -37,7 +37,7 @@
 		"*.zip"
 	],
 	"bold_folder_labels": false,
-	"caret_style": "smooth",
+	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"copy_with_empty_selection": true,
@@ -95,11 +95,12 @@
 	"font_size": 14,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
-	"highlight_line": true,
+	"highlight_line": false,
 	"highlight_modified_tabs": false,
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"AdvancedNewFile",
 		"SublimeCodeIntel"
 	],
 	"indent_guide_options":
@@ -133,7 +134,9 @@
 	"scroll_past_end": true,
 	"scroll_speed": 1.0,
 	"shift_tab_unindent": false,
+	"show_encoding": true,
 	"show_full_path": true,
+	"show_line_endings": true,
 	"show_panel_on_build": true,
 	"show_tab_close_buttons": true,
 	"smart_indent": true,

@@ -45,12 +45,12 @@
     "intraline_analysis": true,
 
     //Ratio, calculated as: (length of changed parts / length of unchanged parts) * 100. When ratio
-    //gets greater than this value interline changes are not displayed and line is considered as
+    //gets greater than this value intraline changes are not displayed and line is considered as
     //fully replaced rather than modified.
     "intraline_changes_threshold": 60,
 
     //This setting makes small spans of text, with the length lower or equal this value, to be marked
-    //as part of interline change if they appear between two interline changes. This setting eliminates
+    //as part of intraline change if they appear between two intraline changes. This setting eliminates
     //noisy highlights within the line.
     "intraline_combine_threshold": 3,
 
