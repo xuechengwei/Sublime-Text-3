@@ -10,12 +10,12 @@
     "debug": false,
 
     //Fallback encoding to encode shell commands. If you get an error message while running VCS commands,
-    //you should change it the compatible one with your system's locale. For full list of encodings please
+    //you should change it to the one compatible with your system's locale. For full list of encodings please
     //visit http://docs.python.org/2/library/codecs.html#standard-encodings
     "shell_fallback_encoding": "ascii",
 
-    //Other plugins to be paused in diff view
-    "pause_plugins": ["GitGutterEvents", "VcsGutterEvents"],
+    //Other plugins to be paused in diff view. Set "pause_plugins": "*" to pause all
+    "pause_plugins": ["GitGutterEvents", "VcsGutterEvents", "JshintListener", "HlChangesBackground"],
 
     //This will limit the list of comparable files to the files with the same syntax
     "same_syntax_only": true,
@@ -30,6 +30,34 @@
     //"Custom Comparison..." option after pressing ctrl+alt+d
     "custom_comparisons_in_separate_menu": false,
 
+    //THREE-WAY DIFF //////////////////////////////////////////////////////////////////////////////////
+
+    //Layout of the three-way diff view:
+    //  0 -> [ Theirs | Merged | Mine ]
+
+    //  1 -> [ Theirs | Mine ]
+    //       [    Merged     ]
+    "three_way_layout": 0,
+
+    //Percentage height for [ Merged ] pane. Applicable only when `three_way_layout` = 1
+    "three_way_merged_height": 40,
+
+    //By default, in three-way diff view, navigation is limited to conflicts only. When set to true, you
+    //can navigate through all changes. You can change this setting via context menu too.
+    "three_way_navigate_all": false,
+
+
+    //THREE WAY DIFF ALGORITHM
+
+    //A group of options to configure how to automatically resolve some conflicts. Such conflicts will
+    //be marked as regular conflicts, but their gutter icon will be changed from '!' to '?'. Additionally
+    //their state will be automatically set to 'resolved' and pre-merged output will contain a text from
+    //the best-matching change (according to these settings).
+    "three_way_auto_resolve": {
+        //A change that contains a text will be used when opposite contains only white-spaces: CR/LF,
+        //spaces or tabs.
+        "white_space_vs_non_white_space": false
+    },
 
     //DIFF ALGORITHM //////////////////////////////////////////////////////////////////////////////////
 
@@ -38,6 +66,9 @@
 
     //Set to true if you want to ignore differences in new line characters (CR/LF)
     "ignore_crlf": true,
+
+    //Set to true if you want diff to be case insensitive
+    "ignore_case": false,
 
     //Determines whether to perform intraline change analysis within each of the changed blocks.
     //It is only used to mark interline changes and does not affect general difference analysis.
@@ -91,21 +122,34 @@
     //Starts diff view in swapped mode where new changes are displayed on the left-hand side panel.
     "start_swapped": false,
 
-    //When set to 0, scroll is synchronized after the scrolled view stops scrolling. When set to greater
-    //value defines how often (in milliseconds) scroll should be synchronized.
-    "scroll_sync_defer": 0,
+    //Defines how often panels in diff window are synced (milliseconds). Minimum value is 1.
+    //Although "1" is proved to be safe value, you should change it when Sublime Text reaches
+    //high CPU usage or crashes when diff window is open.
+    "scroll_sync_interval": 1,
 
     //Set to true if you want diff window to be opened in full screen mode
     "full_screen": false,
 
-    //Set to true if you want to hide menu in diff window (Windows only)
-    "hide_menu": true,
+    //Depending on default state, shows/hides Menu in diff window (Windows-only)
+    //If you don't use Menu normally, you should switch this to `false` - otherwise Menu will
+    //be shown in diff window.
+    "toggle_menu": true,
 
-    //Set to true if you want to hide sidebar in diff window
-    "hide_side_bar": true,
+    //Depending on default state, shows/hides Side Bar in diff window.
+    //If you don't use Side Bar normally, you should switch this to `false` - otherwise Side Bar will
+    //be shown in diff window.
+    "toggle_side_bar": true,
+
+    //Depending on default state, shows/hides Minimap in diff window
+    //If you don't use Minimap normally, you should switch this to `false` - otherwise Minimap will
+    //be shown in diff window.
+    "toggle_minimap": false,
 
     //Set to true if you want the first diff region to be automatically selected
     "auto_select_first": false,
+
+    //Set to false if you don't want to automatically "jump" to the next change after merge
+    "go_to_next_after_merge": true,
 
 
     //DIFF BLOCK COLORS ///////////////////////////////////////////////////////////////////////////////
@@ -114,7 +158,9 @@
     //the Monokai scheme, which is Sublime's default. You can change them to any you want. The list of
     //available values can be found in your current scheme file (.tmTheme).
 
-    //if false, diff blocks will be filled rather than outlined
+    //If false, diff blocks will be filled rather than outlined. It may cause intraline changes not to
+    //be visible even if you define another color for them. This is Sublime Text's drawing issue: when
+    //it draws two (or more) filled regions one in another, some of them are randomly not drawn.
     "diff_block_draw_outlined": true,
 
     //color when content of difference exists in both files
@@ -125,6 +171,9 @@
 
     //color when content of difference exists in right file, but does not exist in left one
     "diff_block_deleted": "markup.deleted",
+
+    //color when changes are conflicting with each other
+    "diff_block_conflict": "invalid.deprecated",
 
     //fill color for intraline changes marks. If diff_block_draw_outlined is false, consider setting
     //this value to other color than for diff_block_changed. Otherwise intraline changes will not be
@@ -151,6 +200,11 @@
 
     "vcs_support": true,
 
+    //Defines the order in which version control systems should be discovered for VCS-related commands.
+    //This is helpful when your project is versioned under multiple VCS setup. Set your primary on the
+    //first position so that it will be always used no matter if another one is found.
+    "vcs_discovery_order": ["git", "hg", "svn"],
+
 
     //GIT SUPPORT (applicable when vcs_support = true)
 
@@ -165,6 +219,12 @@
     //Additional arguments for 'git show' command
     "git_show_args": "",
 
+    //Global arguments added for all other `git` commands
+    "git_global_args": "-c color.ui=false",
+
+    //Whether to automatically remove *.orig files generated by Git after completed merge
+    "git_remove_orig_files_after_merge": false,
+
 
     //SVN SUPPORT (applicable when vcs_support = true)
 
@@ -177,6 +237,9 @@
     //Additional arguments for 'svn cat' command
     "svn_cat_args": "",
 
+    //Global arguments added for all other `svn` commands
+    "svn_global_args": "",
+
 
     //MERCURIAL SUPPORT (applicable when vcs_support = true)
 
@@ -188,6 +251,35 @@
 
     //Additional arguments for 'hg cat' command
     "hg_cat_args": "",
+
+    //Global arguments added for all other `hg` commands
+    "hg_global_args": "",
+
+
+    //DIRECTORIES COMPARISON SETTINGS
+
+    //List of directories' names which should be ignored while doing comparison.
+    //They will be also ignored while copying. Names are case-sensitive.
+    "dir_compare_ignore_dirs": ["RCS", "CVS", "tags", ".git", ".svn", ".hg"],
+
+    //List of files' names which should be ignored while doing comparison.
+    //They will be also ignored while copying. You can specify wildcards here, i.e. *.tmp
+    //Names are case-sensitive.
+    "dir_compare_ignore_files": [".DS_Store", "Thumbs.db"],
+
+    //Normally Sublimerge will copy all changed or added files from source to target directory.
+    //When this setting is true, it will also delete all files that exists in target, but not in source.
+    //Use with caution.
+    "dir_merge_remove_unmatched": false,
+
+    //When set to true, you will be able to navigate through all items in directory.
+    //When set to false, you will navigate only through changed items.
+    "dir_compare_navigate_all": true,
+
+    //Date format to be used to display file/dir modification date and time. More information about
+    //date formatting: http://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior
+    "dir_compare_date_format": "%d/%m/%Y %H:%M:%S",
+
 
     //SYNTAX SPECIFIC SETTINGS ////////////////////////////////////////////////////////////////////////
     "syntax_specific": {

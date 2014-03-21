@@ -43,7 +43,7 @@
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
-	"default_line_ending": "system",
+	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": true,
@@ -92,7 +92,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": false,
