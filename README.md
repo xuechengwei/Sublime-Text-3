@@ -8,37 +8,53 @@ My favorite sublime text 3 settings
 - Alignment
 - AngularJS
 - ApacheConf.tmLanguage
+- AutoFileName
+- Autoprefixer
+- Bootstrap 3 Snippets
 - BracketHighlighter
 - BufferScroll
+- Can I Use
 - Case Conversion
 - ChangeQuotes
 - ColorPicker
 - CSScomb
+- CSSTidy
 - CursorRuler
+- DashDoc
 - DocBlockr
 - Emmet
 - File History
+- FileHeader
+- FindKeyConflicts
 - GitGutter
-- Html compressor
+- Goto-CSS-Declaration
 - HTML Compressor
+- Html compressor
 - HTML-CSS-JS Prettify
 - INI
+- InsertDate
 - jQuery
 - JsFormat
+- JSHint
 - JSHint Gutter
 - LESS
+- LiveReload
 - LiveStyle
+- PackageResourceViewer
 - PlainTasks
 - Pretty JSON
 - Sass
 - SideBarEnhancements
+- SublimeCodeIntel
+- SublimeLinter
 - Sublimerge Pro
 - Tag
 - Terminal
 - Theme - Nil
 - Theme - Soda
+- Toggle Css Format
 - TrailingSpaces
-- YUI Compressor
+- YUI Compresso
 
 ## Usage
 >Install Sublime text 3, open it  
