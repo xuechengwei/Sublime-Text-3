@@ -68,5 +68,5 @@
 	        }
 	    }
 	},
-	{ "keys": ["ctrl+d"], "command": "goto_definition" },
+	{ "keys": ["ctrl+d"], "command": "goto_definition" }
 ]

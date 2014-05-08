@@ -100,8 +100,6 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
-		"SublimeCodeIntel",
 		"Goto-CSS-Declaration"
 	],
 	"indent_guide_options":
