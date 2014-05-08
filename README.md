@@ -7,6 +7,7 @@ My favorite sublime text 3 settings
 - AdvancedNewFile
 - Alignment
 - AngularJS
+- AngularJS Snippets
 - ApacheConf.tmLanguage
 - AutoFileName
 - Autoprefixer
@@ -22,6 +23,7 @@ My favorite sublime text 3 settings
 - CursorRuler
 - DashDoc
 - DocBlockr
+- EditorConfig
 - Emmet
 - File History
 - FileHeader
@@ -34,18 +36,22 @@ My favorite sublime text 3 settings
 - INI
 - InsertDate
 - jQuery
+- jQuery Mobile Snippets
 - JsFormat
 - JSHint
 - JSHint Gutter
 - LESS
 - LiveReload
 - LiveStyle
+- Nodejs
+- Open URL
 - PackageResourceViewer
 - PlainTasks
 - Pretty JSON
 - Sass
 - SideBarEnhancements
 - SublimeCodeIntel
+- SublimeGit
 - SublimeLinter
 - Sublimerge Pro
 - Tag
@@ -54,7 +60,8 @@ My favorite sublime text 3 settings
 - Theme - Soda
 - Toggle Css Format
 - TrailingSpaces
-- YUI Compresso
+- Underscorejs snippets
+- YUI Compressor
 
 ## Usage
 >Install Sublime text 3, open it  
