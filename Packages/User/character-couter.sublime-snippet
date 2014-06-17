@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${0:一二三四五六七八九十}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>num</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.plain</scope>
+</snippet>

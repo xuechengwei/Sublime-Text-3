@@ -931,15 +931,12 @@ class SublimelinterPackageControlCommand(sublime_plugin.WindowCommand):
         """
         Return True if path is an eligible directory.
 
-        A directory is eligible if it is a direct child of Packages,
-        has a messages subdirectory, and has messages.json.
+        A directory is eligible if it has a messages subdirectory
+        and has messages.json.
 
         """
-        packages_path = sublime.packages_path()
-
         return (
             os.path.isdir(path) and
-            os.path.dirname(path) == packages_path and
             os.path.isdir(os.path.join(path, 'messages')) and
             os.path.isfile(os.path.join(path, 'messages.json'))
         )
@@ -1090,6 +1087,17 @@ class SublimelinterNewPackageControlMessageCommand(SublimelinterPackageControlCo
         wrapper = TextWrapper(initial_indent='- ', subsequent_indent='  ')
         messages = list(map(lambda msg: '\n'.join(wrapper.wrap(msg)), messages))
         return '\n\n'.join(messages) + '\n'
+
+
+class SublimelinterClearCachesCommand(sublime_plugin.WindowCommand):
+
+    """A command that clears all of SublimeLinter's internal caches."""
+
+    def run(self):
+        """Run the command."""
+        util.clear_path_caches()
+        util.get_rc_settings.cache_clear()
+        linter.Linter.clear_settings_caches()
 
 
 class SublimelinterReportCommand(sublime_plugin.WindowCommand):

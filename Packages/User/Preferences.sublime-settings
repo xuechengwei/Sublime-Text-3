@@ -44,7 +44,7 @@
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
-	"detect_indentation": true,
+	"detect_indentation": false,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": true,
 	"draw_centered": false,
@@ -100,7 +100,10 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Goto-CSS-Declaration"
+		"Nodejs",
+		"Goto-CSS-Declaration",
+		"AngularJS",
+		"AngularJS Snippets"
 	],
 	"indent_guide_options":
 	[

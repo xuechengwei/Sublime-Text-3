@@ -1,0 +1,46 @@
+{
+	"cmd": [
+		"java",
+		"-jar", "${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar",
+		"--type", "html",
+		// "--remove-quotes",
+		"--remove-intertag-spaces",
+		"--compress-js",
+		"--compress-css",
+		"-o", "compressed/${file_base_name}.${file_extension}",
+		"$file"
+	],
+    "windows": {
+        "cmd": [
+			"java",
+			"-jar", "${packages}\\HTML Compressor\\bin\\htmlcompressor-1.5.3.jar",
+			"--type", "html",
+			// "--remove-quotes",
+			"--remove-intertag-spaces",
+			"--compress-js",
+			"--compress-css",
+			"-o", "compressed/${file_base_name}.${file_extension}",
+			"$file"
+		]
+    },
+    "osx": {
+        "cmd": [
+			"java",
+			"-jar", "${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar",
+			"--type", "html",
+			// "--remove-quotes",
+			"--remove-intertag-spaces",
+			"--compress-js",
+			"--compress-css",
+			"-o", "compressed/${file_base_name}.${file_extension}",
+			"$file"
+		]
+    },
+    "linux": {
+        "cmd": [
+        	"java -jar '${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar' --remove-intertag-spaces --compress-js --compress-css $file -o compressed/${file_base_name}.${file_extension}"	
+		],
+		"shell": true
+    },
+	"selector": "text.html"
+}

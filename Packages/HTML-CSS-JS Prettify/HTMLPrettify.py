@@ -18,8 +18,7 @@ OUTPUT_VALID = b"*** HTMLPrettify output ***"
 
 class HtmlprettifyCommand(sublime_plugin.TextCommand):
   def run(self, edit):
-    previous_selection = [(region.a, region.b) for region in self.view.sel()]
-    previous_position = self.view.viewport_position()
+    settings = sublime.load_settings(SETTINGS_FILE)
 
     if PLUGIN_FOLDER.find(u".sublime-package") != -1:
       # Can't use this plugin if installed via the Package Manager in Sublime
@@ -34,19 +33,28 @@ following the instructions at:\n"""
       webbrowser.open(url)
       return
 
+    # Save the current viewport position to scroll to it after formatting.
+    previousSelection = [(region.a, region.b) for region in self.view.sel()]
+    previousPosition = self.view.viewport_position()
+
     # Get the current text in the buffer.
-    bufferText = self.view.substr(sublime.Region(0, self.view.size()))
+    textSelection = [a for a in self.view.sel()][0]
+    formattingSelection = settings.get("format_selection_only") and not textSelection.empty()
+    if formattingSelection:
+      bufferText = self.view.substr(textSelection)
+    else:
+      bufferText = self.view.substr(sublime.Region(0, self.view.size()))
+
     # ...and save it in a temporary file. This allows for scratch buffers
     # and dirty files to be beautified as well.
     namedTempFile = ".__temp__"
     tempPath = PLUGIN_FOLDER + "/" + namedTempFile
     print("Saving buffer to: " + tempPath)
-    f = codecs.open(tempPath, mode='w', encoding='utf-8')
+    f = codecs.open(tempPath, mode='w', encoding="utf-8")
     f.write(bufferText)
     f.close()
 
     # Simply using `node` without specifying a path sometimes doesn't work :(
-    settings = sublime.load_settings(SETTINGS_FILE)
     if exists_in_path("nodejs"):
       node = "nodejs"
     elif exists_in_path("node"):
@@ -89,28 +97,35 @@ following the instructions at:\n"""
     self.view.erase_regions("jshint_errors")
 
     if len(output) > 0:
-      region = sublime.Region(0, self.view.size())
-      text = output.decode("utf-8")
+      prettyText = output.decode("utf-8")
+      ensureNewline = self.view.settings().get("ensure_newline_at_eof_on_save")
 
-      if self.view.settings().get("ensure_newline_at_eof_on_save") and not text.endswith("\n"):
-        text += "\n"
+      # Ensure a newline is at the end of the file if preferred.
+      if ensureNewline and not formattingSelection and not prettyText.endswith("\n"):
+        prettyText += "\n"
 
-      if text != bufferText:
-        self.view.replace(edit, region, text)
+      # Replace the text only if it's different.
+      if prettyText != bufferText:
+        if formattingSelection:
+          self.view.replace(edit, textSelection, prettyText)
+        else:
+          self.view.replace(edit, sublime.Region(0, self.view.size()), prettyText)
 
     self.view.set_viewport_position((0, 0,), False)
-    self.view.set_viewport_position(previous_position, False)
-
+    self.view.set_viewport_position(previousPosition, False)
     self.view.sel().clear()
-    for a, b in previous_selection:
-     self.view.sel().add(sublime.Region(a, b))
+
+    # Restore the previous selection if formatting wasn't performed only for it.
+    if not formattingSelection:
+      for a, b in previousSelection:
+        self.view.sel().add(sublime.Region(a, b))
 
 class PreSaveFormatListner(sublime_plugin.EventListener):
   def on_pre_save(self, view):
     settings = sublime.load_settings(SETTINGS_FILE)
-    view_settings = view.settings()
-    should_format = view_settings.get('prettify_format_on_save', settings.get('format_on_save'))
-    if should_format == True:
+    viewSettings = view.settings()
+    shouldFormat = viewSettings.get("prettify_format_on_save", settings.get("format_on_save"))
+    if shouldFormat == True:
       view.run_command("htmlprettify")
 
 class HtmlprettifySetPrettifyPrefsCommand(sublime_plugin.TextCommand):

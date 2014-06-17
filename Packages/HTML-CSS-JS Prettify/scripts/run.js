@@ -90,28 +90,45 @@
     setOptions(jsbeautifyrcPath, options);
   }
 
+  var DEFAULT_TYPES = {
+    "html": ["htm", "html", "xhtml", "shtml", "xml"],
+    "css": ["css", "scss", "sass", "less"],
+    "js": ["js", "json", "jshintrc", "jsbeautifyrc"]
+  };
+
+  // Checks if a file type is allowed by regexing the file name and expecting a
+  // certain extension loaded from the settings file.
+  function isTypeAllowed(type, path, data) {
+    var allowedFileExtensions = options[type]["allowed_file_extensions"] || DEFAULT_TYPES[type];
+    for (var i = 0, len = allowedFileExtensions.length; i < len; i++) {
+      if (path.match(new RegExp("\\." + allowedFileExtensions[i] + "$"))) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   function isHTML(path, data) {
-    return path.match(/\.html?$/) ||
-      path.match(/\.xhtml?$/) ||
-      path.match(/\.xml$/) ||
-      path.match(/\.html\.erb$/) ||
-      (path == "?" && data.match(/^\s*</)); // First non-whitespace character is &lt;
+    // If file unsaved, check if first non-whitespace character is &lt;
+    if (path == "?") {
+      return data.match(/^\s*</);
+    }
+    return isTypeAllowed("html", path, data);
   }
-
   function isCSS(path, data) {
-    return path.match(/\.css$/) ||
-      path.match(/\.sass$/) ||
-      path.match(/\.scss$/) ||
-      path.match(/\.less$/);
+    // If file unsaved, there's no good way to determine whether or not it's
+    // CSS based on the file contents.
+    if (path == "?") {
+      return false;
+    }
+    return isTypeAllowed("css", path, data);
   }
-
   function isJS(path, data) {
-    return path.match(/\.jsm?$/) ||
-      path.match(/\.json$/) ||
-      path.match(/\.jshintrc$/) ||
-      path.match(/\.jsbeautifyrc$/) ||
-      path.match(/\.sublime-/) ||
-      (path == "?" && !data.match(/^\s*</)); // First non-whitespace character is not &lt;
+    // If file unsaved, check if first non-whitespace character is NOT &lt;
+    if (path == "?") {
+      return !data.match(/^\s*</);
+    }
+    return isTypeAllowed("js", path, data);
   }
 
   // Read the source file and, when complete, beautify the code.
