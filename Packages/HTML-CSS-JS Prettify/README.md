@@ -56,11 +56,6 @@ If you get an error `sh: node: command not found` or similar, you don't have `no
 * `Ctrl+Shift+P` or `Cmd+Shift+P` in Linux/Windows/OS X
 * type `htmlprettify`, select `Set node Path`
 
-This means from:
-`"node_path": "/usr/local/bin/node"`
-change to
-`"node_path": "/your/absolute/path/to/node"`
-
 Simply using `node` without specifying a path sometimes doesn't work :(
 
 For example, on Linux the path could be in `/home/<user>/.nvm/<node version>/bin/node`.
@@ -80,7 +75,7 @@ To beautify your code when saving the document, set the `format_on_save` setting
 To stop beautifying only the selected text, set the `format_selection_only` setting to `false` in `HTMLPrettify.sublime-settings`.
 
 ## Using your own .jsbeautifyrc options
-The plugin looks for a `.jsbeautifyrc` file in the same directory as the source file you're prettifying (or one directory above if it doesn't exist, or in your home folder if everything else fails) and uses those options along the default ones. [Here](https://github.com/einars/js-beautify/blob/master/js/config/defaults.json)'s an example of how it can look like.
+The plugin looks for a `.jsbeautifyrc` file in the same directory as the source file you're prettifying (or any directory above if it doesn't exist, or in your home folder if everything else fails) and uses those options along the default ones. [Here](https://github.com/einars/js-beautify/blob/master/js/config/defaults.json)'s an example of how it can look like.
 
 These are the default options used by this plugin:
 ```javascript
@@ -88,20 +83,25 @@ These are the default options used by this plugin:
   // Details: https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options
   // Documentation: https://github.com/einars/js-beautify/
   "html": {
-    "allowed_file_extensions": ["htm", "html", "xhtml", "xml"],
+    "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],
     "brace_style": "collapse", // "expand", "end-expand", "expand-strict"
     "indent_char": " ",
+    "indent_handlebars": false, // e.g. {{#foo}}, {{/foo}}
+    "indent_inner_html": false,
     "indent_scripts": "keep", // "separate", "normal"
     "indent_size": 4,
     "max_preserve_newlines": 10,
     "preserve_newlines": true,
-    "unformatted": ["a", "sub", "sup", "b", "i", "u"],
+    "unformatted": ["a", "sub", "sup", "b", "i", "u", "pre"],
     "wrap_line_length": 0
   },
   "css": {
     "allowed_file_extensions": ["css", "scss", "sass", "less"],
+    "end_with_newline": false,
     "indent_char": " ",
-    "indent_size": 4
+    "indent_size": 4,
+    "selector_separator": " ",
+    "selector_separator_newline": false
   },
   "js": {
     "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc"],

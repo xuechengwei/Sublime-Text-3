@@ -2,12 +2,13 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"Alignment",
+		"AlignTab",
 		"AngularJS",
 		"AngularJS Snippets",
 		"ApacheConf.tmLanguage",
 		"AutoFileName",
 		"Autoprefixer",
+		"Backbone.js",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"BufferScroll",
@@ -38,6 +39,7 @@
 		"LESS",
 		"LiveReload",
 		"LiveStyle",
+		"Nettuts+ Fetch",
 		"Nodejs",
 		"Open URL",
 		"PackageResourceViewer",
@@ -56,6 +58,7 @@
 		"Toggle Css Format",
 		"TrailingSpaces",
 		"Underscorejs snippets",
+		"Vagrant",
 		"YUI Compressor"
 	]
 }

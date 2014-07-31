@@ -18,6 +18,8 @@ Install `Autoprefixer` with [Package Control](https://sublime.wbond.net) and res
 **You need to have [Node.js](http://nodejs.org) installed.**  
 Make sure it's in your $PATH by running `node -v` in your command-line.
 
+See the Autoprefixer version in use [here](https://github.com/sindresorhus/sublime-autoprefixer/blob/master/node_modules/autoprefixer/package.json#L3).
+
 
 ## Getting started
 
@@ -28,25 +30,9 @@ In a CSS file, open the Command Palette *(Cmd+Shift+P)* and choose `Autoprefix C
 
 *(Preferences > Package Settings > Autoprefixer > Settings - User)*
 
-You can specify which browsers you need to support using an array of rules:
+You can specify which browsers you need to support using an array of rules.
 
-- `last n versions` is last versions for each browser. Like “last 2 versions” [strategy](http://support.google.com/a/bin/answer.py?answer=33864) in Google.
-- `> n%` is browser versions, selected by global usage statistics.
-- `ff > 20` and `ff >= 20` is Firefox versions newer, that 20.
-- `none` don’t set any browsers to clean CSS from any vendor prefixes.
-- You can also set browsers directly.
-
-
-#### Browser names
-
-- `chrome` for Google Chrome.
-- `ff` for Mozilla Firefox.
-- `safari` for desktop Safari.
-- `opera` for Opera.
-- `ie` for Internet Explorer.
-- `ios` for iOS Safari.
-- `android` for old Android stock browser.
-- `bb` for Blackberry browser.
+See the [supported browser names](https://github.com/ai/autoprefixer#browsers).
 
 
 #### Default
