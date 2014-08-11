@@ -1,5 +1,8 @@
 {
     "disabled_keymap_actions": "expand_abbreviation",
+    "preferences": {
+        "sass.propertyEnd": ";"
+    },
     "snippets": {
         "variables": {
             "lang": "en",
