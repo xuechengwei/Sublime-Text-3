@@ -265,11 +265,35 @@ There are two kinds of arguments: **options** and kinds of languages variables s
 
                 Can't be set custom.
 
+            - file_path
+
+                The absolute path of the current file.
+
+                FileHeader will update it automatically when you change it.
+
+                Can't be set custom.
+
             - file_name
 
-                The name of current file.
+                The name of current file with extension.
 
-                FileHeader will update it automatically when you open it.
+                FileHeader will update it automatically when you change it.
+
+                Can't be set custom.
+
+            - file_name_without_extension
+
+                The name of current file without extension.
+
+                FileHeader will update it automatically when you change it.
+
+                Can't be set custom.
+
+            - project_name
+
+                The project name.
+
+                Note: `project_name` only works in ST3.
 
                 Can't be set custom.
             */

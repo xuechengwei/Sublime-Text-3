@@ -85,6 +85,11 @@
     //noisy highlights within the line.
     "intraline_combine_threshold": 3,
 
+    //Set this to `true` if you want intraline changes to be found using full-text search instead of
+    //simple comparison of adjacent lines. This may be useful when lines are moved. For optimal results,
+    //please remember about `intraline_changes_threshold` setting.
+    "intraline_analysis_full_text": false,
+
     //Produces more difference blocks in such a way that all grayed (missing) lines blocks are
     //separated from changed blocks.
     //This gives you more possible ways to merge changes, but requires you to be more careful.
@@ -182,6 +187,10 @@
 
     //fill color for selected difference
     "diff_block_selected": "selection",
+
+    //defines how to draw the selected blocks. When set to false, selected blocks are drawn outlined
+    //instead of filled. Applicable only when `diff_block_draw_outlined` is `true`.
+    "diff_block_selected_draw_filled": true,
 
     //fill color for missing lines block
     "diff_block_missing": "comment",

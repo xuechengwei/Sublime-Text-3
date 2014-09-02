@@ -100,12 +100,13 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"AngularJS Snippets",
+		"Nodejs",
 		"JSHint Gutter",
+		"Goto-CSS-Declaration",
 		"jQuery",
 		"AngularJS",
-		"Nodejs",
-		"Goto-CSS-Declaration"
+		"AngularJS Snippets",
+		"FileHeader"
 	],
 	"indent_guide_options":
 	[

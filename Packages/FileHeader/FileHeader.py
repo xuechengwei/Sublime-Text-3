@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 # @Author: lime
 # @Date:   2013-10-28 13:39:48
-# @Last Modified by:   lime
-# @Last Modified time: 2014-03-05 10:16:24
+# @Last Modified by:   Lime
+# @Last Modified time: 2014-08-11 19:45:15
+
 
 import os
 import sys
@@ -73,7 +74,7 @@ def plugin_loaded():
                 shutil.rmtree(PLUGIN_PATH)
             except:
                 pass
-        
+
         if not os.path.exists(PLUGIN_PATH):
             os.mkdir(PLUGIN_PATH)
 
@@ -105,17 +106,18 @@ def get_template_part(syntax_type, part):
     tmpl_file = os.path.join(path, tmpl_name)
 
     custom_template_path = Settings().get('custom_template_%s_path' % part)
+    print(custom_template_path)
     if custom_template_path:
         _ = os.path.join(custom_template_path, tmpl_name)
         if os.path.exists(_) and os.path.isfile(_):
             tmpl_file = _
 
+    print(tmpl_file)
     try:
         template_file = open(tmpl_file, 'r')
         contents = template_file.read()
         template_file.close()
     except Exception as e:
-        sublime.error_message(str(e))
         contents = ''
     return contents
 
@@ -129,10 +131,15 @@ def get_strftime():
     '''Get `time_format` setting'''
 
     _ = ['%Y-%m-%d %H:%M:%S', '%Y-%m-%d', '%H:%M:%S']
-    try:
-        format = _[Settings().get('time_format')]
-    except IndexError:
-        format = _[0]
+
+    format = Settings().get('custom_time_format')
+
+    if not format:
+        try:
+            format = _[Settings().get('time_format')]
+        except IndexError:
+            format = _[0]
+
     return format
 
 
@@ -147,6 +154,33 @@ def get_user():
             user = output
 
     return user
+
+
+def get_project_name():
+    '''Get project name'''
+
+    project_data = sublime.active_window().project_data()
+    project = os.path.basename(project_data['folders'][0]['path']) if project_data else None
+
+    return project
+
+
+def get_file_path(path):
+    '''Get absolute path of the file'''
+
+    return 'undefined' if path is None else path
+
+
+def get_file_name(path):
+    '''Get name of the file'''
+
+    return 'undefined' if path is None else os.path.basename(path)
+
+
+def get_file_name_without_extension(file_name):
+    '''Get name of the file without extension'''
+
+    return '.'.join(file_name.split('.')[:-1]) or file_name
 
 
 def get_time(path):
@@ -190,21 +224,26 @@ def get_args(syntax_type, options={}):
 
         return c_time, m_time
 
-    def get_file_name():
-        path = options.get('path', None)
-        return 'undefined' if path is None else os.path.basename(path)
-
     args = Settings().get('Default')
     args.update(Settings().get(syntax_type, {}))
 
     format = get_strftime()
     c_time, m_time = get_st3_time() if IS_ST3 else get_st2_time()
-    
+
+    file_path = get_file_path(options.get('path', None))
+    file_name = get_file_name(options.get('path', None))
+    file_name_without_extension = get_file_name_without_extension(file_name)
+
     args.update({
         'create_time': c_time.strftime(format),
         'last_modified_time': m_time.strftime(format),
-        'file_name': get_file_name()
+        'file_name': file_name,
+        'file_name_without_extension': file_name_without_extension,
+        'file_path' : file_path
     })
+
+    if IS_ST3:
+        args.update({'project_name': get_project_name()})
 
     user = get_user()
     if 'author' not in args:
@@ -226,15 +265,14 @@ def render_template(syntax_type, part=None, options={}):
             template = Template(get_template(syntax_type))
 
         render_string = template.render(get_args(syntax_type, options))
-    except Exception as e:
-        sublime.error_message(str(e))
+    except:
         render_string = ''
     return render_string
 
 
 def get_syntax_type(name):
     '''Judge `syntax_type` according to to `name`'''
-    
+
     syntax_type = Settings().get('syntax_when_not_match')
     file_suffix_mapping = Settings().get('file_suffix_mapping')
 
@@ -289,18 +327,23 @@ class FileHeaderNewFileCommand(sublime_plugin.WindowCommand):
             sublime.error_message('File exists!')
             return
 
-        header = render_template(syntax_type)
+        header = render_template(syntax_type, options={'path': path})
 
         try:
             with open(path, 'w+') as f:
                 f.write(header)
-                f.close()
+
         except Exception as e:
             sublime.error_message(str(e))
             return
 
         new_file = Window().open_file(path)
-        block(new_file, new_file.set_syntax_file, get_syntax_file(syntax_type))
+
+        try:
+            block(new_file, new_file.set_syntax_file, get_syntax_file(syntax_type))
+        except:
+            pass
+
         block(new_file, new_file.show, 0)
 
     def new_view(self, syntax_type, name):
@@ -308,7 +351,11 @@ class FileHeaderNewFileCommand(sublime_plugin.WindowCommand):
         new_file = Window().new_file()
         new_file.set_name(name)
         new_file.run_command('insert', {'characters': header})
-        new_file.set_syntax_file(get_syntax_file(syntax_type))
+
+        try:
+            new_file.set_syntax_file(get_syntax_file(syntax_type))
+        except:
+            pass
 
     def get_path(self, paths):
         path = None
@@ -413,7 +460,7 @@ class FileHeaderAddHeaderCommand(sublime_plugin.WindowCommand):
         '''Whether can add header to path'''
 
         def can_add_to_dir(path):
-            return enable_add_to_hidden_dir or (not enable_add_to_hidden_dir 
+            return enable_add_to_hidden_dir or (not enable_add_to_hidden_dir
                                                 and not self.is_hidden(path))
 
         if not os.path.exists(path):
@@ -505,11 +552,19 @@ class FileHeaderReplaceCommand(sublime_plugin.TextCommand):
         self.view.replace(edit, region, strings)
 
 
+LAST_MODIFIED_BY = 'LAST_MODIFIED_BY'
+LAST_MODIFIED_TIME = 'LAST_MODIFIED_TIME'
+FILE_NAME = 'FILE_NAME'
+FILE_NAME_WITHOUT_EXTENSION = 'FILE_NAME_WITHOUT_EXTENSION'
+FILE_PATH = 'FILE_PATH'
+
 class FileHeaderListener(sublime_plugin.EventListener):
 
     LAST_MODIFIED_BY_REGEX = re.compile('\{\{\s*last_modified_by\s*\}\}')
     LAST_MODIFIED_TIME_REGEX = re.compile('\{\{\s*last_modified_time\s*\}\}')
     FILE_NAME_REGEX = re.compile('\{\{\s*file_name\s*\}\}')
+    FILE_NAME_WITHOUT_EXTENSION_REGEX = re.compile('\{\{\s*file_name_without_extension\s*\}\}')
+    FILE_PATH_REGEX = re.compile('\{\{\s*file_path\s*\}\}')
 
     new_view_id = []
 
@@ -522,12 +577,11 @@ class FileHeaderListener(sublime_plugin.EventListener):
         _ = ['\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}',
              '\d{4}-\d{2}-\d{2}', '\d{2}:\d{2}:\d{2}']
         return _[choice]
-    
+
     def update_automatically(self, view, what):
-        what = what.upper()
         syntax_type = get_syntax_type(view.file_name())
 
-        template = get_template_part(syntax_type, 'header')    
+        template = get_template_part(syntax_type, 'header')
         lines = template.split('\n')
 
         line_pattern = None
@@ -543,36 +597,48 @@ class FileHeaderListener(sublime_plugin.EventListener):
                     if line[i] != ' ':
                         space_start = i + 1
                         line_header = line[:space_start]
-                        break       
+                        break
 
                 line_header = re.escape(line_header)
-                if what == 'LAST_MODIFIED_BY' or what == 'FILE_NAME':
+                if what == LAST_MODIFIED_BY or what == FILE_NAME or \
+                        what == FILE_NAME_WITHOUT_EXTENSION or what == FILE_PATH:
                     line_pattern = '%s.*\n' % line_header
-                elif what == 'LAST_MODIFIED_TIME':
+
+                elif what == LAST_MODIFIED_TIME:
                     line_pattern = '%s\s*%s.*\n' % (line_header, self.time_pattern())
+
                 else:
                     raise KeyError()
+
                 break
 
         if line_pattern is not None:
             _ = view.find(line_pattern, 0)
             if(_ != sublime.Region(-1, -1) and _ is not None):
                 a = _.a + space_start
-                b = _.b - 1    
+                b = _.b - 1
 
-                if what == 'LAST_MODIFIED_BY':
+                file_name = get_file_name(view.file_name())
+                file_name_without_extension = get_file_name_without_extension(file_name)
+                file_path = get_file_path(view.file_name())
+
+                if what == LAST_MODIFIED_BY:
                     strings = get_args(syntax_type)['last_modified_by']
-                elif what == 'LAST_MODIFIED_TIME':                    
+                elif what == LAST_MODIFIED_TIME:
                     strings = datetime.now().strftime(get_strftime())
-                elif what == 'FILE_NAME':
-                    strings = 'undefined' if view.file_name() is None else os.path.basename(view.file_name())
+                elif what == FILE_NAME:
+                    strings = file_name
+                elif what == FILE_NAME_WITHOUT_EXTENSION:
+                    strings = file_name_without_extension
+                elif what == FILE_PATH:
+                    strings = file_path
 
                 spaces = (index - space_start) * ' '
                 strings = spaces + strings
 
                 region = sublime.Region(int(a), int(b))
                 if view.substr(region) != strings:
-                    view.run_command('file_header_replace', 
+                    view.run_command('file_header_replace',
                                      {'a': a, 'b': b, 'strings': strings})
 
     def insert_template(self, view, exists):
@@ -607,15 +673,17 @@ class FileHeaderListener(sublime_plugin.EventListener):
             del FileHeaderListener.new_view_id[index]
         else:
             if view.is_dirty():
-                self.update_automatically(view, 'last_modified_by')
-                self.update_automatically(view, 'last_modified_time')
+                self.update_automatically(view, LAST_MODIFIED_BY)
+                self.update_automatically(view, LAST_MODIFIED_TIME)
 
     def on_activated(self, view):
-        self.update_automatically(view, 'file_name')
+        block(view, self.update_automatically, view, FILE_NAME)
+        block(view, self.update_automatically, view, FILE_NAME_WITHOUT_EXTENSION)
+        block(view, self.update_automatically, view, FILE_PATH)
 
         settings = view.settings()
         c_time, _ = get_time(view.file_name())
         if c_time is not None and settings.get('c_time', None) is None:
             settings.set('c_time', pickle.dumps(c_time))
-            
+
         self.insert_template(view, True)
