@@ -16,4 +16,5 @@ Cache/*
 Index/*
 Backup/*
 Local/*
-Settings/BufferScroll.bin.gz
+Settings/
+Packages/Autoprefixer/node_modules/
