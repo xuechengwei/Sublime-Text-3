@@ -5,12 +5,13 @@ My favorite sublime text 3 settings
 
 ## Installed Packages:
 - AdvancedNewFile
-- Alignment
+- AlignTab
 - AngularJS
 - AngularJS Snippets
 - ApacheConf.tmLanguage
 - AutoFileName
 - Autoprefixer
+- Backbone.js
 - Bootstrap 3 Snippets
 - BracketHighlighter
 - BufferScroll
@@ -30,11 +31,10 @@ My favorite sublime text 3 settings
 - FindKeyConflicts
 - GitGutter
 - Goto-CSS-Declaration
-- HTML Compressor
-- Html compressor
 - HTML-CSS-JS Prettify
 - INI
 - InsertDate
+- Jasmine JS
 - jQuery
 - jQuery Mobile Snippets
 - JsFormat
@@ -43,17 +43,17 @@ My favorite sublime text 3 settings
 - LESS
 - LiveReload
 - LiveStyle
+- Nettuts+ Fetch
 - Nodejs
 - Open URL
 - PackageResourceViewer
 - PlainTasks
 - Pretty JSON
+- Quick File Open
 - Sass
 - SideBarEnhancements
 - SublimeCodeIntel
-- SublimeGit
 - SublimeLinter
-- Sublimerge Pro
 - Tag
 - Terminal
 - Theme - Nil
@@ -61,7 +61,8 @@ My favorite sublime text 3 settings
 - Toggle Css Format
 - TrailingSpaces
 - Underscorejs snippets
-- YUI Compressor
+- Vagrant
+- YUI Compresso
 
 ## Usage
 >Install Sublime text 3, open it  
