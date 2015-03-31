@@ -13,6 +13,7 @@
 
 import datetime
 from fnmatch import fnmatch
+from glob import glob
 import json
 import os
 import re
@@ -44,7 +45,7 @@ def error_command(method):
         vid = self.view.id()
 
         if vid in persist.errors and persist.errors[vid]:
-            method(self, self.view, persist.errors[vid], **kwargs)
+            method(self, self.view, persist.errors[vid], persist.highlights[vid], **kwargs)
         else:
             sublime.message_dialog('No lint errors.')
 
@@ -141,16 +142,16 @@ class GotoErrorCommand(sublime_plugin.TextCommand):
         if direction == 'next':
             for region in regions:
                 if (
-                    (point == region.begin() and empty_selection and not region.empty())
-                    or (point < region.begin())
+                    (point == region.begin() and empty_selection and not region.empty()) or
+                    (point < region.begin())
                 ):
                     region_to_select = region
                     break
         else:
             for region in reversed(regions):
                 if (
-                    (point == region.end() and empty_selection and not region.empty())
-                    or (point > region.end())
+                    (point == region.end() and empty_selection and not region.empty()) or
+                    (point > region.end())
                 ):
                     region_to_select = region
                     break
@@ -212,7 +213,7 @@ class SublimelinterGotoErrorCommand(GotoErrorCommand):
     """A command that selects the next/previous error."""
 
     @error_command
-    def run(self, view, errors, **kwargs):
+    def run(self, view, errors, highlights, **kwargs):
         """Run the command."""
         self.goto_error(view, errors, **kwargs)
 
@@ -222,13 +223,18 @@ class SublimelinterShowAllErrors(sublime_plugin.TextCommand):
     """A command that shows a quick panel with all of the errors in the current view."""
 
     @error_command
-    def run(self, view, errors):
+    def run(self, view, errors, highlights):
         """Run the command."""
         self.errors = errors
+        self.highlights = highlights
         self.points = []
         options = []
 
         for lineno, line_errors in sorted(errors.items()):
+            if persist.settings.get("passive_warnings", False):
+                if self.highlights.line_type(lineno) != highlight.ERROR:
+                    continue
+
             line = view.substr(view.full_line(view.text_point(lineno, 0))).rstrip('\n\r')
 
             # Strip whitespace from the front of the line, but keep track of how much was
@@ -832,7 +838,7 @@ class SublimelinterCreateLinterPluginCommand(sublime_plugin.WindowCommand):
             '__class__': self.camel_case(name),
             '__superclass__': info.get('superclass', 'Linter'),
             '__cmd__': '{}@python'.format(name) if language == 'python' else name,
-            '__extra_attributes__': extra_attributes,
+            '# __extra_attributes__': extra_attributes,
             '__platform__': platform,
             '__install__': info['installer'].format(name),
             '__extra_install_steps__': extra_steps
@@ -1087,6 +1093,25 @@ class SublimelinterNewPackageControlMessageCommand(SublimelinterPackageControlCo
         wrapper = TextWrapper(initial_indent='- ', subsequent_indent='  ')
         messages = list(map(lambda msg: '\n'.join(wrapper.wrap(msg)), messages))
         return '\n\n'.join(messages) + '\n'
+
+
+class SublimelinterClearColorSchemeFolderCommand(sublime_plugin.WindowCommand):
+
+    """A command that clears all of SublimeLinter made color schemes."""
+
+    def run(self):
+        """Run the command."""
+        base_path = os.path.join(sublime.packages_path(), 'User', '*.tmTheme')
+        sublime_path = os.path.join(sublime.packages_path(), 'User', 'SublimeLinter', '*.tmTheme')
+        themes = glob(base_path) + glob(sublime_path)
+        prefs = sublime.load_settings('Preferences.sublime-settings')
+        scheme = prefs.get('color_scheme')
+
+        for theme in themes:
+            # Ensure it is a (SL) theme and it is not current current scheme
+            if re.search(r'\(SL\)', theme) and os.path.normpath(scheme) not in theme:
+                persist.debug('deleting {}'.format(os.path.split(theme)[1]))
+                os.remove(theme)
 
 
 class SublimelinterClearCachesCommand(sublime_plugin.WindowCommand):

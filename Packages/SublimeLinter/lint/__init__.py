@@ -1,4 +1,4 @@
-# [sublimelinter flake8-ignore:F401]
+# flake8: noqa
 #
 # lint.__init__
 # Part of SublimeLinter3, a code checking framework for Sublime Text 3
@@ -21,3 +21,4 @@ from . import (
 from .linter import Linter
 from .python_linter import PythonLinter
 from .ruby_linter import RubyLinter
+from .node_linter import NodeLinter

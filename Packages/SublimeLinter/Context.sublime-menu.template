@@ -36,6 +36,14 @@
                 "command": "sublimelinter_show_all_errors"
             },
             {
+                "caption": "Make Warnings Passive",
+                "command": "sublimelinter_toggle_setting", "args":
+                {
+                    "setting": "passive_warnings",
+                    "checked": true
+                }
+            },
+            {
                 "caption": "Show Errors on Save",
                 "command": "sublimelinter_toggle_setting", "args":
                 {
@@ -60,6 +68,10 @@
                     "setting": "debug",
                     "checked": true
                 }
+            },
+            {
+                "caption": "Clear Color Scheme Folder",
+                "command": "sublimelinter_clear_color_scheme_folder"
             },
             {
                 "caption": "Clear Caches",

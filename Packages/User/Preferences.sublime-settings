@@ -100,16 +100,13 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"SublimeCodeIntel",
-		"AngularJS Snippets",
-		"jQuery",
-		"Goto-CSS-Declaration",
-		"Vagrant",
 		"FileHeader",
 		"Nodejs",
+		"SublimeCodeIntel",
+		"AngularJS Snippets",
+		"Vagrant",
 		"AngularJS",
-		"jQuery Mobile Snippets",
-		"JSHint Gutter"
+		"jQuery Mobile Snippets"
 	],
 	"indent_guide_options":
 	[

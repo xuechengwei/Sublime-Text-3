@@ -90,12 +90,32 @@ function isTrue(value) {
 }
 
 function getUserHome() {
-  return process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+  return process.env.HOME || path.join(process.env.HOMEDRIVE, process.env.HOMEPATH) || process.env.USERPROFILE;
+}
+
+function mergeOptions(source, target) {
+  for (var entry in source) {
+    if (entry === "globals") {
+      if (!target[entry]) target[entry] = {};
+      mergeOptions(source[entry], target[entry]);
+    } else {
+      target[entry] = source[entry];
+    }
+  }
 }
 
 function parseJSON(file) {
   try {
-    return JSON.parse(minify(fs.readFileSync(file, "utf8")));
+    var options = JSON.parse(minify(fs.readFileSync(file, "utf8")));
+    if (!options.extends) { return options; }
+    // Get the options from base file.
+    var baseFile = options.extends;
+    file = path.resolve(path.dirname(file), baseFile);
+    var baseOptions = parseJSON(file);
+    // Overwrite base options with local options.
+    delete options.extends;
+    mergeOptions(options, baseOptions);
+    return baseOptions;
   } catch (e) {
     console.log("Could not parse JSON at: " + file);
     return {};

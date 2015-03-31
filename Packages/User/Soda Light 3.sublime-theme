@@ -7,6 +7,12 @@
 	     "class": "tab_control",
 	     "attributes": ["dirty"],
 	     "layer0.tint": [230, 240, 255]
-	 }
+	 },
+     {
+        "class": "sidebar_label",
+        "color": [0, 0, 0],
+        "font.bold": false,
+        "font.size": 14
+    }
 
 ]

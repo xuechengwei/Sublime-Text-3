@@ -1,6 +1,7 @@
 [
 	{"keys": ["ctrl+tab"], "command": "next_view"},
 	{"keys": ["ctrl+shift+tab"], "command": "prev_view"},
+    // 修改窗格大小
 	{
 		"keys": ["super+alt+left"],
 		"command": "set_layout",
@@ -21,6 +22,7 @@
 			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
 		}
 	},
+
 	// Select text between brackets
 	{
 	    "keys": ["ctrl+alt+super+s"],
@@ -67,5 +69,17 @@
 	        }
 	    }
 	},
-	{ "keys": ["ctrl+d"], "command": "goto_definition" }
+	{ "keys": ["ctrl+d"], "command": "goto_definition" },
+    // 覆盖css-goto-declaration默认的command + right or left
+    {
+        "keys": ["ctrl+]"], "command": "goto_css_declaration",
+        "args": {"goto": "next"}
+    },
+    {
+        "keys": ["ctrl+["],  "command": "goto_css_declaration",
+        "args": {"goto": "prev"}
+    },
+    // 恢复command + right or left的默认行为, 到行首或行尾
+    { "keys": ["super+left"], "command": "move_to", "args": {"to": "bol"} },
+    { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol"} }
 ]

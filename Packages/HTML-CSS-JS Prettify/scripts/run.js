@@ -61,13 +61,13 @@ fs.readFile(tempPath, "utf8", function(err, data) {
   console.log("*** HTMLPrettify output ***");
 
   if (isCSS(filePath, data)) {
-    console.log(css_beautify(data, options["css"]).replace(/\s+$/, ""));
+    console.log(css_beautify(data, options["css"]));
   }
   else if (isHTML(filePath, data)) {
-    console.log(html_beautify(data, options["html"]).replace(/\s+$/, ""));
+    console.log(html_beautify(data, options["html"]));
   }
   else if (isJS(filePath, data)) {
-    console.log(js_beautify(data, options["js"]).replace(/\s+$/, ""));
+    console.log(js_beautify(data, options["js"]));
   }
 });
 
@@ -78,7 +78,7 @@ function isTrue(value) {
 }
 
 function getUserHome() {
-  return process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+  return process.env.HOME || path.join(process.env.HOMEDRIVE, process.env.HOMEPATH) || process.env.USERPROFILE;
 }
 
 function parseJSON(file) {
