@@ -12,23 +12,27 @@ My favorite sublime text 3 settings
 - AutoFileName
 - Autoprefixer
 - Backbone.js
+- Block Cursor Everywhere
 - Bootstrap 3 Snippets
 - BracketHighlighter
 - BufferScroll
 - Can I Use
 - Case Conversion
 - ChangeQuotes
+- Color Highlighter
 - ColorPicker
 - CSScomb
 - CSSTidy
 - CursorRuler
 - DashDoc
 - DocBlockr
+- EasyMotion
 - EditorConfig
 - Emmet
 - File History
 - FileHeader
 - FindKeyConflicts
+- Git
 - GitGutter
 - Goto-CSS-Declaration
 - HTML-CSS-JS Prettify
@@ -46,11 +50,14 @@ My favorite sublime text 3 settings
 - Nettuts+ Fetch
 - Nodejs
 - Open URL
+- Package Control
 - PackageResourceViewer
 - PlainTasks
 - Pretty JSON
 - Quick File Open
 - Sass
+- SASS Snippets
+- SFTP
 - SideBarEnhancements
 - SublimeCodeIntel
 - SublimeLinter
@@ -62,11 +69,11 @@ My favorite sublime text 3 settings
 - TrailingSpaces
 - Underscorejs snippets
 - Vagrant
-- YUI Compresso
+- YUI Compressor
 
 ## Usage
->Install Sublime text 3, open it  
-Sublime Text -> Preferences ->Browse Packages...  
+>Install Sublime text 3, open it
+Sublime Text -> Preferences ->Browse Packages...
 Clone this to your opened folder and replace
 
 ## My Custom Shortcuts
