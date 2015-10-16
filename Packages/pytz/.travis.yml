@@ -1,0 +1,11 @@
+language: python
+
+python:
+  # ST2 and ST3
+  - "2.6"
+  - "3.3"
+
+before_script: cd all
+
+# exclude known-to-fail tests that still get picked up somehow
+script: nosetests -e no_test

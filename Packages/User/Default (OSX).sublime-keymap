@@ -1,6 +1,10 @@
 [
 	{"keys": ["ctrl+tab"], "command": "next_view"},
 	{"keys": ["ctrl+shift+tab"], "command": "prev_view"},
+    { "keys": ["super+shift+t"], "command": "reopen_last_file" },
+    { "keys": ["ctrl+t"], "command": "open_terminal" },
+    { "keys": ["super+t"], "command": "new_file" },
+    { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"},
     // 修改窗格大小
 	{
 		"keys": ["super+alt+left"],
@@ -81,5 +85,70 @@
     },
     // 恢复command + right or left的默认行为, 到行首或行尾
     { "keys": ["super+left"], "command": "move_to", "args": {"to": "bol"} },
-    { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol"} }
+    { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol"} },
+    { "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
+        [
+            {"key": "control", "operand": "sidebar_tree"}
+        ]
+    },
+    { "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+        [
+            {"key": "control", "operand": "sidebar_tree"}
+        ]
+    },
+    { "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+        [
+            {"key": "control", "operand": "sidebar_tree"}
+        ]
+    },
+    { "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+        [
+            {"key": "control", "operand": "sidebar_tree"}
+        ]
+    },
+    {
+        "keys": ["tab"],
+        "command": "expand_abbreviation_by_tab",
+
+        // put comma-separated syntax selectors for which
+        // you want to expandEmmet abbreviations into "operand" key
+        // instead of SCOPE_SELECTOR.
+        // Examples: source.js, text.html - source
+        "context": [
+            {
+                "operand": "source.js.jsx",
+                "operator": "equal",
+                "match_all": true,
+                "key": "selector"
+            },
+
+            // run only if there's no selected text
+            {
+                "match_all": true,
+                "key": "selection_empty"
+            },
+
+            // don't work if there are active tabstops
+            {
+                "operator": "equal",
+                "operand": false,
+                "match_all": true,
+                "key": "has_next_field"
+            },
+
+            // don't work if completion popup is visible and you
+            // want to insert completion with Tab. If you want to
+            // expand Emmet with Tab even if popup is visible --
+            // remove this section
+            {
+                "operand": false,
+                "operator": "equal",
+                "match_all": true,
+                "key": "auto_complete_visible"
+            }, {
+                "match_all": true,
+                "key": "is_abbreviation"
+            }
+        ]
+    }
 ]

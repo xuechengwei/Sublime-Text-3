@@ -1,18 +1,31 @@
 [
-	{
-	        "class": "minimap_control",
-	        "viewport_color": [255, 255, 255, 50]
-	 },
-	 {
-	     "class": "tab_control",
-	     "attributes": ["dirty"],
-	     "layer0.tint": [230, 240, 255]
-	 },
-     {
+    {
+        "class": "minimap_control",
+        "viewport_color": [
+            255,
+            255,
+            255,
+            50
+        ]
+    },
+    {
+        "class": "tab_control",
+        "attributes": [
+            "dirty"
+        ],
+        "layer0.tint": [
+            230,
+            240,
+            255
+        ]
+    },
+    {
         "class": "sidebar_label",
-        "color": [0, 0, 0],
-        "font.bold": false,
-        "font.size": 14
+        "color": [
+            62,62,62
+        ],
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "font.bold": true,
+        "settings": ["bold_folder_labels"]
     }
-
 ]

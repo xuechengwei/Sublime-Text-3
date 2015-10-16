@@ -36,10 +36,10 @@
 		"*.jar",
 		"*.zip"
 	],
-	"bold_folder_labels": false,
+	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -54,7 +54,7 @@
 	"enable_hexadecimal_encoding": true,
 	"enable_telemetry": "auto",
 	"ensure_newline_at_eof_on_save": false,
-	"fade_fold_buttons": true,
+	"fade_fold_buttons": false,
 	"fallback_encoding": "Western (Windows 1252)",
 	"file_exclude_patterns":
 	[
@@ -95,18 +95,18 @@
 	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
-	"highlight_line": false,
+	"highlight_line": true,
 	"highlight_modified_tabs": false,
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"AngularJS",
 		"FileHeader",
+		"jQuery Mobile Snippets",
 		"Nodejs",
 		"SublimeCodeIntel",
-		"AngularJS Snippets",
-		"Vagrant",
-		"AngularJS",
-		"jQuery Mobile Snippets"
+		"Sublimerge Pro",
+		"Vagrant"
 	],
 	"indent_guide_options":
 	[

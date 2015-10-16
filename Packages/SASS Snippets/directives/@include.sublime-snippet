@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+@include ${1:mixin}('${2:arg}') {
+    ${3:content}
+}
+    ]]></content>
+    <tabTrigger>include</tabTrigger>
+    <description>@include</description>
+    <scope>source.scss, source.sass</scope>
+</snippet>
