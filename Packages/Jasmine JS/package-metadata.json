@@ -1,1 +1,1 @@
-{"version": "4.1.0", "sublime_text": "*", "dependencies": [], "url": "https://github.com/NicoSantangelo/sublime-jasmine", "platforms": ["*"], "description": "Jasmine syntax, snippets and commands"}
+{"description": "Jasmine syntax, snippets and commands", "dependencies": [], "url": "https://github.com/NicoSantangelo/sublime-jasmine", "platforms": ["*"], "version": "4.1.1", "sublime_text": "*"}

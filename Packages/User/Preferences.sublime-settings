@@ -86,7 +86,8 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"node_modules"
 	],
 	"font_face": "monaco",
 	"font_options":
@@ -105,7 +106,6 @@
 		"jQuery Mobile Snippets",
 		"Nodejs",
 		"SublimeCodeIntel",
-		"Sublimerge Pro",
 		"Vagrant"
 	],
 	"indent_guide_options":
@@ -159,6 +159,6 @@
 	"use_tab_stops": true,
 	"vintage_start_in_command_mode": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "auto",
+	"word_wrap": true,
 	"wrap_width": 0
 }

@@ -2,7 +2,32 @@
 	"folders":
 	[
 		{
+			"path": "/Users/xue/Dropbox/TODOS"
+		},
+		{
+			"path": "/Users/xue/Downloads/rainbow-v1.5-origin"
+		},
+		{
+			"path": "/Users/xue/Downloads/NewsArticle_app_download_v5.0.2_af66915_source_from_JADX"
+		},
+		{
+			"path": "/Users/xue/Downloads/GuidedTour.playground"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ssad_fe"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"ad_fe"
+			],
 			"path": "/Users/xue/Documents/workspace/ssad"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/learn/angular"
+		},
+		{
+			"path": "/Users/xue/Desktop/video"
 		}
 	]
 }
