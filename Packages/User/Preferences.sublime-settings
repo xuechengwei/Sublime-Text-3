@@ -12,8 +12,8 @@
 	"auto_complete_triggers":
 	[
 		{
-			"characters": "<",
-			"selector": "text.html"
+			"characters": ".",
+			"selector": "source"
 		}
 	],
 	"auto_complete_with_fields": false,
@@ -22,21 +22,23 @@
 	"auto_match_enabled": true,
 	"binary_file_patterns":
 	[
-		"*.jpg",
-		"*.jpeg",
-		"*.png",
-		"*.gif",
-		"*.ttf",
-		"*.tga",
 		"*.dds",
-		"*.ico",
 		"*.eot",
-		"*.pdf",
-		"*.swf",
+		"*.gif",
+		"*.ico",
 		"*.jar",
-		"*.zip"
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"/Users/xue/Documents/workspace/sura/ab/dist/**"
 	],
 	"bold_folder_labels": true,
+	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
@@ -102,10 +104,12 @@
 	"ignored_packages":
 	[
 		"AngularJS",
+		"Block Cursor Everywhere",
+		"CursorRuler",
 		"FileHeader",
+		"Goto-CSS-Declaration",
 		"jQuery Mobile Snippets",
 		"Nodejs",
-		"SublimeCodeIntel",
 		"Vagrant"
 	],
 	"indent_guide_options":
@@ -118,7 +122,7 @@
 	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
-	"margin": 4,
+	"margin": 5,
 	"match_brackets": true,
 	"match_brackets_angle": false,
 	"match_brackets_braces": true,
@@ -133,6 +137,7 @@
 	"remember_open_files": true,
 	"rulers":
 	[
+		79,
 		80
 	],
 	"save_on_focus_lost": false,
@@ -158,6 +163,7 @@
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
 	"vintage_start_in_command_mode": true,
+	"wide_caret": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": true,
 	"wrap_width": 0

@@ -13,7 +13,7 @@ Works only with CSS and not preprocessors like Sass or LESS.
 
 ## Install
 
-Install `Autoprefixer` with [Package Control](https://sublime.wbond.net) and restart Sublime.
+Install `Autoprefixer` with [Package Control](https://packagecontrol.io) and restart Sublime.
 
 **You need to have [Node.js](http://nodejs.org) >=0.12.0 installed.**  
 Make sure it's in your $PATH by running `node -v` in your command-line.  
@@ -40,7 +40,8 @@ See the [supported browser names](https://github.com/ai/autoprefixer#browsers).
 
 ```json
 {
-	"browsers": ["last 2 versions"]
+	"browsers": ["last 2 versions"],
+	"prefixOnSave": false
 }
 ```
 

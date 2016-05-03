@@ -1,1 +1,1 @@
-{"platforms": ["*"], "sublime_text": "*", "description": "Sublime plugin to prefix your CSS", "url": "https://github.com/sindresorhus/sublime-autoprefixer", "dependencies": [], "version": "2015.11.16.15.15.59"}
+{"version": "2016.02.11.17.30.32", "dependencies": [], "platforms": ["*"], "url": "https://github.com/sindresorhus/sublime-autoprefixer", "sublime_text": "*", "description": "Sublime plugin to prefix your CSS"}

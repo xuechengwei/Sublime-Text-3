@@ -5,6 +5,9 @@
 			"path": "/Users/xue/Dropbox/TODOS"
 		},
 		{
+			"path": "/Users/xue/Dropbox/Android/FaceBook/src"
+		},
+		{
 			"path": "/Users/xue/Downloads/rainbow-v1.5-origin"
 		},
 		{
@@ -14,17 +17,49 @@
 			"path": "/Users/xue/Downloads/GuidedTour.playground"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/sura"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ssad_fe/creative_web"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/ssad_fe"
 		},
 		{
-			"folder_exclude_patterns":
-			[
-				"ad_fe"
-			],
 			"path": "/Users/xue/Documents/workspace/ssad"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/ss_thrift_gen"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ss_stats"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ss_data"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ss_conf"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ss_billing"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/site_fe/pgc_web/static/ueditor"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/site_fe/pgc_web/pagelet/write"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/site_fe"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/pyutil"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/learn/angular"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/audience"
 		},
 		{
 			"path": "/Users/xue/Desktop/video"

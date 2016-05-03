@@ -4,7 +4,15 @@
     { "keys": ["super+shift+t"], "command": "reopen_last_file" },
     { "keys": ["ctrl+t"], "command": "open_terminal" },
     { "keys": ["super+t"], "command": "new_file" },
-    { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"},
+    { "keys": ["super+alt+r"], "command": "reveal_in_side_bar"},
+    // ctrl+左键跳转到函数定义处
+    {
+        "button": "button1",
+        "count": 1,
+        "modifiers": ["ctrl"],
+        "press_command": "drag_select",
+        "command": "goto_definition"
+    },
     // 修改窗格大小
 	{
 		"keys": ["super+alt+left"],
@@ -73,16 +81,48 @@
 	        }
 	    }
 	},
-	{ "keys": ["ctrl+d"], "command": "goto_definition" },
+    { "keys": ["j", "j"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    {
+        "keys": ["g", "d"],
+        "command": "anaconda_goto",
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" },
+            { "key": "setting.command_mode", "operand": true },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    { "keys": ["ctrl+d"], "command": "goto_definition" },
+    { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
+    { "keys": ["ctrl+["], "command": "jump_back" },
+    { "keys": ["ctrl+]"], "command": "jump_forward" },
+    {
+        "keys": ["ctrl+;"],
+        "command": "ace_jump_char"
+    },
+    {
+        "keys": ["ctrl+'"],
+        "command": "ace_jump_line"
+    },
+    {
+        "keys": ["ctrl+shift+'"],
+        "command": "ace_jump_select"
+    },
     // 覆盖css-goto-declaration默认的command + right or left
-    {
-        "keys": ["ctrl+]"], "command": "goto_css_declaration",
-        "args": {"goto": "next"}
-    },
-    {
-        "keys": ["ctrl+["],  "command": "goto_css_declaration",
-        "args": {"goto": "prev"}
-    },
+    // {
+    //     "keys": ["ctrl+]"], "command": "goto_css_declaration",
+    //     "args": {"goto": "next"}
+    // },
+    // {
+    //     "keys": ["ctrl+["],  "command": "goto_css_declaration",
+    //     "args": {"goto": "prev"}
+    // },
     // 恢复command + right or left的默认行为, 到行首或行尾
     { "keys": ["super+left"], "command": "move_to", "args": {"to": "bol"} },
     { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol"} },

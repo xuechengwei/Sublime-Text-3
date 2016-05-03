@@ -532,7 +532,7 @@ class Linter(metaclass=LinterMeta):
         """
         def recursive_replace_value(expressions, value):
             if isinstance(value, dict):
-                value = recursive_replace(expressions, value)
+                value = recursive_replace(expressions, value, nested=True)
             elif isinstance(value, list):
                 value = [recursive_replace_value(expressions, item) for item in value]
             elif isinstance(value, str):
@@ -544,14 +544,15 @@ class Linter(metaclass=LinterMeta):
 
             return value
 
-        def recursive_replace(expressions, mutable_input):
+        def recursive_replace(expressions, mutable_input, nested=False):
             for key, value in mutable_input.items():
                 mutable_input[key] = recursive_replace_value(expressions, value)
+            if nested:
+                return mutable_input
 
         # Expressions are evaluated in list order.
         expressions = []
         window = self.view.window()
-
         if window:
             view = window.active_view()
 
@@ -1371,13 +1372,13 @@ class Linter(metaclass=LinterMeta):
         settings = self.get_view_settings()
         self.chdir = settings.get('chdir', None)
 
-        if not self.chdir or not os.path.isdir(self.chdir):
+        if self.chdir and os.path.isdir(self.chdir):
+            persist.debug('chdir has been set to: {0}'.format(self.chdir))
+        else:
             if self.filename:
                 self.chdir = os.path.dirname(self.filename)
             else:
                 self.chdir = os.path.realpath('.')
-
-            persist.debug('chdir not set or invalid, using %s' % self.chdir)
 
         with util.cd(self.chdir):
             output = self.run(cmd, self.code)

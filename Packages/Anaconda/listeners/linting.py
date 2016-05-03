@@ -53,16 +53,19 @@ class BackgroundLinter(sublime_plugin.EventListener):
         """
 
         constraints = ONLY_CODE | NOT_SCRATCH | LINTING_ENABLED
-        if (check_linting(view, constraints, code=self.lang.lower())
-                and check_linting_behaviour(view, ['always'])):
-            # update the last selected line number
-            self.last_selected_line = -1
-            ANACONDA['LAST_PULSE'] = time.time()
-            ANACONDA['ALREADY_LINTED'] = False
+        if check_linting(view, constraints, code=self.lang.lower()):
+            # remove previous linting marks if configured to do so
             if not get_settings(view, 'anaconda_linter_persistent', False):
                 erase_lint_marks(view)
-            if self.check_auto_lint:
-                self.lint()
+
+            # check lint behavior and lint if always and auto lint is set
+            if check_linting_behaviour(view, ['always']):
+                # update the last selected line number
+                self.last_selected_line = -1
+                ANACONDA['LAST_PULSE'] = time.time()
+                ANACONDA['ALREADY_LINTED'] = False
+                if self.check_auto_lint:
+                    self.lint()
         else:
             self._erase_marks_if_no_linting(view)
 
@@ -70,8 +73,8 @@ class BackgroundLinter(sublime_plugin.EventListener):
         """Called after load a file
         """
 
-        if (check_linting(view, ONLY_CODE, code=self.lang.lower())
-                and check_linting_behaviour(view, ['always', 'load-save'])):
+        if (check_linting(view, ONLY_CODE, code=self.lang.lower()) and
+                check_linting_behaviour(view, ['always', 'load-save'])):
             if self.lang in view.settings().get('syntax'):
                 self.run_linter(view)
         else:
@@ -112,8 +115,8 @@ class BackgroundLinter(sublime_plugin.EventListener):
         """
 
         if (check_linting(
-                view, ONLY_CODE | LINTING_ENABLED, code=self.lang.lower())
-                and check_linting_behaviour(view, ['always'])):
+                view, ONLY_CODE | LINTING_ENABLED, code=self.lang.lower()) and
+                check_linting_behaviour(view, ['always'])):
             if self.lang in view.settings().get('syntax'):
                 self.run_linter(view)
         else:
@@ -124,8 +127,8 @@ class BackgroundLinter(sublime_plugin.EventListener):
         """
 
         constraints = ONLY_CODE | NOT_SCRATCH | LINTING_ENABLED
-        if (not check_linting(view, constraints, code=self.lang.lower())
-                or self.lang not in view.settings().get('syntax')):
+        if (not check_linting(view, constraints, code=self.lang.lower()) or
+                self.lang not in view.settings().get('syntax')):
             return
 
         last_selected_line = last_selected_lineno(view)
