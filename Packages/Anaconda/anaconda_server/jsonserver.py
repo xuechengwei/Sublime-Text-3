@@ -22,10 +22,10 @@ try:
 except ImportError:
     import json
 
-sys.path.insert(
-    0, os.path.join(os.path.dirname(__file__), '../anaconda_lib/jedi'))
+sys.path.insert(0, os.path.join(
+    os.path.split(os.path.split(__file__)[0])[0], 'anaconda_lib'))
 
-import settings as jedi_settings
+from jedi import settings as jedi_settings
 from lib.contexts import json_decode
 from handlers import ANACONDA_HANDLERS
 from lib.anaconda_handler import AnacondaHandler
@@ -51,6 +51,7 @@ class JSONHandler(asynchat.async_chat):
         """
 
         if data is not None:
+            print(data)
             data = '{0}\r\n'.format(json.dumps(data))
             data = bytes(data, 'utf8') if PY3 else data
 
@@ -92,6 +93,10 @@ class JSONHandler(asynchat.async_chat):
             uid = data.pop('uid')
             vid = data.pop('vid', None)
             handler_type = data.pop('handler')
+            if DEBUG_MODE is True:
+                print('Received method: {0}, handler: {1}'.format(
+                    method, handler_type)
+                )
             self.handle_command(handler_type, method, uid, vid, data)
         else:
             logging.error(
@@ -110,6 +115,8 @@ class JSONHandler(asynchat.async_chat):
 
         handler = ANACONDA_HANDLERS.get(
             handler_type, AnacondaHandler.get_handler(handler_type))
+        if DEBUG_MODE is True:
+            print('{0} handler retrieved from registry'.format(handler))
         handler(method, data, uid, vid, self.return_back, DEBUG_MODE).run()
 
 

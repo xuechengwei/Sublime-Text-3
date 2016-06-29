@@ -5,14 +5,22 @@
 import sys
 import logging
 
-try:
+from .base import Command
+
+# We are forced to use this not Pythonic import approach as the incomplete
+# module `future.moves.html` distributed by https://github.com/PythonCharmers
+# breaks the doc.py logic if it is present in the user sysrem as it contains
+# just the `escape` method but not the `unescape` one so even if it get
+# imported, this command just crashes and forces a JsonServer new instance
+if sys.version_info >= (3, 0):
     import html
-except ImportError:
-    # python2 faillback
+    if sys .version_info < (3, 4):
+        import html as cgi
+        from html.parser import HTMLParser
+else:
+    # python2 uses cgi
     import cgi
     from HTMLParser import HTMLParser
-
-from .base import Command
 
 
 class Doc(Command):
@@ -23,7 +31,6 @@ class Doc(Command):
         self.script = script
         self.html = html
         super(Doc, self).__init__(callback, uid)
-
 
     def run(self):
         """Run the command
@@ -68,12 +75,21 @@ class Doc(Command):
         """Generate documentation string in HTML format
         """
 
-        if sys.version_info >= (3, 0):
+        if sys.version_info >= (3, 4):
             escaped_doc = html.escape(
                 html.unescape(definition.doc), quote=False)
         else:
-            escaped_doc = cgi.escape(
-                HTMLParser.unescape.__func__(HTMLParser, definition.doc))
+            try:
+                escaped_doc = cgi.escape(
+                    HTMLParser.unescape.__func__(
+                        HTMLParser, definition.doc.encode('utf8')
+                    )
+                )
+            except AttributeError:
+                # Python 3.x < 3.4
+                escaped_doc = cgi.escape(
+                    HTMLParser.unescape(HTMLParser, definition.doc)
+                )
 
         escaped_doc = escaped_doc.replace('\n', '<br>')
 
