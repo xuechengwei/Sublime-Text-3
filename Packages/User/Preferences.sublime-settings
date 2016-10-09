@@ -102,13 +102,16 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"All Autocomplete",
 		"AngularJS",
 		"CursorRuler",
 		"FileHeader",
 		"Goto-CSS-Declaration",
 		"jQuery Mobile Snippets",
+		"LiveStyle",
 		"Nodejs",
-		"Vagrant"
+		"Vagrant",
+		"Vintage Numbers"
 	],
 	"indent_guide_options":
 	[

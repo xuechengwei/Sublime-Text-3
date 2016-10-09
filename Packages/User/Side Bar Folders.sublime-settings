@@ -29,6 +29,9 @@
 			"path": "/Users/xue/Documents/workspace/ssad_fe"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/ssad/djangosite/audit"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/ssad"
 		},
 		{
@@ -36,6 +39,9 @@
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/ss_stats"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ss_site"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/ss_data"
@@ -59,19 +65,58 @@
 			"path": "/Users/xue/Documents/workspace/pyutil"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/nginx_lb_conf"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/learn/angular"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/creative_web"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/audience"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/appointment-reminders-flask"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/android"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/ad/academy"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/academy"
 		},
 		{
 			"path": "/Users/xue/Desktop/video"
 		},
 		{
 			"path": "/Users/xue/Desktop/sdk"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/wtforms"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/werkzeug"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/webargs"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/sqlalchemy"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/marshmallow"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/flask_admin"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/flask"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/django"
 		}
 	]
 }

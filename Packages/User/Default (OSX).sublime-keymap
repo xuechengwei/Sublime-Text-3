@@ -100,8 +100,8 @@
     },
     { "keys": ["ctrl+d"], "command": "goto_definition" },
     { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
-    { "keys": ["ctrl+["], "command": "jump_back" },
-    { "keys": ["ctrl+]"], "command": "jump_forward" },
+    { "keys": ["ctrl+o"], "command": "jump_back" },
+    { "keys": ["ctrl+i"], "command": "jump_forward" },
     {
         "keys": ["ctrl+;"],
         "command": "ace_jump_char"

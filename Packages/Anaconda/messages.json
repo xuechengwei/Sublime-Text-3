@@ -1,5 +1,5 @@
 {
-    "install": "README.md",
+    "install": "messages/install.txt",
     "1.2.7": "messages/1.2.7.txt",
     "1.2.8": "messages/1.2.8.txt",
     "1.2.9": "messages/1.2.9.txt",
@@ -38,5 +38,16 @@
     "1.4.23": "messages/1.4.23.txt",
     "1.4.24": "messages/1.4.24.txt",
     "1.4.25": "messages/1.4.25.txt",
-    "1.4.26": "messages/1.4.26.txt"
+    "1.4.26": "messages/1.4.26.txt",
+    "1.4.27": "messages/1.4.27.txt",
+    "1.4.28": "messages/1.4.28.txt",
+    "2.0.0": "messages/2.0.0.txt",
+    "2.0.1": "messages/2.0.1.txt",
+    "2.0.2": "messages/2.0.2.txt",
+    "2.0.3": "messages/2.0.3.txt",
+    "2.0.4": "messages/2.0.4.txt",
+    "2.0.5": "messages/2.0.5.txt",
+    "2.0.6": "messages/2.0.6.txt",
+    "2.0.7": "messages/2.0.7.txt",
+    "2.0.8": "messages/2.0.8.txt"
 }

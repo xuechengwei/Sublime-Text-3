@@ -1,4 +1,6 @@
-## [PlainTasks](https://github.com/aziz/PlainTasks)
+## [PlainTasks](https://github.com/aziz/PlainTasks) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d42f3e49d104ab8bf663392661b183b)](https://www.codacy.com/app/allen-bargi/PlainTasks?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aziz/PlainTasks&amp;utm_campaign=Badge_Grade)
+
 An opinionated todo-list plugin for Sublime Text (2 & 3) editor
 ![](http://cl.ly/image/1q100Q212o2Q/ss.png)
 
@@ -40,7 +42,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 
 `--` and then <kbd>tab</kbd> will give you this: `--- ✄ -----------------------`
 
-☐ Completion rules (<kbd>ctrl+space</kbd> to see list of them):  
+☐ Completion rules (<kbd>ctrl+space</kbd> or <kbd>alt+/</kbd> to see list of them):  
 
 - type `t`, press <kbd>tab</kbd> — it’ll become `@today` — this one is highlighted differently than other tags;
 - `c`, <kbd>tab</kbd> — `@critical`;
@@ -48,7 +50,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 - `l`, <kbd>tab</kbd> — `@low`;
 - `s`, <kbd>tab</kbd> — `@started` — press <kbd>tab</kbd> again and current date will be inserted, when you’ll complete or cancel a task with such tag, you’ll know how many time has passed since start;
 - `tg`, <kbd>tab</kbd>, <kbd>tab</kbd> work in the same manner as `s`, but inserts `@toggle(current date)` — so you can pause and resume to get more correct result when done/cancel; each toggle tag is either pause or resume depending on its place in sequence;
-- `cr`, <kbd>tab</kbd>, <kbd>tab</kbd> — `@created(current date)`;
+- `cr`, <kbd>tab</kbd>, <kbd>tab</kbd> — `@created(current date)` (<kbd>⌘ + shift + enter</kbd> creates a new task with this tag);
 - `d`, <kbd>tab</kbd> — `@due( )`  
   If you press <kbd>tab</kbd> again, it’ll insert current date, same for `@due( 0)`.  
   You can type short date (similar to [OrgMode’s date prompt](http://orgmode.org/manual/The-date_002ftime-prompt.html), but not the same) and then press <kbd>tab</kbd> to expand it into default format.  
@@ -125,6 +127,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
   In SublimeText 3 you can specify a symbol inside that file by using \> character like: `.\filename>symbol`.  
   In SublimeText 2 you can specify a text inside that file by using inch characters like: `.\filename"any text"`.  
   Pressing <kbd>ctrl + o</kbd> (<kbd>alt + o</kbd> on Windows/Linux) will open the file in Sublime and scroll to specific position if any.  
+  Also in SublimeText 3 link may point to directory, open such link will add the directory to current project (sidebar).  
   In addition, Markdown and “wiki” (Org-Mode, NV, etc.) styles are supported as well, examples:
 
 ```
@@ -162,23 +165,40 @@ Here is a list of PlainTasks’ specific settings:
 
 |            Setting             |     Default      |                                 Options/Description                                 |
 | ------------------------------ | ---------------- | ----------------------------------------------------------------------- |
-| **open_tasks_bullet**          | ☐                | - ❍ ❑ ■ □ ☐ ▪ ▫ – — ≡ → › [ ]                                           |
-| **done_tasks_bullet**          | ✔                | ✓   ☑ + [x]                                                               |
-| **cancelled_tasks_bullet**     | ✘                | x [-]                                                                   |
+| **open_tasks_bullet**          | `☐`              | `-` `❍` `❑` `■` `□` `☐` `▪` `▫` `–` `—` `≡` `→` `›` `[ ]`             |
+| **done_tasks_bullet**          | `✔`              | `✓` `☑` `+` `[x]`                                                      |
+| **cancelled_tasks_bullet**     | `✘`              | `x` `[-]`                                                               |
 | **date_format**                | `(%y-%m-%d %H:%M)` | See [strfti.me](http://www.strfti.me/) for quick reference; detailed documentation: [ST2](https://docs.python.org/2.6/library/datetime.html#strftime-and-strptime-behavior), [ST3](https://docs.python.org/3.3/library/datetime.html#strftime-and-strptime-behavior) |
-| **done_tag**                   | true             | Determines whether done tasks should gain a @done tag or not            |
+| **done_tag**                   | true             | Determines whether done tasks should gain a `@done` tag or not          |
 | **before_tasks_bullet_margin** | 1                | Determines the number of spaces (default indent) before the task bullet |
 | **project_tag**                | true             | Postfix archived task with project tag, otherwise prefix                |
 | **archive_name**               | `Archive:`       | Make sure it is the unique project name within your todo files          |
 | **new_on_top**                 | true             | How to sort archived tasks (done_tag=true and default date_format are required)|
-| **header_to_task**             | absent (false)   | If true, a project title line will be converted to a task on the certain keystroke  |
-| **decimal_minutes**            | absent (false)   | If true, minutes in lasted/wasted tags will be persent of hour, e.g. 1.50 instead of 1:30 |
-| **tasks_bullet_space** | absent (whitespace or tab) | String to place after bullet, might be any character(s) |
+| **header_to_task**             | false            | If true, a project title line will be converted to a task on the certain keystroke  |
+| **decimal_minutes**            | false            | If true, minutes in lasted/wasted tags will be percent of hour, e.g. 1.50 instead of 1:30 |
+| **tasks_bullet_space**         | whitespace or tab | String to place after bullet, might be any character(s)                |
+| **highlight_past_due**         | true             | If true, highlight past, soon, and invalid `@due(something)`            |
+| **highlight_due_soon**         | 24               | Hours as int, threshold to define which `@due` will be soon             |
+| **scope_past_due**             | `string.other.tag.todo.critical` | Any scope, define color for past `@due`                 |
+| **scope_due_soon**             | `string.other.tag.todo.high`     | Any scope, define color for `@due` will be soon         |
+| **scope_misformatted**         | `string.other.tag.todo.low`      | Any scope, define color for `@due` mismatch **date_format** |
 
+### Changing color scheme
+If you don't like colors used in bundled schemes just copy any `.hidden-tmTheme` from PlainTasks to 
+your User directory, change colors and paste the code below in your user settings file:
 
+``` json
+{ "color_scheme": "Path to your custom color scheme file. e.g. Packages/User/custom_plaintasks.hidden-tmTheme" }
+```
+
+**N.B.**, sometimes you have to restart Sublime Text to apply changes made in tmTheme file.
+
+**N.B.**, `scope_past_due`, `scope_due_soon`, and `scope_misformatted` settings can assign any scopes defined in tmTheme file, e.g. 
+you can set `"scope_past_due": "my.own.super.expired.whatever"` and then just add style definition in tmTheme for this scope.
 
 ### Taskpaper Compatibility
-Go to `Preferences → Package Settings → PlainTasks` and open `Settings - User`, then
+If you need to keep your files compatible with Taskpaper, go to 
+`Preferences → Package Settings → PlainTasks` and open `Settings - User`, then
 add these settings to the json file:
 
 ```json
@@ -221,7 +241,7 @@ Statistics of current file are represented in status-bar, based on `stats_format
 
 So you can customise it as you like, by adding to `Settings - User`, e.g.
 
-```json
+```
 {
     "stats_format": "☐$o ✔$d ✘$c",
 
@@ -234,7 +254,7 @@ So you can customise it as you like, by adding to `Settings - User`, e.g.
 Bring up the command palette and type `Tasks: Copy Statistics`.
 
 ### Additional settings for progress bar
-```json
+```
 {
     "bar_full": "■",   // any char
     "bar_empty": "☐", // any char
@@ -245,8 +265,14 @@ Bring up the command palette and type `Tasks: Copy Statistics`.
 }
 ```
 
-## [Introduction to PlainTasks Screencast](https://tutsplus.com/lesson/pretty-task-management/)
-[![](http://i46.tinypic.com/9ggbd3.png)](https://tutsplus.com/lesson/pretty-task-management/)
+## Introduction to PlainTasks Screencast
+[![](http://i46.tinypic.com/9ggbd3.png)](https://www.youtube.com/watch?v=LsfGhjRVJwk)
+
+## PlainTasks for other editors
+NOTE: These are separate projects, maintained by some awesome developers other than us.
+- [Atom: Tasks plugin](https://atom.io/packages/tasks)
+- [Vim: Plaintasks.vim](https://github.com/elentok/plaintasks.vim)
+- [Visual Studio Code: To Do Tasks](https://github.com/sandy081/vscode-todotasks)
 
 
 ## Contributors
