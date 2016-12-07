@@ -36,7 +36,9 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 
 ☐ You can write plain text as notes or descriptions wherever you want. Use `_` or `*` for italic and bold just like in Markdown.
 
-☐ You can add tags using **`@`** sign
+☐ You can add tags using **`@`** sign  
+You can place cursors on tags, click right mouse button and **Filter by tags under cursors**:
+pending tasks with selected tags will remain visible (and their notes and projects they belong to), but everything else will be hidden/folded; to unfold all press <kbd>⌘+k</kbd>, <kbd>⌘+j</kbd> or <kbd>⌘+k</kbd>, <kbd>⌘+0</kbd>
 
 ☐ PlainTasks comes with a simple snippet for creating separators, if you feel that your task list is becoming too long you can split it into several sections (and fold some of them) using this snippet:
 
@@ -66,6 +68,10 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
          <tr>
           <td>  <code>@due(1)</code>    </td>
           <td>  1st day of next month always    </td>
+         </tr>
+         <tr>
+          <td>  <code>@due(-1)</code>    </td>
+          <td>  1st day of current month always    </td>
          </tr>
          <tr>
           <td>  <code>@due(5)</code>    </td>
@@ -182,6 +188,8 @@ Here is a list of PlainTasks’ specific settings:
 | **scope_past_due**             | `string.other.tag.todo.critical` | Any scope, define color for past `@due`                 |
 | **scope_due_soon**             | `string.other.tag.todo.high`     | Any scope, define color for `@due` will be soon         |
 | **scope_misformatted**         | `string.other.tag.todo.low`      | Any scope, define color for `@due` mismatch **date_format** |
+| **show_remain_due**            | true             | In Sublime 3, show remain or overdue time under due tags                |
+| **show_calendar_on_tags**      | false            | In Sublime 3, if true, automatically show date picker when cursor is on tag (you can get date picker any time via context menu) |
 
 ### Changing color scheme
 If you don't like colors used in bundled schemes just copy any `.hidden-tmTheme` from PlainTasks to 

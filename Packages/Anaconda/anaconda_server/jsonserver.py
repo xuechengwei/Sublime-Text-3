@@ -100,7 +100,15 @@ class JSONHandler(asynchat.async_chat):
                 print('Received method: {0}, handler: {1}'.format(
                     method, handler_type)
                 )
-            self.handle_command(handler_type, method, uid, vid, data)
+            try:
+                self.handle_command(handler_type, method, uid, vid, data)
+            except Exception as error:
+                logging.error(error)
+                log_traceback()
+                self.return_back({
+                    'success': False, 'uid': uid,
+                    'vid': vid, 'error': str(error)
+                })
         else:
             logging.error(
                 'client sent somethinf that I don\'t understand: {0}'.format(
@@ -273,18 +281,8 @@ def log_traceback():
     """Just log the traceback
     """
 
-    logging.error(get_log_traceback())
+    logging.error(traceback.format_exc())
 
-
-def get_log_traceback():
-    """Get the traceback log msg
-    """
-
-    error = []
-    for traceback_line in traceback.format_exc().splitlines():
-        error.append(traceback_line)
-
-    return '\n'.join(error)
 
 if __name__ == "__main__":
 
@@ -339,7 +337,7 @@ if __name__ == "__main__":
             server = JSONServer(('localhost', port))
         else:
             unix_socket_path = UnixSocketPath(options.project)
-            if not os.path.exists(unix_socket_path.socket):
+            if not os.path.exists(os.path.dirname(unix_socket_path.socket)):
                 os.makedirs(os.path.dirname(unix_socket_path.socket))
             if os.path.exists(unix_socket_path.socket):
                 os.unlink(unix_socket_path.socket)
@@ -358,6 +356,7 @@ if __name__ == "__main__":
     except Exception as error:
         log_traceback()
         logger.error(str(error))
+        server.shutdown()
         sys.exit(-1)
 
     server.logger = logger

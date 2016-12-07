@@ -1,11 +1,14 @@
-[![Join the chat at https://gitter.im/DamnWidget/anaconda](https://badges.gitter.im/DamnWidget/anaconda.svg)](https://gitter.im/DamnWidget/anaconda?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/DamnWidget/anaconda.svg?branch=master)](https://travis-ci.org/DamnWidget/anaconda)
+[![Join the chat at https://gitter.im/DamnWidget/anaconda](https://img.shields.io/gitter/room/DamnWidget/anaconda.svg?maxAge=2592000)](https://gitter.im/DamnWidget/anaconda?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub release](https://img.shields.io/github/release/damnwidget/anaconda.svg)](https://github.com/DamnWidget/anaconda/releases/latest)
+[![Build Status](https://travis-ci.org/DamnWidget/anaconda.svg?branch=master)](https://travis-ci.org/DamnWidget/anaconda)
+[![Package Control](https://img.shields.io/packagecontrol/dt/Anaconda.svg)](https://packagecontrol.io/packages/Anaconda)
 
-                                                          |        
-              _` |  __ \    _` |   __|   _ \   __ \    _` |   _` | 
-             (   |  |   |  (   |  (     (   |  |   |  (   |  (   | 
-            \__,_| _|  _| \__,_| \___| \___/  _|  _| \__,_| \__,_| 
+                                                          |
+              _` |  __ \    _` |   __|   _ \   __ \    _` |   _` |
+             (   |  |   |  (   |  (     (   |  |   |  (   |  (   |
+            \__,_| _|  _| \__,_| \___| \___/  _|  _| \__,_| \__,_|
                                      The Sublime Text 3 Python IDE
-                                     
+
 [![Pledgie][pledgie-donate-image]][pledgie-donate-link]
 
 Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plugin documentation on [http://damnwidget.github.io/anaconda](http://damnwidget.github.io/anaconda).
@@ -19,7 +22,6 @@ Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plu
 ## Getting Started
 Anaconda works out of the box but there are multitude of options and features that you can tune and adapt to your own style or needs.
 
-* [Autocompletion on dot](http://damnwidget.github.io/anaconda/IDE/#toc_3)
 * [Powerful IDE](http://damnwidget.github.io/anaconda/IDE/)
 * [Advanced Configuration](http://damnwidget.github.io/anaconda/anaconda_settings/)
 * [Run Tests using Anaconda](http://damnwidget.github.io/anaconda/tests_runner/)
@@ -87,7 +89,7 @@ anaconda capabilities to other languages, the complete list of them can be shown
 
 | Language | Web Site | Package Control | Status |
 | --- | --- | --- | --- |
-| **Go** | https://github.com/DamnWidget/anaconda_go | No | Under heavy development |
+| **Go** | https://github.com/DamnWidget/anaconda_go | Yes | Active |
 | **Rust** | https://github.com/DamnWidget/anaconda_rust | Yes | Active |
 | **PHP** | https://github.com/DamnWidget/anaconda_php | Yes | Active |
 

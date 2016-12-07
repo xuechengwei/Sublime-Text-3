@@ -13,22 +13,35 @@ class Goto(Command):
         self.script = script
         super(Goto, self).__init__(callback, uid)
 
+    def _get_definitions(self):
+        definitions = self.script.goto_assignments()
+        if all(d.type == 'import' for d in definitions):
+            definitions = self.script.goto_definitions()
+        return definitions
+
     def run(self):
         """Run the command
         """
 
         try:
-            definitions = self.script.goto_assignments()
-            if all(d.type == 'import' for d in definitions):
-                definitions = self.script.goto_definitions()
+            definitions = self._get_definitions()
         except:
-            data = None
+            data = []
             success = False
         else:
             # we use a set here to avoid duplication
-            data = set([(i.module_path, i.line, i.column + 1)
+            data = set([(i.full_name, i.module_path, i.line, i.column + 1)
                         for i in definitions if not i.in_builtin_module()])
+
             success = True
 
         self.callback(
-            {'success': success, 'goto': list(data), 'uid': self.uid})
+            {'success': success, 'result': list(data), 'uid': self.uid})
+
+
+class GotoAssignment(Goto):
+    """Get back a python assignment where to go
+    """
+
+    def _get_definitions(self):
+        return self.script.goto_assignments()

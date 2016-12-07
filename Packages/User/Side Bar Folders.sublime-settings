@@ -2,10 +2,16 @@
 	"folders":
 	[
 		{
+			"path": "/Users/xue/Library/Application Support/Sublime Text 3"
+		},
+		{
 			"path": "/Users/xue/Dropbox/TODOS"
 		},
 		{
 			"path": "/Users/xue/Dropbox/Android/FaceBook/src"
+		},
+		{
+			"path": "/Users/xue/Downloads/utf8-php/php"
 		},
 		{
 			"path": "/Users/xue/Downloads/rainbow-v1.5-origin"
@@ -65,16 +71,22 @@
 			"path": "/Users/xue/Documents/workspace/pyutil"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/opentsdb_deploy"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/nginx_lb_conf"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/mesos_scripts"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/learn/angular"
 		},
 		{
-			"path": "/Users/xue/Documents/workspace/creative_web"
+			"path": "/Users/xue/Documents/workspace/ERP"
 		},
 		{
-			"path": "/Users/xue/Documents/workspace/audience"
+			"path": "/Users/xue/Documents/workspace/creative_web"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/appointment-reminders-flask"
@@ -83,10 +95,10 @@
 			"path": "/Users/xue/Documents/workspace/android"
 		},
 		{
-			"path": "/Users/xue/Documents/workspace/ad/academy"
+			"path": "/Users/xue/Documents/workspace/adbaike_web"
 		},
 		{
-			"path": "/Users/xue/Documents/workspace/academy"
+			"path": "/Users/xue/Documents/workspace/ad/academy"
 		},
 		{
 			"path": "/Users/xue/Desktop/video"
@@ -107,6 +119,12 @@
 			"path": "/Library/Python/2.7/site-packages/sqlalchemy"
 		},
 		{
+			"path": "/Library/Python/2.7/site-packages/requests"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages/planout"
+		},
+		{
 			"path": "/Library/Python/2.7/site-packages/marshmallow"
 		},
 		{
@@ -118,5 +136,6 @@
 		{
 			"path": "/Library/Python/2.7/site-packages/django"
 		}
-	]
+	],
+	"swap_append_load": false
 }
