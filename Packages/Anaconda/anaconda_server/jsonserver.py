@@ -8,6 +8,7 @@ import sys
 import time
 import socket
 import logging
+import platform
 import asyncore
 import asynchat
 import threading
@@ -26,6 +27,7 @@ sys.path.insert(0, os.path.join(
     os.path.split(os.path.split(__file__)[0])[0], 'anaconda_lib'))
 
 from lib.path import log_directory
+from jedi import set_debug_function
 from lib.contexts import json_decode
 from unix_socket import UnixSocketPath
 from handlers import ANACONDA_HANDLERS
@@ -33,7 +35,7 @@ from jedi import settings as jedi_settings
 from lib.anaconda_handler import AnacondaHandler
 
 
-DEBUG_MODE = True
+DEBUG_MODE = False
 logger = logging.getLogger('')
 PY3 = True if sys.version_info >= (3,) else False
 
@@ -137,7 +139,7 @@ class JSONServer(asyncore.dispatcher):
 
     allow_reuse_address = False
     request_queue_size = 5
-    if os.name == 'nt':
+    if platform.system().lower() != 'linux':
         address_family = socket.AF_INET
     else:
         address_family = socket.AF_UNIX
@@ -287,6 +289,7 @@ def log_traceback():
 if __name__ == "__main__":
 
     WINDOWS = os.name == 'nt'
+    LINUX = platform.system().lower() == 'linux'
     opt_parser = OptionParser(usage=(
         'usage: %prog -p <project> -e <extra_paths> port'
     )) if WINDOWS else OptionParser(usage=(
@@ -304,7 +307,7 @@ if __name__ == "__main__":
 
     options, args = opt_parser.parse_args()
     port, PID = None, None
-    if WINDOWS:
+    if not LINUX:
         if len(args) != 2:
             opt_parser.error('you have to pass a port number and PID')
 
@@ -333,7 +336,7 @@ if __name__ == "__main__":
     logger = get_logger(log_directory)
 
     try:
-        if WINDOWS:
+        if not LINUX:
             server = JSONServer(('localhost', port))
         else:
             unix_socket_path = UnixSocketPath(options.project)
@@ -369,6 +372,7 @@ if __name__ == "__main__":
         logger.info('Anaconda Server started in DEBUG mode...')
         print('DEBUG MODE')
         DEBUG_MODE = True
+        set_debug_function(notices=True)
 
     # start the server
     server.serve_forever()

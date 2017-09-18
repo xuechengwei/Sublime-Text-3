@@ -9,11 +9,9 @@
         runs in a ST3 installation equal to or newer than build 3070, it
         can be configured to show tooltips for documentation and signatures.
 
-        The options below set how the tooltip is shown. Set the theme
-        as dark if you are using a dark theme or light if you are using
-        a light one.
+        The options below set how the tooltip looks.
     */
-    "anaconda_tooltip_theme": "dark",  // possible options: "light" or "dark"
+    "anaconda_tooltip_theme": "popup",
 
     /*
         If you set the following option as true, anaconda will display the
@@ -293,6 +291,21 @@
     "anaconda_linter_underlines": true,
 
     /*
+        If this is set to true, anaconda will show errors inline.
+    */
+    "anaconda_linter_phantoms": false,
+
+    /*
+        This determines what theme is phantoms used.
+    */
+    "anaconda_linter_phantoms_theme": "phantom",
+
+    /*
+        This determines what template is phantoms used.
+    */
+    "anaconda_linter_phantoms_template": "default",
+
+    /*
         If anaconda_linter_show_errors_on_save is set to true, anaconda
         will show a list of errors when you save the file.
 
@@ -305,7 +318,7 @@
 
         **** WARNING ****
 
-        - If you set this value as true, PyFlakes and pep8 will not bet used.
+        - If you set this value as true, PyFlakes and pep8 will not be used.
         - PyLint does *NOT* support linting buffers that are not already saved in
           the file system.
 
@@ -369,7 +382,7 @@
         default as this rule has been deprecated.
 
         D203: 1 blank line before class docstring is ignored by default, as
-        this rule has been dprecated.
+        this rule has been deprecated.
     */
     "pep257_ignore":
     [
@@ -514,6 +527,15 @@
 	*/
 	"mypy_check_untyped_defs": false,
 
+    /*
+        MyPy Fast Parser
+
+        Enable the experimental fast parser module of MyPy. In practice
+        this seems to be slower, however is required for support of some
+        recent syntax changes in Python.
+    */
+    "mypy_fast_parser": false,
+
 	/*
 		MyPy Custom Typing
 
@@ -605,6 +627,11 @@
     "test_method_delimeter": ".",
 
     /*
+        Whether to include full path of the test file/method.
+    */
+    "test_include_full_path": true,
+
+    /*
         Uncomment the line below to enable filepath-based test runner
         patterns like those required for py.test.
     */
@@ -638,8 +665,10 @@
 	"swallow_startup_errors": false,
 
     /*
-        If this is set to true, anaconda will uload plugins that
-        make it malfunction intefering with it
+        If this is set to true, anaconda will unload plugins that
+        make it malfunction interfering with it
     */
     "auto_unload_conflictive_plugins": true
 }
+
+// vim: set ft=javascript:

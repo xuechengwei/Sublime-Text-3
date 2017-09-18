@@ -4,6 +4,16 @@
 
 You shouldn't have to care about vendor prefixes. Now you don't have to!
 
+
+---
+
+<p align="center">✨</p>
+<p align="center"><b>Support this project & level up your Sublime skills with this excellent <a href="https://SublimeTextBook.com/friend/AWESOME">Sublime Power User</a> course by Wes Bos</b><br>Try his free <a href="https://javascript30.com/friend/AWESOME">JavaScript 30</a> course for a taste of what to expect. Also check out his <a href="https://ES6.io/friend/AWESOME">ES6</a> and <a href="https://ReactForBeginners.com/friend/AWESOME">React</a> course.</p>
+<p align="center">✨</p>
+
+---
+
+
 ![](screenshot.gif)
 
 Adding prefixes manually is a chore. It's also hard to keep track of where and which prefixes are needed. This plugin uses the [Autoprefixer](https://github.com/postcss/autoprefixer) module to prefix properties and values according to the [Can I Use](http://caniuse.com) database. Which means it will only add the necessary prefixes and not bloat your stylesheet. It even lets you specify what browsers you want to target. In addition it will remove existing prefixes which are no longer needed.
@@ -15,7 +25,7 @@ Works with CSS and SCSS, but not other preprocessors.
 
 Install `Autoprefixer` with [Package Control](https://packagecontrol.io) and restart Sublime.
 
-**You need to have [Node.js](http://nodejs.org) >=0.12.0 installed.**<br>
+**You need to have [Node.js](http://nodejs.org) 4+ installed.**<br>
 Make sure it's in your $PATH by running `node --version` in your command-line.<br>
 On macOS you need to make sure it's in `/usr/local/bin` or symlink it there.
 
@@ -28,7 +38,7 @@ In a CSS file, open the Command Palette *(<kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>P
 
 ### Options
 
-*(Preferences → Package Settings → Autoprefixer → Settings - User)*
+*(Preferences → Package Settings → Autoprefixer)*
 
 You can specify which browsers you need to support using an array of rules.
 
@@ -38,7 +48,7 @@ See the [supported browser names](https://github.com/postcss/autoprefixer#browse
 
 ```json
 {
-	"browsers": ["last 2 versions"],
+	"browsers": ["defaults"],
 	"prefixOnSave": false
 }
 ```

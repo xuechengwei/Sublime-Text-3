@@ -9,7 +9,7 @@ import sublime
 import sublime_plugin
 
 from ..anaconda_lib.worker import Worker
-from ..anaconda_lib.typing import Dict, Any
+from ..anaconda_lib._typing import Dict, Any
 from ..anaconda_lib.progress_bar import ProgressBar
 from ..anaconda_lib.helpers import get_settings, is_python, get_window_view
 from ..anaconda_lib.jsonclient import Callback
@@ -49,7 +49,8 @@ class AnacondaAutoFormat(sublime_plugin.TextCommand):
             ),
             'pep8_max_line_length': get_settings(
                 self.view, 'pep8_max_line_length', 79
-            )
+            ),
+            'tab_size': get_settings(self.view, 'tab_size', 4)
         }
         try:
             messages = {

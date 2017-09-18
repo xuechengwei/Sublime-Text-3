@@ -8,7 +8,7 @@ import sublime
 import sublime_plugin
 
 from ..anaconda_lib.worker import Worker
-from ..anaconda_lib.typing import Dict, Any
+from ..anaconda_lib._typing import Dict, Any
 from ..anaconda_lib.tooltips import Tooltip
 from ..anaconda_lib.callback import Callback
 from ..anaconda_lib.helpers import prepare_send_data, is_python, get_settings
@@ -37,8 +37,8 @@ class AnacondaDoc(sublime_plugin.TextCommand):
             except Exception as error:
                 print(error)
         else:
-            if (get_settings(self.view, 'enable_docstrings_tooltip', False)
-                    and int(sublime.version()) >= 3070):
+            if get_settings(self.view, 'enable_docstrings_tooltip', False) \
+               and int(sublime.version()) >= 3070:
                 self.print_popup(edit)
             else:
                 self.print_doc(edit)
@@ -90,7 +90,7 @@ class AnacondaDoc(sublime_plugin.TextCommand):
         docstring = ''.join(dlines[1:])
         content = {'name': name, 'content': docstring}
         self.documentation = None
-        css = get_settings(self.view, 'anaconda_tooltip_theme', 'dark')
+        css = get_settings(self.view, 'anaconda_tooltip_theme', 'popup')
         Tooltip(css).show_tooltip(
             self.view, 'doc', content, partial(self.print_doc, edit))
 

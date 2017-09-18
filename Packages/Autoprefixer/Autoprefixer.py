@@ -9,7 +9,7 @@ try:
 except:
 	from .node_bridge import node_bridge
 
-# monkeypatch `Region` to be iterable
+# Monkeypatch `Region` to be iterable
 sublime.Region.totuple = lambda self: (self.a, self.b)
 sublime.Region.__iter__ = lambda self: self.totuple().__iter__()
 
@@ -57,6 +57,10 @@ class AutoprefixerCommand(sublime_plugin.TextCommand):
 			return node_bridge(data, BIN_PATH, [json.dumps({
 				'browsers': get_setting(self.view, 'browsers'),
 				'cascade': get_setting(self.view, 'cascade'),
+				'remove': get_setting(self.view, 'remove'),
+				'supports': get_setting(self.view, 'supports'),
+				'flexbox': get_setting(self.view, 'flexbox'),
+				'grid': get_setting(self.view, 'grid'),
 				'is_css': is_css(self.view)
 			})])
 		except Exception as e:

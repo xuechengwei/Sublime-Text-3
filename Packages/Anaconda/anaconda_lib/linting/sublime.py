@@ -16,6 +16,7 @@ from ..persistent_list import PersistentList
 from ..helpers import (
     get_settings, is_code, get_view, check_linting, LINTING_ENABLED
 )
+from ..phantoms import Phantom
 
 
 sublime_api = sublime.sublime_api
@@ -137,6 +138,15 @@ class Linter:
         ignore_star = get_settings(self.view, 'pyflakes_ignore_import_*', True)
 
         for error in errors:
+            try:
+                line_text = self.view.substr(self.view.full_line(
+                    self.view.text_point(error['lineno']-1, 0)
+                ))
+                if '# noqa' in line_text:
+                    continue
+            except Exception as e:
+                print(e)
+
             error_level = error.get('level', 'W')
             messages = errors_level[error_level]['messages']
             underlines = errors_level[error_level]['underlines']
@@ -173,6 +183,8 @@ class Linter:
 def erase_lint_marks(view):
     """Erase all the lint marks
     """
+    if get_settings(view, 'anaconda_linter_phantoms', False):
+        Phantom().clear_phantoms(view)
 
     types = ['illegal', 'warning', 'violation']
     for t in types:
@@ -217,6 +229,20 @@ def add_lint_marks(view, lines, **errors):
             'Packages/' + package_name + '/anaconda_lib/linting/'
             'gutter_mark_themes/{theme}-{type}.png'
         )
+
+        if get_settings(view, 'anaconda_linter_phantoms', False):
+            phantom = Phantom()
+            vid = view.id()
+            phantoms = []
+            for level in ['ERRORS', 'WARNINGS', 'VIOLATIONS']:
+                for line, messages in ANACONDA.get(level)[vid].items():
+                    for message in messages:
+                        phantoms.append({
+                            "line": line,
+                            "level": level.lower(),
+                            "messages": message
+                        })
+            phantom.update_phantoms(view, phantoms)
 
         for lint_type, lints in get_outlines(view).items():
             if len(lints) > 0:
@@ -373,6 +399,8 @@ def get_mypy_settings(view):
         mypy_settings.append('--disallow-untyped-defs')
     if get_settings(view, 'mypy_check_untyped_defs', False):
         mypy_settings.append('--check-untyped-defs')
+    if get_settings(view, 'mypy_fast_parser', False):
+        mypy_settings.append('--fast-parser')
     custom_typing = get_settings(view, 'mypy_custom_typing', None)
     if custom_typing is not None:
         mypy_settings.append('--custom-typing')

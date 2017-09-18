@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AceJump",
 		"AdvancedNewFile",
 		"AlignTab",
@@ -33,6 +34,7 @@
 		"DashDoc",
 		"Djaneiro",
 		"DocBlockr",
+		"DocBlockr_Python",
 		"EditorConfig",
 		"Emmet",
 		"File History",
@@ -74,6 +76,7 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"SideBarFolders",
+		"SqlBeautifier",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
@@ -86,6 +89,7 @@
 		"Text Pastry",
 		"Theme - Nil",
 		"Theme - Soda",
+		"ThriftSyntax",
 		"Toggle Css Format",
 		"TrailingSpaces",
 		"Underscore.js Snippets",

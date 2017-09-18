@@ -4,9 +4,13 @@ python:
     - "2.7"
     - "3.3"
     - "3.5"
+    - "3.6"
+    - "3.6-dev"
     - "pypy"
-    - "pypy3"
-
+    # - "pypy3"
+install: |
+    export PYTHON_VERSION=$(pip --version | grep -oP 'python \d.\d' | cut -d' ' -f2 | cut -d'.' -f1)
+    if [ ${PYTHON_VERSION} -eq 3 ]; then pip install -r requirements.py3.txt; fi
 notifications:
   webhooks:
     urls:
