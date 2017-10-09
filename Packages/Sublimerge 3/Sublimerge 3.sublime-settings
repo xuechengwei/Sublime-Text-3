@@ -24,6 +24,12 @@
     //visit http://docs.python.org/2/library/codecs.html#standard-encodings
     "shell_fallback_encoding": "ascii",
 
+    //Define the strategy for detecting files encoding, like files from VCS revisions, etc.
+    // "auto" - try to autodetect
+    // ["cp1252", "utf-8"] - detect by trying one-by-one
+    // null - disable
+    "file_encoding_detection_strategy": "auto",
+
     //This will limit the list of comparable files to the files with the same syntax
     "same_syntax_only": true,
 
@@ -113,6 +119,25 @@
     //noisy highlights within the line.
     "intraline_combine_threshold": 3,
 
+    //EXPERIMENTAL! All strings matching these regular expressions will be marked as unimportant
+    //while doing intraline differences analysis. They apply to a line so ^ and $ operators will match 
+    //line begin and line end. Expressions are case-sensitive. 
+    //
+    // Important Notes:
+    //  - Expressions are applied in order of appearing in this list.
+    //  - Expression must have at least one capturing group - only capturing groups are considered to be 
+    //    treated as unimportant. 
+    //  - You should not use nested capturing groups. If your expression requires nested groups, mark
+    //    the other ones as non-capturing using "?:" operator, i.e. (?:(cat|dog))?. Otherwise it will
+    //    result in undefined behavior.
+    //  - Implementation of this feature may change in the future.
+    //
+    //Example: ["\d+(st|nd|rd)"] - mark as unimportant only st, nd, rd following any number
+    "intraline_unimportant_regexps": [],
+
+    //Just like `intraline_style` but for unimportant differences
+    "intraline_unimportant_style": "outlined",
+
     //VIEWS ///////////////////////////////////////////////////////////////////////////////////////////
 
     //Diff view consists of two Sublime's views. All options defined here will be applied to them.
@@ -145,12 +170,12 @@
     //Set to false if you don't want to automatically "jump" to the next change after merge
     "go_to_next_after_merge": false,
 
+    //Starts diff view in swapped mode where new changes are displayed on the left-hand side panel.
+    "start_swapped": false,
+
     // ########################################################################################################
     // # BEGIN OF UNIMPLEMENTED FEATURES' SETTINGS. THEY WILL BE IMPLEMENTED IN FUTURE RELEASES               #
     // ########################################################################################################
-
-    //Starts diff view in swapped mode where new changes are displayed on the left-hand side panel.
-    // "start_swapped": false,
 
     //Set to true if you want diff window to be opened in full screen mode
     //"full_screen": false,

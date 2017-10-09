@@ -44,7 +44,7 @@
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
-	"default_line_ending": "unix",
+	"default_line_ending": "CRLF",
 	"detect_indentation": false,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": true,
@@ -110,6 +110,7 @@
 		"jQuery Mobile Snippets",
 		"LiveStyle",
 		"Nodejs",
+		"SublimeGit",
 		"Vagrant",
 		"Vintage Numbers"
 	],

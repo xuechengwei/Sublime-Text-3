@@ -1,0 +1,15 @@
+{
+    "root_folders": [{
+        //required, all sub-folders and *.sublime-projects inside will be indexed, except .*
+        "folder": "/Users/xue/Documents/workspace/",
+
+        //optional, will be opened together with one of sub-folders
+        "extra": ["/Users/xue/Documents/workspace/"],
+
+        //optional, will be used in display panel, e.g. AS3:SubFolderName
+        "alias": "workspace"
+    }],
+
+    //optional, set to true to save scan time, but requires ST re-launch when folder list change
+    "cache": false
+}
