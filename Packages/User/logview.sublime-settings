@@ -1,0 +1,5 @@
+{
+    "error_filter": "ERROR",
+    "warning_filter": "WARNING",
+    "highlight_style": "underline"
+}

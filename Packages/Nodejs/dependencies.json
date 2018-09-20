@@ -1,0 +1,9 @@
+{
+    "*": {
+        "*": [
+            "shellenv",
+            "newterm",
+            "psutil"
+        ]
+    }
+}

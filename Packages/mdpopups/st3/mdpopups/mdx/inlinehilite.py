@@ -1,14 +1,16 @@
 """
-Inline Hilite.
+Inline Highlighting.
 
 pymdownx.inlinehilite
 
 An alternative inline code extension that highlights code.  Can
 use CodeHilite to source its settings or pymdownx.highlight.
 
-    `:::javascript var test = 0;`
-            - or -
-    `#!javascript var test = 0;`
+`:::javascript var test = 0;`
+
+- or -
+
+`#!javascript var test = 0;`
 
 Copyright 2014 - 2017 Isaac Muse <isaacmuse@gmail.com>
 """
@@ -19,8 +21,6 @@ from markdown import Extension
 from markdown.inlinepatterns import Pattern
 from markdown import util as md_util
 from . import highlight as hl
-from .util import PymdownxDeprecationWarning
-import warnings
 
 ESCAPED_BSLASH = '%s%s%s' % (md_util.STX, ord('\\'), md_util.ETX)
 DOUBLE_BSLASH = '\\\\'
@@ -56,7 +56,7 @@ class InlineHilitePattern(Pattern):
         self.get_hl_settings = False
 
     def get_settings(self):
-        """Check for code hilite extension and gather its settings."""
+        """Check for CodeHilite extension and gather its settings."""
 
         if not self.get_hl_settings:
             self.get_hl_settings = True
@@ -73,7 +73,7 @@ class InlineHilitePattern(Pattern):
             self.noclasses = config['noclasses']
 
     def highlight_code(self, language, src):
-        """Syntax highlite the inline code block."""
+        """Syntax highlight the inline code block."""
 
         process_text = self.style_plain_text or language or self.guess_lang
 
@@ -104,17 +104,12 @@ class InlineHilitePattern(Pattern):
 
 
 class InlineHiliteExtension(Extension):
-    """Add inline-hilite extension to Markdown class."""
+    """Add inline highlighting extension to Markdown class."""
 
     def __init__(self, *args, **kwargs):
         """Initialize."""
 
         self.config = {
-            'use_codehilite_settings': [
-                None,
-                "Deprecated and does nothing. "
-                "- Default: True"
-            ],
             'style_plain_text': [
                 False,
                 "Process inline code even when a language is not specified "
@@ -133,19 +128,9 @@ class InlineHiliteExtension(Extension):
         super(InlineHiliteExtension, self).__init__(*args, **kwargs)
 
     def extendMarkdown(self, md, md_globals):
-        """Add support for :::language`code` code hiliting."""
+        """Add support for `:::language code` and `#!language code` highlighting."""
 
         config = self.getConfigs()
-
-        if config.get('use_codehilite_settings'):  # pragma: no coverage
-            warnings.warn(
-                "'use_codehilite_settings' is deprecated and does nothing.\n"
-                "\nCodeHilite settings will only be used if CodeHilite is configured\n"
-                " and 'pymdownx.highlight' is not configured.\n"
-                "Please discontinue use of this setting as it will be removed in the future.",
-                PymdownxDeprecationWarning
-            )
-
         inline_hilite = InlineHilitePattern(BACKTICK_CODE_RE, md)
         inline_hilite.config = config
         md.inlinePatterns['backtick'] = inline_hilite

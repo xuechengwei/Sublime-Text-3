@@ -1,0 +1,35 @@
+{
+	"history":
+	[
+		{
+			"data":
+			{
+				"args":
+				{
+					"context": "file",
+					"keep": true,
+					"operator": "add",
+					"pattern": "\\d:",
+					"use_regex": true
+				},
+				"command": "text_pastry_modify_selection",
+				"pattern": "\\d:"
+			},
+			"key": "802a0a17b3d36216613d59f50bb849b7",
+			"label": "\\d:"
+		}
+	],
+	"last_command":
+	{
+		"args":
+		{
+			"context": "file",
+			"keep": true,
+			"operator": "add",
+			"pattern": "\\d:",
+			"use_regex": true
+		},
+		"command": "text_pastry_modify_selection",
+		"pattern": "\\d:"
+	}
+}

@@ -103,7 +103,6 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"AngularJS",
 		"CursorRuler",
 		"FileHeader",
 		"Goto-CSS-Declaration",
@@ -112,7 +111,8 @@
 		"Nodejs",
 		"SublimeGit",
 		"Vagrant",
-		"Vintage Numbers"
+		"Vintage Numbers",
+		"Vue Syntax Highlight"
 	],
 	"indent_guide_options":
 	[

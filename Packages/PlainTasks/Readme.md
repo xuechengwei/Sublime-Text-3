@@ -40,6 +40,8 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 You can place cursors on tags, click right mouse button and **Filter by tags under cursors**:
 pending tasks with selected tags will remain visible (and their notes and projects they belong to), but everything else will be hidden/folded; to unfold all press <kbd>⌘+k</kbd>, <kbd>⌘+j</kbd> or <kbd>⌘+k</kbd>, <kbd>⌘+0</kbd>
 
+☐ You can navigate tags in current document via <kbd>⌘+shift+r</kbd>.
+
 ☐ PlainTasks comes with a simple snippet for creating separators, if you feel that your task list is becoming too long you can split it into several sections (and fold some of them) using this snippet:
 
 `--` and then <kbd>tab</kbd> will give you this: `--- ✄ -----------------------`
@@ -295,6 +297,7 @@ NOTE: These are separate projects, maintained by some awesome developers other t
 - [Atom: Tasks plugin](https://atom.io/packages/tasks)
 - [Vim: Plaintasks.vim](https://github.com/elentok/plaintasks.vim)
 - [Visual Studio Code: To Do Tasks](https://github.com/sandy081/vscode-todotasks)
+- [Visual Studio Code: Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus)
 
 
 ## Contributors

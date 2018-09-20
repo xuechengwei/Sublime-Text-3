@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fileTypes</key>
+    <array/>
+    <key>name</key>
+    <string>Log Highlight</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>begin</key>
+            <string>Log Highlight</string>
+            <key>comment</key>
+            <string>...</string>
+            <key>end</key>
+            <string>[\r\n]</string>
+            <key>name</key>
+            <string>summary.title</string>
+        </dict>
+    </array>
+    <key>repository</key>
+    <dict>
+    </dict>
+    <key>scopeName</key>
+    <string>source.loghighlight</string>
+    <key>uuid</key>
+    <string>0ed2482c-a94a-49dc-9aae-b1401bcff2e0</string>
+</dict>
+</plist>

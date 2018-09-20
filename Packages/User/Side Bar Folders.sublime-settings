@@ -14,16 +14,34 @@
 			"path": "/Users/xue/Downloads/银联对接/upacp_sdk_python"
 		},
 		{
+			"path": "/Users/xue/Downloads/银联对接"
+		},
+		{
 			"path": "/Users/xue/Downloads/utf8-php/php"
 		},
 		{
 			"path": "/Users/xue/Downloads/rainbow-v1.5-origin"
 		},
 		{
+			"path": "/Users/xue/Downloads/people_helper"
+		},
+		{
 			"path": "/Users/xue/Downloads/NewsArticle_app_download_v5.0.2_af66915_source_from_JADX"
 		},
 		{
 			"path": "/Users/xue/Downloads/GuidedTour.playground"
+		},
+		{
+			"path": "/Users/xue/Downloads/gmail_checker"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/toutiao/app/ad/worker"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/toutiao/app/ad/mars_solar"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/tianchi"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/sura"
@@ -53,6 +71,9 @@
 			"path": "/Users/xue/Documents/workspace/ss_site"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/ss_lib"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/ss_data"
 		},
 		{
@@ -74,6 +95,12 @@
 			"path": "/Users/xue/Documents/workspace/pyutil"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/project_boilerplate"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/platform_web"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/opentsdb_deploy"
 		},
 		{
@@ -89,10 +116,19 @@
 			"path": "/Users/xue/Documents/workspace/learn/angular"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/hero"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/ERP"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/db_monitor"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/creative_web"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/auto_diagnosis"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace/appointment-reminders-flask"
@@ -101,10 +137,22 @@
 			"path": "/Users/xue/Documents/workspace/android"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/adweb"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/adnavi"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/adbaike_web"
 		},
 		{
+			"path": "/Users/xue/Documents/workspace/ad_site_env"
+		},
+		{
 			"path": "/Users/xue/Documents/workspace/ad/academy"
+		},
+		{
+			"path": "/Users/xue/Documents/workspace/account_web"
 		},
 		{
 			"path": "/Users/xue/Documents/workspace"
@@ -147,6 +195,9 @@
 		},
 		{
 			"path": "/Library/Python/2.7/site-packages/django"
+		},
+		{
+			"path": "/Library/Python/2.7/site-packages"
 		}
 	],
 	"swap_append_load": false

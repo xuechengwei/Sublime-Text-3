@@ -15,7 +15,11 @@ exports.reporter = function (errors, results) {
     return stayNumberWang;
   }
 
-  buffer += '[JSHint: ' + results[0].file + ']\n\n';
+  if (results && results[0] && results[0].file) {
+    buffer += '[JSHint: ' + results[0].file + ']\n\n';
+  } else {
+    buffer += '[JSX Transform]\n\n';
+  }
 
   if (errors.length) {
     if (errors.length > 1) {
@@ -23,10 +27,11 @@ exports.reporter = function (errors, results) {
     }
 
     errors.forEach(function (result) {
-      var
-        error = result.error;
+      var error = result.error,
+          code = (error.code) ? ' (' + error.code + ')' : '';
 
-      buffer += numberWang((error.line + error.character.toString()).length) + ' ' + error.line + ',' + error.character + ':' + ' ' + error.reason + '\n';
+      buffer += numberWang((error.line + error.character.toString()).length) + ' ' + error.line + ',' + error.character + ':' + ' ' + error.reason + code + '\n';
+      
     });
 
     buffer += '\n✗ ' + errors.length + ' ' + title + ', double-click above, [F4] for next, [shift-F4] for previous.\n';

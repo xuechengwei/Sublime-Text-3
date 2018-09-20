@@ -145,9 +145,12 @@ class Highlight(object):
 
         if lexer is None:
             if self.guess_lang:
-                lexer = guess_lexer(src)
-            else:
-                lexer = get_lexer_by_name('text')
+                try:
+                    lexer = guess_lexer(src)
+                except Exception:  # pragma: no cover
+                    pass
+        if lexer is None:
+            lexer = get_lexer_by_name('text')
         return lexer
 
     def escape(self, txt):
@@ -256,7 +259,7 @@ class HighlightTreeprocessor(Treeprocessor):
     """Highlight source code in code blocks."""
 
     def run(self, root):
-        """Find code blocks and store in htmlStash."""
+        """Find code blocks and store in `htmlStash`."""
 
         blocks = root.iter('pre')
         for block in blocks:
@@ -287,7 +290,7 @@ class HighlightTreeprocessor(Treeprocessor):
 
 
 class HighlightExtension(Extension):
-    """Configure highlight settins globally."""
+    """Configure highlight settings globally."""
 
     def __init__(self, *args, **kwargs):
         """Initialize."""

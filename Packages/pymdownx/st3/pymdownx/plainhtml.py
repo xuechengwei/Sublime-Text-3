@@ -25,74 +25,13 @@ DEALINGS IN THE SOFTWARE.
 """
 from __future__ import unicode_literals
 from markdown import Extension
-from markdown.postprocessors import Postprocessor
-import re
-
-
-RE_TAG_HTML = re.compile(
-    r'''(?x)
-    (?:
-        (?P<comments>(\r?\n?\s*)<!--[\s\S]*?-->(\s*)(?=\r?\n)|<!--[\s\S]*?-->)|
-        (?P<open><[\w\:\.\-]+)
-        (?P<attr>(?:\s+[\w\-:]+(?:\s*=\s*(?:"[^"]*"|'[^']*'))?)*)
-        (?P<close>\s*(?:\/?)>)
-    )
-    ''',
-    re.DOTALL | re.UNICODE
-)
-
-TAG_BAD_ATTR = r'''(?x)
-(?P<attr>
-    (?:
-        \s+(?:%s)
-        (?:\s*=\s*(?:"[^"]*"|'[^']*'))
-    )*
-)
-'''
-
-
-def repl(m, attributes, strip_comments):
-    """Replace comments and unwanted attributes."""
-
-    if m.group('comments'):
-        tag = '' if strip_comments else m.group('comments')
-    else:
-        tag = m.group('open')
-        if attributes is not None:
-            tag += attributes.sub('', m.group('attr'))
-        else:
-            tag += m.group('attr')
-        tag += m.group('close')
-    return tag
-
-
-class PlainHtmlPostprocessor(Postprocessor):
-    """Post processor to strip out unwanted content."""
-
-    def run(self, text):
-        """Strip out ids and classes for a simplified HTML output."""
-
-        attr_str = self.config.get('strip_attributes', 'id class style').strip()
-        attributes = [re.escape(a) for a in attr_str.split(' ')] if attr_str else []
-        if self.config.get('strip_js_on_attributes', True):
-            attributes.append(r'on[\w]+')
-        if len(attributes):
-            re_attributes = re.compile(
-                TAG_BAD_ATTR % '|'.join(attributes),
-                re.DOTALL | re.UNICODE
-            )
-        else:
-            re_attributes = None
-        strip_comments = self.config.get('strip_comments', True)
-
-        return RE_TAG_HTML.sub(
-            lambda m: repl(m, re_attributes, strip_comments),
-            text
-        )
+from . import striphtml
+from .util import PymdownxDeprecationWarning
+import warnings
 
 
 class PlainHtmlExtension(Extension):
-    """PlainHtml extension."""
+    """Plain HTML extension."""
 
     def __init__(self, *args, **kwargs):
         """Initialize."""
@@ -119,8 +58,22 @@ class PlainHtmlExtension(Extension):
     def extendMarkdown(self, md, md_globals):
         """Strip unwanted attributes to give a plain HTML."""
 
-        plainhtml = PlainHtmlPostprocessor(md)
-        plainhtml.config = self.getConfigs()
+        warnings.warn(
+            "'PlainHTML' has been renamed to 'StripHTML' (pymdownx.striphtml).\n"
+            "The usage of pymdownx.plainhtml is deprecated and will be removed\n"
+            "in the future.  It is advised to switch over to StripHTML, but please\n"
+            "read the documentation as some of the option formats and defaults are\n"
+            "are different in the new StripHTML extension.",
+            PymdownxDeprecationWarning
+        )
+
+        config = self.getConfigs()
+        plainhtml = striphtml.StripHtmlPostprocessor(
+            config.get('strip_comments'),
+            config.get('strip_js_on_attributes'),
+            config.get('strip_attributes').split(),
+            md
+        )
         md.postprocessors.add("plain-html", plainhtml, "_end")
         md.registerExtension(self)
 
